@@ -1,4 +1,4 @@
-* `genus-execise` : contains the results of the Exercise section of the lab instruction pdf `EN4603-Lab1.pdf`.
+* `genus-exercise` : contains the results of the Exercise section of the lab instruction pdf `EN4603-Lab1.pdf`.
 * `genus-familiarization` : contains the results of the Familiarization section of the lab instruction pdf `EN4603-Lab1.pdf`
 
 Both the directories have the following directory structure.
