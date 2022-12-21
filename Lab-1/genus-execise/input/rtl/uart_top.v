@@ -11,7 +11,7 @@ module uart_top #(
 		
 	// Interface of 'A'
 	input clk_a,
-    	input reset_a,
+    input reset_a,
 	 	
  	input [TX_WORD_LENGTH*TX_NO_OF_WORDS-1:0] tx_parallel_data_in_a,
  	input  tx_data_wr_enable_in_a,
@@ -21,12 +21,12 @@ module uart_top #(
  	output [RX_WORD_LENGTH*RX_NO_OF_WORDS-1:0] rx_parallel_data_out_a,
  	input  rx_data_rd_enable_in_a,
  	output rx_parity_error_a,
-    	output rx_stop_bit_error_a,
+    output rx_stop_bit_error_a,
 
 
-    	// Interface of 'B'
-    	input clk_b,
-    	input reset_b,
+    // Interface of 'B'
+    input clk_b,
+    input reset_b,
 	
  	input [TX_WORD_LENGTH*TX_NO_OF_WORDS-1:0] tx_parallel_data_in_b,
  	input  tx_data_wr_enable_in_b,
@@ -36,7 +36,7 @@ module uart_top #(
  	output [RX_WORD_LENGTH*RX_NO_OF_WORDS-1:0] rx_parallel_data_out_b,
  	input  rx_data_rd_enable_in_b,
  	output rx_parity_error_b,
-    	output rx_stop_bit_error_b
+    output rx_stop_bit_error_b
 );
 
 	wire w_a_tx_b_rx;
