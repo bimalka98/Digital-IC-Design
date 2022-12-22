@@ -88,11 +88,11 @@ write_sdc > ../output/uart_top_2.sdc
 write_scandef > ../output/uart_top_2_scanDEF.scandef
 
 # 22. Generate the reports after scan connect
-report_area > ../report/ after_scan_connect/area.log
+report_area > ../report/after_scan_connect/area.log
 report_timing -nworst 10 > ../report/after_scan_connect/timing.log
-report_port * > ../report/ after_scan_connect/ports.log
-report_power > ../report/ after_scan_connect/power.log
+report_port * > ../report/after_scan_connect/ports.log
+report_power > ../report/after_scan_connect/power.log
 
 # 23. Write the scripts required for the ATPG tool
-write_dft_atpg -library ../input/libs/gsclib045/timing/slow_vdd1v0_basicCells.li
+write_dft_atpg -library ../input/libs/gsclib045/timing/slow_vdd1v0_basicCells.lib
 
