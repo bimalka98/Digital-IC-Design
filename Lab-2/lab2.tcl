@@ -67,6 +67,9 @@ define_scan_chain -name top_chain_b -sdi scan_in_b -sdo scan_out_b -non_shared_o
 # 15. Preview the scan chains/Scan Stitching
 connect_scan_chains -preview -auto_create_chains
 
+# 16. Preview the scan chains/Scan Stitching
+connect_scan_chains -auto_create_chains
+
 # 17. Perform incremental synthesis to generate the netlist of the scan connected design
 syn_opt -incr
 
