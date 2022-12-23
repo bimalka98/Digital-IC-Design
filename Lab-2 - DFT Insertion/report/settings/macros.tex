@@ -1,0 +1,28 @@
+%% my macros
+
+%% Text fomats
+\newcommand{\tbi}[1]{\textbf{\textit{#1}}}
+
+% IEEE naming convention
+%\renewcommand{\figurename}{Fig.}
+
+% custom counter for shell scripts
+\newcounter{shellcounter}
+% \newcounter{myexample}% preamble
+\newtcolorbox[
+use counter=shellcounter,
+number format=\Alph]{shell}[2][]{%
+	colback=blue!5!white,
+	colframe=blue!75!white,
+	fonttitle=\bfseries,
+	title= {\sc Shell \thetcbcounter}: #2,#1}
+
+
+\newcounter{outputcounter}
+\newtcolorbox[
+use counter=outputcounter,
+number format=\Roman]{result}[2][]{%
+	colback=green!5!white,
+	colframe=green!75!black,
+	fonttitle=\bfseries,
+	title= {\sc Result box \thetcbcounter}: #2,#1}
