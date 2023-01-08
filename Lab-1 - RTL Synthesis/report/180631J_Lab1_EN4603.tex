@@ -25,7 +25,7 @@
 \section{Introduction}
 
 \subsection{Practical}
-In this practical, we will be using \textit{Cadence Genus} to synthesize an example \ac{rtl} design, a transceiver. As inputs to Genus, we will provide
+In this practical, we will be using \textit{Cadence Genus - Ver. 18.10 } to synthesize an example \ac{rtl} design, a transceiver. As inputs to Genus, we will provide
 
 \begin{enumerate}
 	\item Source Verilog files
@@ -64,14 +64,40 @@ During \ac{rtl} synthesis, an \ac{rtl} compiler reads the \ac{rtl} description o
 
 \pagebreak
 \section{Exercise}
+This section documents the observations made in step 4 and 5 of the practical guide, with screenshots and explanations.\\
+
+\textbf{Note}: \textit{Genus is a \ac{tcl} based tool and therefore {\tt .tcl} scripts can be created to execute a series of commands instead of typing each command individually. The entire interface of Genus is accessible through \ac{tcl}, and true \ac{tcl} syntax and semantics are supported.}
 
 \subsection{System Clocks \& Resets}
 
 \subsubsection{System Clocks}
 
+The specifications related to the system clocks and other constraints are defined in the {\tt constraints.tcl} script file, which can be executed once using the Genus software. The command {\tt create\_clock} is used to define the clocks, and the parameters related to that command is given below\cite{genus_command_ref_2019}.
 
+\begin{verbatim}
+create_clock
+    [-add]
+    [-name clock] [-domain clock_domain]
+    -period float [-waveform float]
+    [-apply_inverted {port|pin|hpin}]
+    [port|pin|hpin] [-comment string]
 
+create_clock -name clk_a -period 20 [get_ports clk_a] -waveform {0 8}
+create_clock -name clk_b -period 20 [get_ports clk_b] -waveform {10 18}
+\end{verbatim}
 
+The clocks specified in the constraints file has the properties described in the 
+
+\begin{table}[h]
+	\captionsetup{font={sc, footnotesize}, labelsep=newline}
+	\centering
+	\caption{Properties of the system clocks}
+	\begin{tabular}{|L{0.15\linewidth}  |C{0.12\linewidth}  | C{0.12\linewidth} |  C{0.12\linewidth} |  C{0.12\linewidth} | C{0.12\linewidth} | }
+		
+	
+	\end{tabular}
+	\label{table:}
+\end{table}
 
 \vfill
 \hrule

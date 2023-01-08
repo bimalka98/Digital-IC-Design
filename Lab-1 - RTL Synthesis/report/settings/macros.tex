@@ -26,3 +26,8 @@ number format=\Roman]{result}[2][]{%
 	colframe=green!75!black,
 	fonttitle=\bfseries,
 	title= {\sc Result box \thetcbcounter}: #2,#1}
+
+% table related commands
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}m{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}m{#1}}
