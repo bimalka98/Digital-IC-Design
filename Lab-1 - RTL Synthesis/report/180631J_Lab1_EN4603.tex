@@ -15,9 +15,6 @@
 \listoftables
 \input{content/abbreviations}
 \vfill
-\begin{center}
-	\textbf{\textit{*PDF is clickable}}
-\end{center}
 
 \textit{\textbf{Note:}}\\
 \textit{All the materials related to the report can also be found at \url{https://github.com/bimalka98/Digital-IC-Design}}
@@ -33,6 +30,15 @@ In this practical, we will be using \textit{Cadence Genus} to synthesize an exam
 \begin{enumerate}
 	\item Source Verilog files
 	\item Technology libraries provided by the fabrication plant (here, $45~nm$ educational \ac{gpdk} given by Cadence) : {\tt (.lib, .lef, .tch)}
+	
+	\begin{itemize}
+		\item Library Timing (.lib) files specify timing (cell delay, cell transition time, setup and hold time requirement) and power characteristics of standard cells. Slow and fast libraries 	characterize standard cells with maximum and minimum signal delays, which could occur from process variations.
+
+		\item Tch files are binary files that accurately characterize library elements, that include  capacitance and resistance.
+		
+		\item Library Exchange Format (LEF) specify design rules, metal capacitances, layer information…etc.
+	\end{itemize}
+	
 	\item Timing constraints
 \end{enumerate}
 
@@ -50,12 +56,13 @@ During \ac{rtl} synthesis, an \ac{rtl} compiler reads the \ac{rtl} description o
 \begin{figure}[H]
 	\centering
 	\fbox{
-		\includegraphics[width=0.53\linewidth]{figures/flow.PNG}
+		\includegraphics[width=0.9\linewidth]{figures/flow.PNG}
 	}
-	\caption{Overview of an \ac{rtl} synthesis flow\cite{genus_user_guide_2019}.}
+	\caption{Overview of \ac{rtl} synthesis flow of Cadence Genus software\cite{genus_user_guide_2019}.}
 	\label{fig:asic_flow}
 \end{figure}
 
+\pagebreak
 \section{Exercise}
 
 \subsection{System Clocks \& Resets}
