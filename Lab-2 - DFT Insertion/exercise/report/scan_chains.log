@@ -1,0 +1,195 @@
+Reporting 4 scan chains (muxed_scan)
+ 
+Chain 1: top_chain_a1 
+  scan_in:      scan_in_a1 
+  scan_out:     scan_out_a1   
+  shift_enable: SE (active high) 
+  clock_domain: clk_a (edge: rise)
+  length: 41
+    bit 1 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/buffer_full_counter_reg[0]  <clk_a (rise)>  
+    bit 2 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/buffer_full_counter_reg[1]  <clk_a (rise)>  
+    bit 3 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/buffer_full_counter_reg[2]  <clk_a (rise)>  
+    bit 4 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/buffer_full_counter_reg[3]  <clk_a (rise)>  
+    bit 5 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[0]  <clk_a (rise)>  
+    bit 6 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[1]  <clk_a (rise)>  
+    bit 7 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[2]  <clk_a (rise)>  
+    bit 8 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[3]  <clk_a (rise)>  
+    bit 9 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[4]  <clk_a (rise)>  
+    bit 10 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[5]  <clk_a (rise)>  
+    bit 11 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[6]  <clk_a (rise)>  
+    bit 12 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[7]  <clk_a (rise)>  
+    bit 13 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/memory_reg[0]  <clk_a (rise)>  
+    bit 14 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/memory_reg[1]  <clk_a (rise)>  
+    bit 15 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/memory_reg[2]  <clk_a (rise)>  
+    bit 16 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/memory_reg[3]  <clk_a (rise)>  
+    bit 17 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/memory_reg[4]  <clk_a (rise)>  
+    bit 18 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/memory_reg[5]  <clk_a (rise)>  
+    bit 19 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/memory_reg[6]  <clk_a (rise)>  
+    bit 20 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/memory_reg[7]  <clk_a (rise)>  
+    bit 21 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_fsm/data_bit_counter_reg[0]  <clk_a (rise)>  
+    bit 22 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_fsm/data_bit_counter_reg[1]  <clk_a (rise)>  
+    bit 23 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_fsm/data_bit_counter_reg[2]  <clk_a (rise)>  
+    bit 24 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_fsm/data_out_to_buffer_reg  <clk_a (rise)>  
+    bit 25 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_fsm/data_valid_to_buffer_reg  <clk_a (rise)>  
+    bit 26 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_fsm/parity_error_reg  <clk_a (rise)>  
+    bit 27 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_fsm/parity_reg  <clk_a (rise)>  
+    bit 28 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_fsm/state_reg[0]  <clk_a (rise)>  
+    bit 29 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_fsm/state_reg[1]  <clk_a (rise)>  
+    bit 30 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_fsm/state_reg[2]  <clk_a (rise)>  
+    bit 31 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_fsm/stop_bit_error_reg  <clk_a (rise)>  
+    bit 32 	ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_fsm/tick_start_reg  <clk_a (rise)>  
+    bit 33 	ins_uart_transceiver_A/ins_rx_wrapper/ins_sampling_tick_generator/counter_reg[0]  <clk_a (rise)>  
+    bit 34 	ins_uart_transceiver_A/ins_rx_wrapper/ins_sampling_tick_generator/counter_reg[1]  <clk_a (rise)>  
+    bit 35 	ins_uart_transceiver_A/ins_rx_wrapper/ins_sampling_tick_generator/counter_reg[2]  <clk_a (rise)>  
+    bit 36 	ins_uart_transceiver_A/ins_rx_wrapper/ins_sampling_tick_generator/counter_reg[3]  <clk_a (rise)>  
+    bit 37 	ins_uart_transceiver_A/ins_rx_wrapper/ins_sampling_tick_generator/counter_reg[4]  <clk_a (rise)>  
+    bit 38 	ins_uart_transceiver_A/ins_rx_wrapper/ins_sampling_tick_generator/counter_reg[5]  <clk_a (rise)>  
+    bit 39 	ins_uart_transceiver_A/ins_rx_wrapper/ins_sampling_tick_generator/counter_reg[6]  <clk_a (rise)>  
+    bit 40 	ins_uart_transceiver_A/ins_rx_wrapper/ins_sampling_tick_generator/counter_reg[7]  <clk_a (rise)>  
+    bit 41 	ins_uart_transceiver_A/ins_rx_wrapper/ins_sampling_tick_generator/counter_reg[8]  <clk_a (rise)>  
+------------------------
+Chain 2: top_chain_a2 
+  scan_in:      scan_in_a2 
+  scan_out:     scan_out_a2   
+  shift_enable: SE (active high) 
+  clock_domain: clk_a (edge: rise)
+  length: 41
+    bit 1 	ins_uart_transceiver_A/ins_rx_wrapper/ins_sampling_tick_generator/counter_reg[9]  <clk_a (rise)>  
+    bit 2 	ins_uart_transceiver_A/ins_rx_wrapper/ins_sampling_tick_generator/tick_16_8_reg  <clk_a (rise)>  
+    bit 3 	ins_uart_transceiver_A/ins_rx_wrapper/ins_sampling_tick_generator/tick_16_16_reg  <clk_a (rise)>  
+    bit 4 	ins_uart_transceiver_A/ins_tx_wrapper/ins_sampling_tick_generator/counter_reg[0]  <clk_a (rise)>  
+    bit 5 	ins_uart_transceiver_A/ins_tx_wrapper/ins_sampling_tick_generator/counter_reg[1]  <clk_a (rise)>  
+    bit 6 	ins_uart_transceiver_A/ins_tx_wrapper/ins_sampling_tick_generator/counter_reg[2]  <clk_a (rise)>  
+    bit 7 	ins_uart_transceiver_A/ins_tx_wrapper/ins_sampling_tick_generator/counter_reg[3]  <clk_a (rise)>  
+    bit 8 	ins_uart_transceiver_A/ins_tx_wrapper/ins_sampling_tick_generator/counter_reg[4]  <clk_a (rise)>  
+    bit 9 	ins_uart_transceiver_A/ins_tx_wrapper/ins_sampling_tick_generator/counter_reg[5]  <clk_a (rise)>  
+    bit 10 	ins_uart_transceiver_A/ins_tx_wrapper/ins_sampling_tick_generator/counter_reg[6]  <clk_a (rise)>  
+    bit 11 	ins_uart_transceiver_A/ins_tx_wrapper/ins_sampling_tick_generator/counter_reg[7]  <clk_a (rise)>  
+    bit 12 	ins_uart_transceiver_A/ins_tx_wrapper/ins_sampling_tick_generator/counter_reg[8]  <clk_a (rise)>  
+    bit 13 	ins_uart_transceiver_A/ins_tx_wrapper/ins_sampling_tick_generator/counter_reg[9]  <clk_a (rise)>  
+    bit 14 	ins_uart_transceiver_A/ins_tx_wrapper/ins_sampling_tick_generator/tick_16_8_reg  <clk_a (rise)>  
+    bit 15 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_buffer/buffer_empty_counter_reg[0]  <clk_a (rise)>  
+    bit 16 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_buffer/buffer_empty_counter_reg[1]  <clk_a (rise)>  
+    bit 17 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_buffer/buffer_empty_counter_reg[2]  <clk_a (rise)>  
+    bit 18 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_buffer/buffer_empty_counter_reg[3]  <clk_a (rise)>  
+    bit 19 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_buffer/data_serial_out_reg  <clk_a (rise)>  
+    bit 20 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_buffer/memory_reg[0]  <clk_a (rise)>  
+    bit 21 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_buffer/memory_reg[1]  <clk_a (rise)>  
+    bit 22 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_buffer/memory_reg[2]  <clk_a (rise)>  
+    bit 23 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_buffer/memory_reg[3]  <clk_a (rise)>  
+    bit 24 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_buffer/memory_reg[4]  <clk_a (rise)>  
+    bit 25 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_buffer/memory_reg[5]  <clk_a (rise)>  
+    bit 26 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_buffer/memory_reg[6]  <clk_a (rise)>  
+    bit 27 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_buffer/memory_reg[7]  <clk_a (rise)>  
+    bit 28 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_fsm/buffer_rd_enable_reg  <clk_a (rise)>  
+    bit 29 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_fsm/data_bit_counter_reg[0]  <clk_a (rise)>  
+    bit 30 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_fsm/data_bit_counter_reg[1]  <clk_a (rise)>  
+    bit 31 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_fsm/data_bit_counter_reg[2]  <clk_a (rise)>  
+    bit 32 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_fsm/delay_data_parallel_wr_enable_reg  <clk_a (rise)>  
+    bit 33 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_fsm/parity_reg  <clk_a (rise)>  
+    bit 34 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_fsm/state_reg[0]  <clk_a (rise)>  
+    bit 35 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_fsm/state_reg[1]  <clk_a (rise)>  
+    bit 36 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_fsm/state_reg[2]  <clk_a (rise)>  
+    bit 37 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_fsm/state_reg[3]  <clk_a (rise)>  
+    bit 38 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_fsm/tem_buffer_data_reg  <clk_a (rise)>  
+    bit 39 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_fsm/tick_start_reg  <clk_a (rise)>  
+    bit 40 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_fsm/tx_busy_reg  <clk_a (rise)>  
+    bit 41 	ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_fsm/tx_data_reg  <clk_a (rise)>  
+------------------------
+Chain 3: top_chain_b1 
+  scan_in:      scan_in_b1 
+  scan_out:     scan_out_b1   
+  shift_enable: SE (active high) 
+  clock_domain: clk_b (edge: rise)
+  length: 41
+    bit 1 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/buffer_full_counter_reg[0]  <clk_b (rise)>  
+    bit 2 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/buffer_full_counter_reg[1]  <clk_b (rise)>  
+    bit 3 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/buffer_full_counter_reg[2]  <clk_b (rise)>  
+    bit 4 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/buffer_full_counter_reg[3]  <clk_b (rise)>  
+    bit 5 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[0]  <clk_b (rise)>  
+    bit 6 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[1]  <clk_b (rise)>  
+    bit 7 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[2]  <clk_b (rise)>  
+    bit 8 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[3]  <clk_b (rise)>  
+    bit 9 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[4]  <clk_b (rise)>  
+    bit 10 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[5]  <clk_b (rise)>  
+    bit 11 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[6]  <clk_b (rise)>  
+    bit 12 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[7]  <clk_b (rise)>  
+    bit 13 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/memory_reg[0]  <clk_b (rise)>  
+    bit 14 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/memory_reg[1]  <clk_b (rise)>  
+    bit 15 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/memory_reg[2]  <clk_b (rise)>  
+    bit 16 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/memory_reg[3]  <clk_b (rise)>  
+    bit 17 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/memory_reg[4]  <clk_b (rise)>  
+    bit 18 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/memory_reg[5]  <clk_b (rise)>  
+    bit 19 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/memory_reg[6]  <clk_b (rise)>  
+    bit 20 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/memory_reg[7]  <clk_b (rise)>  
+    bit 21 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_fsm/data_bit_counter_reg[0]  <clk_b (rise)>  
+    bit 22 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_fsm/data_bit_counter_reg[1]  <clk_b (rise)>  
+    bit 23 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_fsm/data_bit_counter_reg[2]  <clk_b (rise)>  
+    bit 24 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_fsm/data_out_to_buffer_reg  <clk_b (rise)>  
+    bit 25 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_fsm/data_valid_to_buffer_reg  <clk_b (rise)>  
+    bit 26 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_fsm/parity_error_reg  <clk_b (rise)>  
+    bit 27 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_fsm/parity_reg  <clk_b (rise)>  
+    bit 28 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_fsm/state_reg[0]  <clk_b (rise)>  
+    bit 29 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_fsm/state_reg[1]  <clk_b (rise)>  
+    bit 30 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_fsm/state_reg[2]  <clk_b (rise)>  
+    bit 31 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_fsm/stop_bit_error_reg  <clk_b (rise)>  
+    bit 32 	ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_fsm/tick_start_reg  <clk_b (rise)>  
+    bit 33 	ins_uart_transceiver_B/ins_rx_wrapper/ins_sampling_tick_generator/counter_reg[0]  <clk_b (rise)>  
+    bit 34 	ins_uart_transceiver_B/ins_rx_wrapper/ins_sampling_tick_generator/counter_reg[1]  <clk_b (rise)>  
+    bit 35 	ins_uart_transceiver_B/ins_rx_wrapper/ins_sampling_tick_generator/counter_reg[2]  <clk_b (rise)>  
+    bit 36 	ins_uart_transceiver_B/ins_rx_wrapper/ins_sampling_tick_generator/counter_reg[3]  <clk_b (rise)>  
+    bit 37 	ins_uart_transceiver_B/ins_rx_wrapper/ins_sampling_tick_generator/counter_reg[4]  <clk_b (rise)>  
+    bit 38 	ins_uart_transceiver_B/ins_rx_wrapper/ins_sampling_tick_generator/counter_reg[5]  <clk_b (rise)>  
+    bit 39 	ins_uart_transceiver_B/ins_rx_wrapper/ins_sampling_tick_generator/counter_reg[6]  <clk_b (rise)>  
+    bit 40 	ins_uart_transceiver_B/ins_rx_wrapper/ins_sampling_tick_generator/counter_reg[7]  <clk_b (rise)>  
+    bit 41 	ins_uart_transceiver_B/ins_rx_wrapper/ins_sampling_tick_generator/counter_reg[8]  <clk_b (rise)>  
+------------------------
+Chain 4: top_chain_b2 
+  scan_in:      scan_in_b2 
+  scan_out:     scan_out_b2   
+  shift_enable: SE (active high) 
+  clock_domain: clk_b (edge: rise)
+  length: 41
+    bit 1 	ins_uart_transceiver_B/ins_rx_wrapper/ins_sampling_tick_generator/counter_reg[9]  <clk_b (rise)>  
+    bit 2 	ins_uart_transceiver_B/ins_rx_wrapper/ins_sampling_tick_generator/tick_16_8_reg  <clk_b (rise)>  
+    bit 3 	ins_uart_transceiver_B/ins_rx_wrapper/ins_sampling_tick_generator/tick_16_16_reg  <clk_b (rise)>  
+    bit 4 	ins_uart_transceiver_B/ins_tx_wrapper/ins_sampling_tick_generator/counter_reg[0]  <clk_b (rise)>  
+    bit 5 	ins_uart_transceiver_B/ins_tx_wrapper/ins_sampling_tick_generator/counter_reg[1]  <clk_b (rise)>  
+    bit 6 	ins_uart_transceiver_B/ins_tx_wrapper/ins_sampling_tick_generator/counter_reg[2]  <clk_b (rise)>  
+    bit 7 	ins_uart_transceiver_B/ins_tx_wrapper/ins_sampling_tick_generator/counter_reg[3]  <clk_b (rise)>  
+    bit 8 	ins_uart_transceiver_B/ins_tx_wrapper/ins_sampling_tick_generator/counter_reg[4]  <clk_b (rise)>  
+    bit 9 	ins_uart_transceiver_B/ins_tx_wrapper/ins_sampling_tick_generator/counter_reg[5]  <clk_b (rise)>  
+    bit 10 	ins_uart_transceiver_B/ins_tx_wrapper/ins_sampling_tick_generator/counter_reg[6]  <clk_b (rise)>  
+    bit 11 	ins_uart_transceiver_B/ins_tx_wrapper/ins_sampling_tick_generator/counter_reg[7]  <clk_b (rise)>  
+    bit 12 	ins_uart_transceiver_B/ins_tx_wrapper/ins_sampling_tick_generator/counter_reg[8]  <clk_b (rise)>  
+    bit 13 	ins_uart_transceiver_B/ins_tx_wrapper/ins_sampling_tick_generator/counter_reg[9]  <clk_b (rise)>  
+    bit 14 	ins_uart_transceiver_B/ins_tx_wrapper/ins_sampling_tick_generator/tick_16_8_reg  <clk_b (rise)>  
+    bit 15 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/buffer_empty_counter_reg[0]  <clk_b (rise)>  
+    bit 16 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/buffer_empty_counter_reg[1]  <clk_b (rise)>  
+    bit 17 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/buffer_empty_counter_reg[2]  <clk_b (rise)>  
+    bit 18 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/buffer_empty_counter_reg[3]  <clk_b (rise)>  
+    bit 19 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/data_serial_out_reg  <clk_b (rise)>  
+    bit 20 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/memory_reg[0]  <clk_b (rise)>  
+    bit 21 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/memory_reg[1]  <clk_b (rise)>  
+    bit 22 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/memory_reg[2]  <clk_b (rise)>  
+    bit 23 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/memory_reg[3]  <clk_b (rise)>  
+    bit 24 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/memory_reg[4]  <clk_b (rise)>  
+    bit 25 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/memory_reg[5]  <clk_b (rise)>  
+    bit 26 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/memory_reg[6]  <clk_b (rise)>  
+    bit 27 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/memory_reg[7]  <clk_b (rise)>  
+    bit 28 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_fsm/buffer_rd_enable_reg  <clk_b (rise)>  
+    bit 29 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_fsm/data_bit_counter_reg[0]  <clk_b (rise)>  
+    bit 30 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_fsm/data_bit_counter_reg[1]  <clk_b (rise)>  
+    bit 31 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_fsm/data_bit_counter_reg[2]  <clk_b (rise)>  
+    bit 32 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_fsm/delay_data_parallel_wr_enable_reg  <clk_b (rise)>  
+    bit 33 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_fsm/parity_reg  <clk_b (rise)>  
+    bit 34 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_fsm/state_reg[0]  <clk_b (rise)>  
+    bit 35 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_fsm/state_reg[1]  <clk_b (rise)>  
+    bit 36 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_fsm/state_reg[2]  <clk_b (rise)>  
+    bit 37 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_fsm/state_reg[3]  <clk_b (rise)>  
+    bit 38 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_fsm/tem_buffer_data_reg  <clk_b (rise)>  
+    bit 39 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_fsm/tick_start_reg  <clk_b (rise)>  
+    bit 40 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_fsm/tx_busy_reg  <clk_b (rise)>  
+    bit 41 	ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_fsm/tx_data_reg  <clk_b (rise)>  
+------------------------
+
