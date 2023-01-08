@@ -13,6 +13,7 @@
 \tableofcontents
 \listoffigures
 \listoftables
+\input{content/abbreviations}
 \vfill
 \begin{center}
 	\textbf{\textit{*PDF is clickable}}
@@ -22,20 +23,38 @@
 \textit{All the materials related to the report can also be found at \url{https://github.com/bimalka98/Digital-IC-Design}}
 \pagebreak
 
+
+\pagebreak
 \section{Introduction}
 
-In this practical, we will be using Cadence Genus to synthesize an example RTL design: a
-transceiver. As inputs to Genus, we will provide
+\subsection{Practical}
+In this practical, we will be using \textit{Cadence Genus} to synthesize an example \ac{rtl} design, a transceiver. As inputs to Genus, we will provide
 
 \begin{enumerate}
 	\item Source Verilog files
-	\item Technology libraries provided by the fabrication plant (here, 35 nm educational GPDK
-given by cadence) : .lib, .lef, .tch
+	\item Technology libraries provided by the fabrication plant (here, $45~nm$ educational \ac{gpdk} given by Cadence) : {\tt (.lib, .lef, .tch)}
 	\item Timing constraints
-\begin{enumerate}
+\end{enumerate}
 
-and will obtain the synthesized netlist (Verilog files) and further timing constrains (.sdc) as
-output. We will then analyze the area, timing and power of the synthesized design.
+and will obtain the synthesized netlist (Verilog files) and further timing constrains {\tt (.sdc)} as output. We will then analyze the area, timing and power of the synthesized design.
+
+\subsection{RTL Synthesis}
+
+In the context of digital hardware design, \ac{rtl} synthesis is the process of converting an \ac{rtl} description of a digital circuit into an optimized gate-level design.\\
+
+The \ac{rtl} description of a digital circuit is written in a \ac{hdl} such as Verilog or VHDL. It specifies the digital circuit in terms of the flow of digital signals between registers, and the logical operations that are performed on those signals as they are transferred between the registers.\\
+
+During \ac{rtl} synthesis, an \ac{rtl} compiler reads the \ac{rtl} description of the digital circuit and generates an optimized gate-level representation of the circuit. This gate-level representation is a description of the digital circuit in terms of gates and interconnections between them. Figure \ref{fig:asic_flow} illustrates an overview of an \ac{rtl} synthesis flow.
+
+
+\begin{figure}[H]
+	\centering
+	\fbox{
+		\includegraphics[width=0.53\linewidth]{figures/flow.PNG}
+	}
+	\caption{Overview of an \ac{rtl} synthesis flow.}
+	\label{fig:asic_flow}
+\end{figure}
 
 \section{Exercise}
 
