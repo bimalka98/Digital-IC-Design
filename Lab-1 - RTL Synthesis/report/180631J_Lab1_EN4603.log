@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.9)  8 JAN 2023 20:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.9)  9 JAN 2023 23:13
 entering extended mode
 **./180631J_Lab1_EN4603.tex
 (180631J_Lab1_EN4603.tex
@@ -1071,7 +1071,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.60 ...mand\NAT@force@numbers{}\NAT@force@numbers
+l.78 ...mand\NAT@force@numbers{}\NAT@force@numbers
                                                   
 Check the bibliography entries for non-compliant syntax,
 or select author-year BibTeX style, e.g. plainnat
@@ -1191,7 +1191,7 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (content/title_page.tex
-<figures/uomlogo.png, id=70, 307.1475pt x 326.21875pt>
+<figures/uomlogo.png, id=78, 307.1475pt x 326.21875pt>
 File: figures/uomlogo.png Graphic file (type png)
 <use figures/uomlogo.png>
 Package pdftex.def Info: figures/uomlogo.png  used on input line 10.
@@ -1264,33 +1264,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
-<figures/flow.PNG, id=137, 478.78876pt x 560.69475pt>
+<figures/flow.PNG, id=151, 478.78876pt x 560.69475pt>
 File: figures/flow.PNG Graphic file (type png)
 <use figures/flow.PNG>
 Package pdftex.def Info: figures/flow.PNG  used on input line 60.
 (pdftex.def)             Requested size: 409.71692pt x 479.80965pt.
-[2] [3 <./figures/flow.PNG (PNG copy)>]
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
 Package acronym Info: Label `acro:tcl' newly defined as it shall be overridden
 although it is yet undefined on input line 69.
-(180631J_Lab1_EN4603.bbl) [4] (180631J_Lab1_EN4603.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
+ []
+
+[3 <./figures/flow.PNG (PNG copy)>]
+Package acronym Info: Label `acro:asic' newly defined as it shall be overridden
+
+although it is yet undefined on input line 84.
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+ []
+
+
+Overfull \hbox (1.97842pt too wide) in paragraph at lines 97--97
+ \OT1/cmr/m/n/10.95 Un-cer-tainty| 
+ []
+
+[4] (180631J_Lab1_EN4603.bbl) [5] (180631J_Lab1_EN4603.aux)
 Package rerunfilecheck Info: File `180631J_Lab1_EN4603.out' has not changed.
-(rerunfilecheck)             Checksum: EE609FF92A20032C37EDCF825C468D10;1233.
+(rerunfilecheck)             Checksum: 14971F45DDB6A5B1E5B156290CEC2A53;1510.
  ) 
 Here is how much of TeX's memory you used:
- 29525 strings out of 479321
- 542578 string characters out of 2856584
- 864269 words of memory out of 3000000
- 46362 multiletter control sequences out of 15000+600000
- 412186 words of font info for 59 fonts, out of 8000000 for 9000
+ 29552 strings out of 479321
+ 542896 string characters out of 2856584
+ 868329 words of memory out of 3000000
+ 46379 multiletter control sequences out of 15000+600000
+ 414077 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 92i,8n,120p,482b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 92i,11n,120p,760b,490s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\bimal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -1299,15 +1315,16 @@ ype1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/bimal/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/bimal/AppData/Local/Pr
 ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Users/bimal/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/bim
-al/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/U
-sers/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.p
+al/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/U
+sers/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.p
 fb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmr9.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmti10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmtt10.pfb>
-Output written on 180631J_Lab1_EN4603.pdf (5 pages, 335424 bytes).
+/cmr12.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmr9.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmti10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on 180631J_Lab1_EN4603.pdf (6 pages, 353687 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
- 31 named destinations out of 1000 (max. 500000)
- 199 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 239 PDF objects out of 1000 (max. 8388607)
+ 36 named destinations out of 1000 (max. 500000)
+ 215 words of extra memory for PDF output out of 10000 (max. 10000000)
 

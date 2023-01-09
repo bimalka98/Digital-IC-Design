@@ -62,7 +62,7 @@ During \ac{rtl} synthesis, an \ac{rtl} compiler reads the \ac{rtl} description o
 	\label{fig:asic_flow}
 \end{figure}
 
-\pagebreak
+
 \section{Exercise}
 This section documents the observations made in step 4 and 5 of the practical guide, with screenshots and explanations.\\
 
@@ -72,36 +72,51 @@ This section documents the observations made in step 4 and 5 of the practical gu
 
 \subsubsection{System Clocks}
 
-The specifications related to the system clocks and other constraints are defined in the {\tt constraints.tcl} script file, which can be executed once using the Genus software. The command {\tt create\_clock} is used to define the clocks, and the parameters related to that command is given below\cite{genus_command_ref_2019}.
+The specifications related to the system clocks and other constraints are defined in the {\tt constraints.tcl} script file, which can be executed once using the Genus software. The units of the clocks, and the other parameters related to timings are in nanoseconds ($ns$) scale, as defines in the Verilog source files by {\tt \`timescale 1ns/1ps}.\\
 
-\begin{verbatim}
-create_clock
-    [-add]
-    [-name clock] [-domain clock_domain]
-    -period float [-waveform float]
-    [-apply_inverted {port|pin|hpin}]
-    [port|pin|hpin] [-comment string]
+The command {\tt create\_clock}\cite{genus_command_ref_2019} is used to define the clocks, and the necessary parameters related to them. 
 
-create_clock -name clk_a -period 20 [get_ports clk_a] -waveform {0 8}
-create_clock -name clk_b -period 20 [get_ports clk_b] -waveform {10 18}
-\end{verbatim}
+\begin{Verbatim}[frame=single]
+create_clock -name clk_a -period 10 [get_ports clk_a] -waveform {0 5}
+create_clock -name clk_b -period 10 [get_ports clk_b] -waveform {0 5}
+\end{Verbatim}
 
-The clocks specified in the constraints file has the properties described in the 
+The clocks specified in the constraints file has the properties described in the Table \ref{table:clocks}. In addition to those properties, constraints related to the clock network uncertainty is also defined in the same file. In practical \ac{asic} design, ideal clock networks do not exist and clock signal arrival time may differ from cell to cell. In order to facilitate this, a parameter known as \textit{\textbf{clock uncertainty}} is defined. It takes into account all the possible variations of the clock signal such as 1. \textit{\textbf{jitter}}, which is caused by the physical properties of the clock source, and 2. \textit{\textbf{skew}}, which is due to the routing length variations.\\
+
+The {\tt set\_clock\_uncertainty}\cite{genus_command_ref_2019} command is used to define the clock uncertainty as below.
+
+\begin{Verbatim}[frame=single]
+set_clock_uncertainty 0.5 [all_clocks]
+\end{Verbatim}
 
 \begin{table}[h]
 	\captionsetup{font={sc, footnotesize}, labelsep=newline}
 	\centering
-	\caption{Properties of the system clocks}
-	\begin{tabular}{|L{0.15\linewidth}  |C{0.12\linewidth}  | C{0.12\linewidth} |  C{0.12\linewidth} |  C{0.12\linewidth} | C{0.12\linewidth} | }
-		
-	
+	\caption{Properties of the system clocks. (time unit = $ns$)}
+	\begin{tabular}{|L{0.15\linewidth}  |C{0.12\linewidth}  | C{0.12\linewidth} | C{0.12\linewidth} | C{0.12\linewidth} |} \hline
+		Name & Period & Rise Time & Fall Time & Clock Uncertainty\\ \hline
+		{\tt clk\_a} & 10 & 0 & 5 & 0.5\\ \hline
+		{\tt clk\_b} & 10 & 0 & 5 & 0.5\\ \hline
 	\end{tabular}
-	\label{table:}
+	\label{table:clocks}
 \end{table}
 
-\vfill
-\hrule
-\vspace{0.5cm}
+\subsubsection{System Resets}
+Two system reset signals are defined in the top module {\tt uart\_top.v} Verilog source file, as {\tt reset\_a}  and {\tt reset\_b}. Both resets are synchronous and active high.
+
+\begin{Verbatim}[frame=single]
+always@(posedge clk) begin	
+    if (reset) begin
+      some statements;	   
+    end
+end
+\end{Verbatim}
+
+\subsubsection{Derived Clocks}
+
+A \textit{derived clock} (a new clock signal) can be created from the clock waveform of a given pin in the design using the command {\tt create\_generated\_clock}\cite{genus_command_ref_2019}. Howevr, the given design for this lab does not in cooperate any derived clocks.
+
+\pagebreak
 \bibliographystyle{IEEEtran}
 \bibliography{refer}
 
