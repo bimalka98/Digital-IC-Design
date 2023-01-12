@@ -44,6 +44,7 @@ In this practical, we will be using \textit{Cadence Genus - Ver. 18.10 } to synt
 
 and will obtain the synthesized netlist (Verilog files) and further timing constrains {\tt (.sdc)} as output. We will then analyze the area, timing and power of the synthesized design.
 
+\pagebreak
 \subsection{RTL Synthesis}
 
 In the context of digital hardware design, \ac{rtl} synthesis is the process of converting an \ac{rtl} description of a digital circuit into an optimized gate-level design.\\
@@ -52,21 +53,67 @@ The \ac{rtl} description of a digital circuit is written in a \ac{hdl} such as V
 
 During \ac{rtl} synthesis, an \ac{rtl} compiler reads the \ac{rtl} description of the digital circuit and generates an optimized gate-level representation of the circuit. This gate-level representation is a description of the digital circuit in terms of gates and interconnections between them. Figure \ref{fig:asic_flow} illustrates an overview of an \ac{rtl} synthesis flow.
 
+\vfill
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\fbox{
-		\includegraphics[width=0.9\linewidth]{figures/flow.PNG}
+		\includegraphics[width=0.8\linewidth]{figures/flow.PNG}
 	}
 	\caption{Overview of \ac{rtl} synthesis flow of Cadence Genus software\cite{genus_user_guide_2019}.}
 	\label{fig:asic_flow}
 \end{figure}
 
+\pagebreak
+\subsection{Associated Genus Commands}
 
+\textbf{Note}: \textit{Genus is a \ac{tcl} based tool and therefore {\tt .tcl} scripts can be created to execute a series of commands instead of typing each command individually. The entire interface of Genus is accessible through \ac{tcl}, and true \ac{tcl} syntax and semantics are supported.}\\
+
+Followings are the commands used in this lab, and the entire script could be executed once using a single {\tt .tcl} file. However, it was encouraged to execute the commands one-by-one in order to understand the process of synthesizing an \ac{rtl} design.
+
+\begin{Verbatim}[frame=single]
+# 1. Link Technology Library
+set_db init_lib_search_path [list ../input/libs/gsclib045/lef
+    ../input/libs/gsclib045/timing ../input/libs/gsclib045/qrc/qx]
+set_db library {slow_vdd1v0_basicCells.lib fast_vdd1v0_basicCells.lib}
+set_db lef_library {gsclib045_tech.lef gsclib045_macro.lef
+    gsclib045_multibitsDFF.lef}
+set_db qrc_tech_file gpdk045.tch
+
+# 2. Read HDLs
+read_hdl [glob ../input/rtl/*.v]
+
+# 3. Elaborate the top module
+elaborate uart_top
+
+# 4. Check Design
+check_design > ../log/check_design.log
+
+# 5. Uniquifies the instances under the specified design or subdesign.
+uniquify uart_top
+
+# 6. Set constraints
+source ../input/constraints.tcl
+
+# 7. Synthesize 
+synthesize -to_mapped -effort m
+
+# 8. Write netlist
+write -mapped > ../output/uart_top.v
+write_sdc > ../output/uart_top.sdc
+
+# 9. Reports
+report_area > ../report/area.log
+report_timing  -nworst 10 > ../report/timing.log
+report_constraint > ../report/constraint.log
+report_port * > ../report/ports_final.log
+report_power > ../report/power.log
+\end{Verbatim}
+
+\pagebreak
 \section{Exercise}
 This section documents the observations made in step 4 and 5 of the practical guide, with screenshots and explanations.\\
 
-\textbf{Note}: \textit{Genus is a \ac{tcl} based tool and therefore {\tt .tcl} scripts can be created to execute a series of commands instead of typing each command individually. The entire interface of Genus is accessible through \ac{tcl}, and true \ac{tcl} syntax and semantics are supported.}
 
 \subsection{System Clocks \& Resets}
 
@@ -115,6 +162,37 @@ end
 \subsubsection{Derived Clocks}
 
 A \textit{derived clock} (a new clock signal) can be created from the clock waveform of a given pin in the design using the command {\tt create\_generated\_clock}\cite{genus_command_ref_2019}. Howevr, the given design for this lab does not in cooperate any derived clocks.
+
+\subsection{Design Log Files}
+
+\subsubsection{Area}
+
+{\tt area.log} file in the {\tt report} directory carries the information shown in the Figure \ref{fig:area_log}. It provides a breakdown of the area usage by design hierarchy and by instance, which can be helpful in identifying specific modules that are contributing to the overall area of the design. Specifically it provides the below information\cite{genus_command_ref_2019}.
+
+\begin{enumerate}[i.]
+	\item \textbf{\textit{Cell Count}} : The total count of cells mapped against the hierarchical blocks in the current design.
+	
+	\item \textbf{\textit{Cell Area}} : The combined cell area in each of the blocks and the top level design (hierarchical breakup)
+	
+	\item \textbf{\textit{Net Area}} : The estimated post-route net area, which is based on the minimum wire widths defined in the LEF and capacitance table files and the area of the design blocks.
+	
+	\item \textbf{\textit{Total Area}} : Simply combines the `Cell Area' and the `Net Area'
+\end{enumerate}
+
+
+\begin{figure}[h]
+	\centering
+	\fbox{
+		\includegraphics[width=0.95\linewidth]{figures/area_log.PNG}
+	}
+	\caption{Area log file}
+	\label{fig:area_log}
+\end{figure}
+
+
+\subsubsection{Power}
+\subsubsection{Timing}
+\subsubsection{Ports}
 
 \pagebreak
 \bibliographystyle{IEEEtran}

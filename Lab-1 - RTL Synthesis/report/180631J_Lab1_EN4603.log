@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.9)  9 JAN 2023 23:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.9)  12 JAN 2023 06:51
 entering extended mode
 **./180631J_Lab1_EN4603.tex
 (180631J_Lab1_EN4603.tex
@@ -1071,7 +1071,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.78 ...mand\NAT@force@numbers{}\NAT@force@numbers
+l.88 ...mand\NAT@force@numbers{}\NAT@force@numbers
                                                   
 Check the bibliography entries for non-compliant syntax,
 or select author-year BibTeX style, e.g. plainnat
@@ -1191,7 +1191,7 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (content/title_page.tex
-<figures/uomlogo.png, id=78, 307.1475pt x 326.21875pt>
+<figures/uomlogo.png, id=102, 307.1475pt x 326.21875pt>
 File: figures/uomlogo.png Graphic file (type png)
 <use figures/uomlogo.png>
 Package pdftex.def Info: figures/uomlogo.png  used on input line 10.
@@ -1252,58 +1252,70 @@ l.22
 Package acronym Info: Label `acro:gpdk' newly defined as it shall be overridden
 
 although it is yet undefined on input line 32.
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
 Package acronym Info: Label `acro:hdl' newly defined as it shall be overridden
-although it is yet undefined on input line 51.
+although it is yet undefined on input line 52.
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
-<figures/flow.PNG, id=151, 478.78876pt x 560.69475pt>
+<figures/flow.PNG, id=192, 478.78876pt x 560.69475pt>
 File: figures/flow.PNG Graphic file (type png)
 <use figures/flow.PNG>
-Package pdftex.def Info: figures/flow.PNG  used on input line 60.
-(pdftex.def)             Requested size: 409.71692pt x 479.80965pt.
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
-
- []
-
-Package acronym Info: Label `acro:tcl' newly defined as it shall be overridden
-although it is yet undefined on input line 69.
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-
- []
-
+Package pdftex.def Info: figures/flow.PNG  used on input line 62.
+(pdftex.def)             Requested size: 364.19667pt x 426.50032pt.
 [3 <./figures/flow.PNG (PNG copy)>]
+Package acronym Info: Label `acro:tcl' newly defined as it shall be overridden
+although it is yet undefined on input line 70.
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
+
+ []
+
 Package acronym Info: Label `acro:asic' newly defined as it shall be overridden
 
-although it is yet undefined on input line 84.
+although it is yet undefined on input line 131.
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
  []
 
 
-Overfull \hbox (1.97842pt too wide) in paragraph at lines 97--97
+Overfull \hbox (1.97842pt too wide) in paragraph at lines 144--144
  \OT1/cmr/m/n/10.95 Un-cer-tainty| 
  []
 
-[4] (180631J_Lab1_EN4603.bbl) [5] (180631J_Lab1_EN4603.aux)
+[5]
+<figures/area_log.PNG, id=224, 794.97pt x 291.489pt>
+File: figures/area_log.PNG Graphic file (type png)
+<use figures/area_log.PNG>
+Package pdftex.def Info: figures/area_log.PNG  used on input line 187.
+(pdftex.def)             Requested size: 432.48051pt x 158.58037pt.
+ [6 <./figures/area_log.PNG>] (180631J_Lab1_EN4603.bbl) [7]
+(180631J_Lab1_EN4603.aux)
 Package rerunfilecheck Info: File `180631J_Lab1_EN4603.out' has not changed.
-(rerunfilecheck)             Checksum: 14971F45DDB6A5B1E5B156290CEC2A53;1510.
+(rerunfilecheck)             Checksum: 674F9FBDFCD1A1A62D86CA24821C182D;2215.
  ) 
 Here is how much of TeX's memory you used:
- 29552 strings out of 479321
- 542896 string characters out of 2856584
- 868329 words of memory out of 3000000
- 46379 multiletter control sequences out of 15000+600000
+ 29577 strings out of 479321
+ 543304 string characters out of 2856584
+ 869395 words of memory out of 3000000
+ 46390 multiletter control sequences out of 15000+600000
  414077 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  92i,11n,120p,760b,490s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1322,9 +1334,9 @@ fb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 fonts/cm/cmr9.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/amsfonts/cm/cmti10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on 180631J_Lab1_EN4603.pdf (6 pages, 353687 bytes).
+Output written on 180631J_Lab1_EN4603.pdf (8 pages, 412428 bytes).
 PDF statistics:
- 239 PDF objects out of 1000 (max. 8388607)
- 36 named destinations out of 1000 (max. 500000)
- 215 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 295 PDF objects out of 1000 (max. 8388607)
+ 49 named destinations out of 1000 (max. 500000)
+ 268 words of extra memory for PDF output out of 10000 (max. 10000000)
 
