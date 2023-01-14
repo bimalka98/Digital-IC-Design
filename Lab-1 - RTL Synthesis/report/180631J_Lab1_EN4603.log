@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.9)  12 JAN 2023 07:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.9)  14 JAN 2023 22:11
 entering extended mode
 **./180631J_Lab1_EN4603.tex
 (180631J_Lab1_EN4603.tex
@@ -1071,7 +1071,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.91 ...mand\NAT@force@numbers{}\NAT@force@numbers
+l.93 ...mand\NAT@force@numbers{}\NAT@force@numbers
                                                   
 Check the bibliography entries for non-compliant syntax,
 or select author-year BibTeX style, e.g. plainnat
@@ -1264,7 +1264,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
-<figures/flow.PNG, id=194, 478.78876pt x 560.69475pt>
+<figures/flow.PNG, id=196, 478.78876pt x 560.69475pt>
 File: figures/flow.PNG Graphic file (type png)
 <use figures/flow.PNG>
 Package pdftex.def Info: figures/flow.PNG  used on input line 62.
@@ -1301,27 +1301,37 @@ Overfull \hbox (1.97842pt too wide) in paragraph at lines 144--144
  []
 
 [5]
-<figures/area_log.PNG, id=226, 794.97pt x 291.489pt>
+<figures/area_log.PNG, id=228, 794.97pt x 291.489pt>
 File: figures/area_log.PNG Graphic file (type png)
 <use figures/area_log.PNG>
 Package pdftex.def Info: figures/area_log.PNG  used on input line 187.
 (pdftex.def)             Requested size: 432.48051pt x 158.58037pt.
  [6 <./figures/area_log.PNG>]
-<figures/power_log.PNG, id=240, 437.2335pt x 302.93175pt>
+<figures/power_log.PNG, id=242, 437.2335pt x 302.93175pt>
 File: figures/power_log.PNG Graphic file (type png)
 <use figures/power_log.PNG>
 Package pdftex.def Info: figures/power_log.PNG  used on input line 209.
-(pdftex.def)             Requested size: 295.90588pt x 205.02016pt.
+(pdftex.def)             Requested size: 341.43307pt x 236.56314pt.
+<figures/timing_log.PNG, id=245, 935.8965pt x 508.90125pt>
+File: figures/timing_log.PNG Graphic file (type png)
+<use figures/timing_log.PNG>
+Package pdftex.def Info: figures/timing_log.PNG  used on input line 240.
+(pdftex.def)             Requested size: 432.48051pt x 235.169pt.
  [7 <./figures/power_log.PNG>]
-(180631J_Lab1_EN4603.bbl) [8] (180631J_Lab1_EN4603.aux)
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
+
+ []
+
+[8 <./figures/timing_log.PNG>] (180631J_Lab1_EN4603.bbl) [9]
+(180631J_Lab1_EN4603.aux)
 Package rerunfilecheck Info: File `180631J_Lab1_EN4603.out' has not changed.
-(rerunfilecheck)             Checksum: 409212DE0DABD92479B79DF2777BC0C7;2215.
+(rerunfilecheck)             Checksum: C28552EF7774326F848FECBA8A98FF70;2215.
  ) 
 Here is how much of TeX's memory you used:
- 29589 strings out of 479321
- 543498 string characters out of 2856584
- 869441 words of memory out of 3000000
- 46396 multiletter control sequences out of 15000+600000
+ 29599 strings out of 479321
+ 543690 string characters out of 2856584
+ 869491 words of memory out of 3000000
+ 46403 multiletter control sequences out of 15000+600000
  414077 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  92i,11n,120p,760b,490s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1340,9 +1350,9 @@ fb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 fonts/cm/cmr9.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/amsfonts/cm/cmti10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on 180631J_Lab1_EN4603.pdf (9 pages, 439787 bytes).
+Output written on 180631J_Lab1_EN4603.pdf (10 pages, 485387 bytes).
 PDF statistics:
- 308 PDF objects out of 1000 (max. 8388607)
- 54 named destinations out of 1000 (max. 500000)
- 273 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 320 PDF objects out of 1000 (max. 8388607)
+ 56 named destinations out of 1000 (max. 500000)
+ 278 words of extra memory for PDF output out of 10000 (max. 10000000)
 
