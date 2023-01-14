@@ -205,7 +205,7 @@ The {\tt power.log} file in the {\tt report} directory carries the details shown
 \begin{figure}[h]
 	\centering
 	\fbox{
-		\includegraphics[width=0.75\linewidth]{figures/power_log.PNG}
+		\includegraphics[width=0.65\linewidth]{figures/power_log.PNG}
 	}
 	\caption{Power log file}
 	\label{fig:power_log}
@@ -213,7 +213,7 @@ The {\tt power.log} file in the {\tt report} directory carries the details shown
 
 
 \subsubsection{Timing}
-The {\tt timing.log} file in the {\tt report} directory carries the details shown in the Figure \ref{fig:timing_log}. The command given below was used to generate this timing report. `{\tt -nworst 10}' argument in the command specifies that, the maximum number of paths to report to each endpoint is 10.
+The {\tt timing.log} file in the {\tt report} directory carries the details shown in the Figure \ref{fig:timing_log}. The command given below was used to generate this timing report. `{\tt -nworst 10}' argument in the command specifies that, the maximum number of paths to report to each endpoint is 10\cite{genus_command_ref_2019}.
 
 \begin{Verbatim}[frame=single]
 report_timing  -nworst 10 > ../report/timing.log
@@ -233,7 +233,7 @@ set_output_delay 6 -clock clk_b $design_outputs_b
 \end{Verbatim}
 
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\fbox{
 		\includegraphics[width=0.95\linewidth]{figures/timing_log.PNG}
@@ -249,6 +249,17 @@ Note: Slack is a measure of the timing margin available in a design. It is the d
 
 
 \subsubsection{Ports}
+
+The {\tt ports\_final.log} file in the {\tt report} directory carries the details related to the ports of the current design. By default, the report gives information on port direction, external delays, exception objects and their types, driver, slew, fanout load, pin capacitance and wire capacitance for the ports\cite{genus_command_ref_2019}. Figure \ref{fig:ports_log} illustrates the `External Delays \& Exceptions' section of the ports log file.
+
+\begin{figure}[h]
+	\centering
+	\fbox{
+		\includegraphics[width=0.95\linewidth]{figures/ports_log.PNG}
+	}
+	\caption{External Delays \& Exceptions section of the ports log file}
+	\label{fig:ports_log}
+\end{figure}
 
 \pagebreak
 \bibliographystyle{IEEEtran}
