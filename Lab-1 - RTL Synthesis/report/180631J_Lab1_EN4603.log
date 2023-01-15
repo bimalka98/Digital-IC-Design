@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.9)  14 JAN 2023 22:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.9)  15 JAN 2023 12:32
 entering extended mode
 **./180631J_Lab1_EN4603.tex
 (180631J_Lab1_EN4603.tex
@@ -1071,7 +1071,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.97 ...mand\NAT@force@numbers{}\NAT@force@numbers
+l.136 ...and\NAT@force@numbers{}\NAT@force@numbers
                                                   
 Check the bibliography entries for non-compliant syntax,
 or select author-year BibTeX style, e.g. plainnat
@@ -1191,7 +1191,7 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (content/title_page.tex
-<figures/uomlogo.png, id=102, 307.1475pt x 326.21875pt>
+<figures/uomlogo.png, id=138, 307.1475pt x 326.21875pt>
 File: figures/uomlogo.png Graphic file (type png)
 <use figures/uomlogo.png>
 Package pdftex.def Info: figures/uomlogo.png  used on input line 10.
@@ -1231,10 +1231,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write10
 \openout10 = `180631J_Lab1_EN4603.toc'.
 
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.19 \listoffigures
+                    [1] (180631J_Lab1_EN4603.lof
+Package acronym Info: Label `acro:uart' newly defined as it shall be overridden
 
-(180631J_Lab1_EN4603.lof
-Package acronym Info: Label `acro:rtl' newly defined as it shall be overridden
 although it is yet undefined on input line 1.
+Package acronym Info: Label `acro:rtl' newly defined as it shall be overridden
+although it is yet undefined on input line 2.
 )
 \tf@lof=\write11
 \openout11 = `180631J_Lab1_EN4603.lof'.
@@ -1243,108 +1250,149 @@ although it is yet undefined on input line 1.
 \tf@lot=\write12
 \openout12 = `180631J_Lab1_EN4603.lot'.
 
- (content/abbreviations.tex)pdfTeX warning (ext4): destination with the same id
-entifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.22 
-      [1]
+
+(content/abbreviations.tex) [2]
 Package acronym Info: Label `acro:gpdk' newly defined as it shall be overridden
 
-although it is yet undefined on input line 32.
- [2]
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
+although it is yet undefined on input line 33.
+<figures/bw1.png, id=255, 1124.70187pt x 433.62pt>
+File: figures/bw1.png Graphic file (type png)
+<use figures/bw1.png>
+Package pdftex.def Info: figures/bw1.png  used on input line 52.
+(pdftex.def)             Requested size: 432.48051pt x 166.7358pt.
+ [3 <./figures/bw1.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
 
 Package acronym Info: Label `acro:hdl' newly defined as it shall be overridden
-although it is yet undefined on input line 52.
+although it is yet undefined on input line 62.
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
-<figures/flow.PNG, id=198, 478.78876pt x 560.69475pt>
+<figures/flow.PNG, id=277, 478.78876pt x 560.69475pt>
 File: figures/flow.PNG Graphic file (type png)
 <use figures/flow.PNG>
-Package pdftex.def Info: figures/flow.PNG  used on input line 62.
+Package pdftex.def Info: figures/flow.PNG  used on input line 72.
 (pdftex.def)             Requested size: 364.19667pt x 426.50032pt.
-[3 <./figures/flow.PNG (PNG copy)>]
+[4 <./figures/flow.PNG (PNG copy)>]
 Package acronym Info: Label `acro:tcl' newly defined as it shall be overridden
-although it is yet undefined on input line 70.
+although it is yet undefined on input line 80.
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
-
- []
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
 Package acronym Info: Label `acro:asic' newly defined as it shall be overridden
 
-although it is yet undefined on input line 131.
+although it is yet undefined on input line 141.
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 
  []
 
 
-Overfull \hbox (1.97842pt too wide) in paragraph at lines 144--144
+Overfull \hbox (1.97842pt too wide) in paragraph at lines 154--154
  \OT1/cmr/m/n/10.95 Un-cer-tainty| 
  []
 
-[5]
-<figures/area_log.PNG, id=230, 794.97pt x 291.489pt>
+[6]
+<figures/area_log.PNG, id=309, 794.97pt x 291.489pt>
 File: figures/area_log.PNG Graphic file (type png)
 <use figures/area_log.PNG>
-Package pdftex.def Info: figures/area_log.PNG  used on input line 187.
+Package pdftex.def Info: figures/area_log.PNG  used on input line 197.
 (pdftex.def)             Requested size: 432.48051pt x 158.58037pt.
- [6 <./figures/area_log.PNG>]
-<figures/power_log.PNG, id=244, 437.2335pt x 302.93175pt>
+ [7 <./figures/area_log.PNG>]
+<figures/power_log.PNG, id=322, 437.2335pt x 302.93175pt>
 File: figures/power_log.PNG Graphic file (type png)
 <use figures/power_log.PNG>
-Package pdftex.def Info: figures/power_log.PNG  used on input line 209.
+Package pdftex.def Info: figures/power_log.PNG  used on input line 219.
 (pdftex.def)             Requested size: 295.90588pt x 205.02016pt.
-<figures/timing_log.PNG, id=248, 935.8965pt x 508.90125pt>
+<figures/timing_log.PNG, id=326, 935.8965pt x 508.90125pt>
 File: figures/timing_log.PNG Graphic file (type png)
 <use figures/timing_log.PNG>
-Package pdftex.def Info: figures/timing_log.PNG  used on input line 240.
+Package pdftex.def Info: figures/timing_log.PNG  used on input line 250.
 (pdftex.def)             Requested size: 432.48051pt x 235.169pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
 
  []
 
-[7 <./figures/power_log.PNG>]
-<figures/ports_log.PNG, id=259, 673.91776pt x 243.91125pt>
+[8 <./figures/power_log.PNG>]
+<figures/ports_log.PNG, id=337, 673.91776pt x 243.91125pt>
 File: figures/ports_log.PNG Graphic file (type png)
 <use figures/ports_log.PNG>
-Package pdftex.def Info: figures/ports_log.PNG  used on input line 259.
+Package pdftex.def Info: figures/ports_log.PNG  used on input line 269.
 (pdftex.def)             Requested size: 432.48051pt x 156.52693pt.
- [8 <./figures/timing_log.PNG> <./figures/ports_log.PNG>] (180631J_Lab1_EN4603.
-bbl) [9] (180631J_Lab1_EN4603.aux)
+Package acronym Info: Label `acro:tx' newly defined as it shall be overridden
+although it is yet undefined on input line 276.
+Package acronym Info: Label `acro:rx' newly defined as it shall be overridden
+although it is yet undefined on input line 276.
+ [9 <./figures/timing_log.PNG> <./figures/ports_log.PNG>]
+<figures/area_log2.PNG, id=349, 789.54974pt x 284.262pt>
+File: figures/area_log2.PNG Graphic file (type png)
+<use figures/area_log2.PNG>
+Package pdftex.def Info: figures/area_log2.PNG  used on input line 300.
+(pdftex.def)             Requested size: 432.48051pt x 155.70695pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: File `figures/timing_log2.PNG' not found on input line 343.
+
+
+! Package pdftex.def Error: File `figures/timing_log2.PNG' not found: using dra
+ft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.343 	}
+        
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[10 <./figures/area_log2.PNG>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11] [12]
+<figures/timing_log3.PNG, id=380, 887.7165pt x 428.19975pt>
+File: figures/timing_log3.PNG Graphic file (type png)
+<use figures/timing_log3.PNG>
+Package pdftex.def Info: figures/timing_log3.PNG  used on input line 408.
+(pdftex.def)             Requested size: 432.48051pt x 208.6175pt.
+ [13] (180631J_Lab1_EN4603.bbl) [14 <./figures/timing_log3.PNG>]
+(180631J_Lab1_EN4603.aux)
 Package rerunfilecheck Info: File `180631J_Lab1_EN4603.out' has not changed.
-(rerunfilecheck)             Checksum: 2DFB4DFCF098CE59DD99B27122BA4F5A;2215.
+(rerunfilecheck)             Checksum: 0261F63D5E15E6D6336D990FABCD1A87;3958.
  ) 
 Here is how much of TeX's memory you used:
- 29606 strings out of 479321
- 543849 string characters out of 2856584
- 869581 words of memory out of 3000000
- 46408 multiletter control sequences out of 15000+600000
+ 29714 strings out of 479321
+ 545551 string characters out of 2856584
+ 874278 words of memory out of 3000000
+ 46471 multiletter control sequences out of 15000+600000
  414077 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 92i,11n,120p,760b,490s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 92i,11n,120p,760b,569s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\bimal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -1358,11 +1406,13 @@ sers/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.p
 fb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmr12.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmr9.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmti10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on 180631J_Lab1_EN4603.pdf (10 pages, 510479 bytes).
+lic/amsfonts/cm/cmsy10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/bimal/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on 180631J_Lab1_EN4603.pdf (15 pages, 653533 bytes).
 PDF statistics:
- 327 PDF objects out of 1000 (max. 8388607)
- 57 named destinations out of 1000 (max. 500000)
- 283 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 459 PDF objects out of 1000 (max. 8388607)
+ 86 named destinations out of 1000 (max. 500000)
+ 370 words of extra memory for PDF output out of 10000 (max. 10000000)
 

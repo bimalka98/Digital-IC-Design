@@ -1,0 +1,48 @@
+3c3
+<   Generated on:           Dec 08 2022  01:50:00 pm
+---
+>   Generated on:           Dec 08 2022  12:51:23 pm
+4a5,7
+>   Technology libraries:   slow_vdd1v0 1.0
+>                           fast_vdd1v0 1.0
+>                           physical_cells 
+12,30c15,33
+< uart_top                                                                                    1128   3732.588  1384.730     5117.318 
+<   ins_uart_transceiver_B          uart_transceiver_CLOCK_IN_MHZ100_TX_WORD_LENGTH32_         564   1866.294   602.163     2468.457 
+<     ins_rx_wrapper                rx_wrapper_NO_OF_WORS_IN_BUFFER1_NO_OF_DATA_BITS32         305   1170.666   307.895     1478.561 
+<       ins_rx_buffer               rx_buffer_WORD_SIZE32_NO_OF_WORDS1_1                       199    888.858   190.933     1079.791 
+<       ins_sampling_tick_generator sampling_tick_generator_BAUD115200_CLOCK_IN_MHZ100          48    145.350    51.221      196.571 
+<       ins_rx_fsm                  rx_fsm_NO_OF_DATA_BITS32_PARITY_ENABLED32h54525545          58    136.458    57.702      194.160 
+<     ins_tx_wrapper                tx_wrapper_NO_OF_WORDS_IN_BUFFER1_NO_OF_DATA_BITS3         259    695.628   294.268      989.896 
+<       ins_tx_buffer               tx_buffer_WORD_SIZE32_NO_OF_WORDS1_1                       146    405.612   154.043      559.655 
+<       ins_tx_fsm                  tx_fsm_NO_OF_DATA_BITS32_PARITY_ENABLED32h54525545          66    153.900    69.790      223.690 
+<       ins_sampling_tick_generator sampling_tick_generator_BAUD115200_CLOCK_IN_MHZ100          47    136.116    50.118      186.234 
+<   ins_uart_transceiver_A          uart_transceiver_CLOCK_IN_MHZ100_TX_WORD_LENGTH32_         564   1866.294   602.163     2468.457 
+<     ins_rx_wrapper                rx_wrapper_NO_OF_WORS_IN_BUFFER1_NO_OF_DATA_BITS32         305   1170.666   307.895     1478.561 
+<       ins_rx_buffer               rx_buffer_WORD_SIZE32_NO_OF_WORDS1                         199    888.858   190.933     1079.791 
+<       ins_sampling_tick_generator sampling_tick_generator_BAUD115200_CLOCK_IN_MHZ100          48    145.350    51.221      196.571 
+<       ins_rx_fsm                  rx_fsm_NO_OF_DATA_BITS32_PARITY_ENABLED32h54525545          58    136.458    57.702      194.160 
+<     ins_tx_wrapper                tx_wrapper_NO_OF_WORDS_IN_BUFFER1_NO_OF_DATA_BITS3         259    695.628   294.268      989.896 
+<       ins_tx_buffer               tx_buffer_WORD_SIZE32_NO_OF_WORDS1                         146    405.612   154.043      559.655 
+<       ins_tx_fsm                  tx_fsm_NO_OF_DATA_BITS32_PARITY_ENABLED32h54525545          66    153.900    69.790      223.690 
+<       ins_sampling_tick_generator sampling_tick_generator_BAUD115200_CLOCK_IN_MHZ100          47    136.116    50.118      186.234 
+---
+> uart_top                                                                                     772   2220.948   946.493     3167.441 
+>   ins_uart_transceiver_B          uart_transceiver_CLOCK_IN_MHZ100_TX_WORD_LENGTH8_T         386   1110.474   423.318     1533.792 
+>     ins_rx_wrapper                rx_wrapper_NO_OF_WORS_IN_BUFFER1_NO_OF_DATA_BITS8_         197    621.072   209.103      830.175 
+>       ins_rx_buffer               rx_buffer_WORD_SIZE8_NO_OF_WORDS1_1                         67    292.068    61.047      353.115 
+>       ins_rx_fsm                  rx_fsm_NO_OF_DATA_BITS8_PARITY_ENABLED32h54525545_          74    180.918    77.867      258.785 
+>       ins_sampling_tick_generator sampling_tick_generator_BAUD115200_CLOCK_IN_MHZ100          56    148.086    62.149      210.235 
+>     ins_tx_wrapper                tx_wrapper_NO_OF_WORDS_IN_BUFFER1_NO_OF_DATA_BITS8         189    489.402   214.215      703.617 
+>       ins_tx_fsm                  tx_fsm_NO_OF_DATA_BITS8_PARITY_ENABLED32h54525545_          94    210.330   103.544      313.874 
+>       ins_tx_buffer               tx_buffer_WORD_SIZE8_NO_OF_WORDS1_1                         53    146.718    52.247      198.965 
+>       ins_sampling_tick_generator sampling_tick_generator_BAUD115200_CLOCK_IN_MHZ100          42    132.354    46.412      178.766 
+>   ins_uart_transceiver_A          uart_transceiver_CLOCK_IN_MHZ100_TX_WORD_LENGTH8_T         386   1110.474   423.318     1533.792 
+>     ins_rx_wrapper                rx_wrapper_NO_OF_WORS_IN_BUFFER1_NO_OF_DATA_BITS8_         197    621.072   209.103      830.175 
+>       ins_rx_buffer               rx_buffer_WORD_SIZE8_NO_OF_WORDS1                           67    292.068    61.047      353.115 
+>       ins_rx_fsm                  rx_fsm_NO_OF_DATA_BITS8_PARITY_ENABLED32h54525545_          74    180.918    77.867      258.785 
+>       ins_sampling_tick_generator sampling_tick_generator_BAUD115200_CLOCK_IN_MHZ100          56    148.086    62.149      210.235 
+>     ins_tx_wrapper                tx_wrapper_NO_OF_WORDS_IN_BUFFER1_NO_OF_DATA_BITS8         189    489.402   214.215      703.617 
+>       ins_tx_fsm                  tx_fsm_NO_OF_DATA_BITS8_PARITY_ENABLED32h54525545_          94    210.330   103.544      313.874 
+>       ins_tx_buffer               tx_buffer_WORD_SIZE8_NO_OF_WORDS1                           53    146.718    52.247      198.965 
+>       ins_sampling_tick_generator sampling_tick_generator_BAUD115200_CLOCK_IN_MHZ100          42    132.354    46.412      178.766 

@@ -1,0 +1,632 @@
+3c3
+<   Generated on:           Dec 08 2022  01:50:07 pm
+---
+>   Generated on:           Dec 08 2022  12:53:04 pm
+11c11
+< Path 1: MET (9126 ps) Late External Delay Assertion at pin rx_stop_bit_error_b
+---
+> Path 1: MET (2539 ps) Setup Check with Pin ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/buffer_full_counter_reg[2]/CK->D
+13c13
+<      Startpoint: (R) ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_fsm/stop_bit_error_reg/CK
+---
+>      Startpoint: (F) rx_data_rd_enable_in_b
+15c15
+<        Endpoint: (F) rx_stop_bit_error_b
+---
+>        Endpoint: (R) ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/buffer_full_counter_reg[2]/D
+19c19,20
+<         Clock Edge:+   30000        10000     
+---
+>         Clock Edge:+   10000            0     
+>         Drv Adjust:+       0            0     
+22c23
+<            Arrival:=   30000        10000     
+---
+>            Arrival:=   10000            0     
+24c25
+<       Output Delay:-    6000                  
+---
+>              Setup:-     168                  
+26,29c27,31
+<      Required Time:=   23500                  
+<       Launch Clock:-   10000                  
+<          Data Path:-    4374                  
+<              Slack:=    9126                  
+---
+>      Required Time:=    9332                  
+>       Launch Clock:-       0                  
+>        Input Delay:-    6000                  
+>          Data Path:-     793                  
+>              Slack:=    2539                  
+32c34
+<   output_delay             6000            ou_del_416_1 
+---
+>   input_delay             6000            in_del_19_1 
+34,42c36,47
+< #-------------------------------------------------------------------------------------------------------------------------------------------------
+< #                             Timing Point                               Flags   Arc   Edge   Cell     Fanout  Load  Trans Delay Arrival Instance 
+< #                                                                                                              (fF)   (ps)  (ps)   (ps)  Location 
+< #-------------------------------------------------------------------------------------------------------------------------------------------------
+<   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_fsm/stop_bit_error_reg/CK -       -     R     (arrival)    153      -     0     -   10000    (-,-) 
+<   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_fsm/stop_bit_error_reg/Q  -       CK->Q F     DFFHQX1        2    4.6   126   253   10253    (-,-) 
+<   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_fsm/drc_bufs2976/Y        -       A->Y  F     CLKBUFX20      1 5201.6  7071  4085   14338    (-,-) 
+<   rx_stop_bit_error_b                                                    -       -     F     (port)         -      -     -     0   14374    (-,-) 
+< #-------------------------------------------------------------------------------------------------------------------------------------------------
+---
+> #---------------------------------------------------------------------------------------------------------------------------------------------------------
+> #                                  Timing Point                                    Flags   Arc   Edge   Cell     Fanout Load Trans Delay Arrival Instance 
+> #                                                                                                                       (fF)  (ps)  (ps)   (ps)  Location 
+> #---------------------------------------------------------------------------------------------------------------------------------------------------------
+>   rx_data_rd_enable_in_b                                                           -       -     F     (arrival)      9 11.4     0     0    6000    (-,-) 
+>   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/g598/Y                       -       B->Y  R     NOR2BX1        3  4.4   216   132    6132    (-,-) 
+>   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/g593/Y                       -       B->Y  F     NOR2X1         2  2.9   123   181    6312    (-,-) 
+>   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/g574/Y                       -       B0->Y R     OAI21X1        1  2.0   144   104    6416    (-,-) 
+>   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/g560/Y                       -       A1->Y F     AOI22X1        1  1.9   190   206    6623    (-,-) 
+>   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/g555/Y                       -       B->Y  R     NOR2X1         1  1.9   127   171    6793    (-,-) 
+>   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/buffer_full_counter_reg[2]/D -       -     R     DFFHQX1        1    -     -     0    6793    (-,-) 
+> #---------------------------------------------------------------------------------------------------------------------------------------------------------
+46,51c51,56
+< Path 2: MET (9126 ps) Late External Delay Assertion at pin rx_parity_error_b
+<           Group: clk_b
+<      Startpoint: (R) ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_fsm/parity_error_reg/CK
+<           Clock: (R) clk_b
+<        Endpoint: (F) rx_parity_error_b
+<           Clock: (R) clk_b
+---
+> Path 2: MET (2539 ps) Setup Check with Pin ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/buffer_full_counter_reg[2]/CK->D
+>           Group: clk_a
+>      Startpoint: (F) rx_data_rd_enable_in_a
+>           Clock: (R) clk_a
+>        Endpoint: (R) ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/buffer_full_counter_reg[2]/D
+>           Clock: (R) clk_a
+54c59,60
+<         Clock Edge:+   30000        10000     
+---
+>         Clock Edge:+   10000            0     
+>         Drv Adjust:+       0            0     
+57c63
+<            Arrival:=   30000        10000     
+---
+>            Arrival:=   10000            0     
+59c65
+<       Output Delay:-    6000                  
+---
+>              Setup:-     168                  
+61,64c67,71
+<      Required Time:=   23500                  
+<       Launch Clock:-   10000                  
+<          Data Path:-    4374                  
+<              Slack:=    9126                  
+---
+>      Required Time:=    9332                  
+>       Launch Clock:-       0                  
+>        Input Delay:-    6000                  
+>          Data Path:-     793                  
+>              Slack:=    2539                  
+67c74
+<   output_delay             6000            ou_del_415_1 
+---
+>   input_delay             6000            in_del_9_1 
+69,77c76,87
+< #-----------------------------------------------------------------------------------------------------------------------------------------------
+< #                            Timing Point                              Flags   Arc   Edge   Cell     Fanout  Load  Trans Delay Arrival Instance 
+< #                                                                                                            (fF)   (ps)  (ps)   (ps)  Location 
+< #-----------------------------------------------------------------------------------------------------------------------------------------------
+<   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_fsm/parity_error_reg/CK -       -     R     (arrival)    153      -     0     -   10000    (-,-) 
+<   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_fsm/parity_error_reg/Q  -       CK->Q F     DFFHQX1        2    4.6   126   253   10253    (-,-) 
+<   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_fsm/drc_bufs2984/Y      -       A->Y  F     CLKBUFX20      1 5201.6  7071  4085   14338    (-,-) 
+<   rx_parity_error_b                                                    -       -     F     (port)         -      -     -     0   14374    (-,-) 
+< #-----------------------------------------------------------------------------------------------------------------------------------------------
+---
+> #---------------------------------------------------------------------------------------------------------------------------------------------------------
+> #                                  Timing Point                                    Flags   Arc   Edge   Cell     Fanout Load Trans Delay Arrival Instance 
+> #                                                                                                                       (fF)  (ps)  (ps)   (ps)  Location 
+> #---------------------------------------------------------------------------------------------------------------------------------------------------------
+>   rx_data_rd_enable_in_a                                                           -       -     F     (arrival)      9 11.4     0     0    6000    (-,-) 
+>   ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/g598/Y                       -       B->Y  R     NOR2BX1        3  4.4   216   132    6132    (-,-) 
+>   ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/g593/Y                       -       B->Y  F     NOR2X1         2  2.9   123   181    6312    (-,-) 
+>   ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/g574/Y                       -       B0->Y R     OAI21X1        1  2.0   144   104    6416    (-,-) 
+>   ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/g560/Y                       -       A1->Y F     AOI22X1        1  1.9   190   206    6623    (-,-) 
+>   ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/g555/Y                       -       B->Y  R     NOR2X1         1  1.9   127   171    6793    (-,-) 
+>   ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/buffer_full_counter_reg[2]/D -       -     R     DFFHQX1        1    -     -     0    6793    (-,-) 
+> #---------------------------------------------------------------------------------------------------------------------------------------------------------
+81c91
+< Path 3: MET (9126 ps) Late External Delay Assertion at pin tx_busy_out_b
+---
+> Path 3: MET (2653 ps) Setup Check with Pin ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/buffer_full_counter_reg[2]/CK->D
+83c93
+<      Startpoint: (R) ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_fsm/tx_busy_reg/CK
+---
+>      Startpoint: (R) rx_data_rd_enable_in_b
+85c95
+<        Endpoint: (F) tx_busy_out_b
+---
+>        Endpoint: (F) ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/buffer_full_counter_reg[2]/D
+89c99,100
+<         Clock Edge:+   30000        10000     
+---
+>         Clock Edge:+   10000            0     
+>         Drv Adjust:+       0            0     
+92c103
+<            Arrival:=   30000        10000     
+---
+>            Arrival:=   10000            0     
+94c105
+<       Output Delay:-    6000                  
+---
+>              Setup:-      91                  
+96,99c107,111
+<      Required Time:=   23500                  
+<       Launch Clock:-   10000                  
+<          Data Path:-    4374                  
+<              Slack:=    9126                  
+---
+>      Required Time:=    9409                  
+>       Launch Clock:-       0                  
+>        Input Delay:-    6000                  
+>          Data Path:-     756                  
+>              Slack:=    2653                  
+102c114
+<   output_delay             6000            ou_del_381_1 
+---
+>   input_delay             6000            in_del_19_1 
+104,112c116,127
+< #------------------------------------------------------------------------------------------------------------------------------------------
+< #                          Timing Point                           Flags   Arc   Edge   Cell     Fanout  Load  Trans Delay Arrival Instance 
+< #                                                                                                       (fF)   (ps)  (ps)   (ps)  Location 
+< #------------------------------------------------------------------------------------------------------------------------------------------
+<   ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_fsm/tx_busy_reg/CK -       -     R     (arrival)    153      -     0     -   10000    (-,-) 
+<   ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_fsm/tx_busy_reg/Q  -       CK->Q F     DFFHQX1        2    4.6   126   253   10253    (-,-) 
+<   ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_fsm/drc_bufs2824/Y -       A->Y  F     CLKBUFX20      1 5201.6  7071  4085   14338    (-,-) 
+<   tx_busy_out_b                                                   -       -     F     (port)         -      -     -     0   14374    (-,-) 
+< #------------------------------------------------------------------------------------------------------------------------------------------
+---
+> #---------------------------------------------------------------------------------------------------------------------------------------------------------
+> #                                  Timing Point                                    Flags   Arc   Edge   Cell     Fanout Load Trans Delay Arrival Instance 
+> #                                                                                                                       (fF)  (ps)  (ps)   (ps)  Location 
+> #---------------------------------------------------------------------------------------------------------------------------------------------------------
+>   rx_data_rd_enable_in_b                                                           -       -     R     (arrival)      9 11.5     0     0    6000    (-,-) 
+>   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/g598/Y                       -       B->Y  F     NOR2BX1        3  4.2   126    68    6068    (-,-) 
+>   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/g593/Y                       -       B->Y  R     NOR2X1         2  3.0   168   164    6232    (-,-) 
+>   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/g574/Y                       -       B0->Y F     OAI21X1        1  2.0   167   200    6432    (-,-) 
+>   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/g560/Y                       -       A1->Y R     AOI22X1        1  2.0   153   194    6626    (-,-) 
+>   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/g555/Y                       -       B->Y  F     NOR2X1         1  1.9    87   130    6756    (-,-) 
+>   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/buffer_full_counter_reg[2]/D -       -     F     DFFHQX1        1    -     -     0    6756    (-,-) 
+> #---------------------------------------------------------------------------------------------------------------------------------------------------------
+116c131
+< Path 4: MET (9126 ps) Late External Delay Assertion at pin rx_stop_bit_error_a
+---
+> Path 4: MET (2653 ps) Setup Check with Pin ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/buffer_full_counter_reg[2]/CK->D
+118c133
+<      Startpoint: (R) ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_fsm/stop_bit_error_reg/CK
+---
+>      Startpoint: (R) rx_data_rd_enable_in_a
+120c135
+<        Endpoint: (F) rx_stop_bit_error_a
+---
+>        Endpoint: (F) ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/buffer_full_counter_reg[2]/D
+124c139,140
+<         Clock Edge:+   20000            0     
+---
+>         Clock Edge:+   10000            0     
+>         Drv Adjust:+       0            0     
+127c143
+<            Arrival:=   20000            0     
+---
+>            Arrival:=   10000            0     
+129c145
+<       Output Delay:-    6000                  
+---
+>              Setup:-      91                  
+131c147
+<      Required Time:=   13500                  
+---
+>      Required Time:=    9409                  
+133,134c149,151
+<          Data Path:-    4374                  
+<              Slack:=    9126                  
+---
+>        Input Delay:-    6000                  
+>          Data Path:-     756                  
+>              Slack:=    2653                  
+137c154
+<   output_delay             6000            ou_del_380_1 
+---
+>   input_delay             6000            in_del_9_1 
+139,147c156,167
+< #-------------------------------------------------------------------------------------------------------------------------------------------------
+< #                             Timing Point                               Flags   Arc   Edge   Cell     Fanout  Load  Trans Delay Arrival Instance 
+< #                                                                                                              (fF)   (ps)  (ps)   (ps)  Location 
+< #-------------------------------------------------------------------------------------------------------------------------------------------------
+<   ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_fsm/stop_bit_error_reg/CK -       -     R     (arrival)    153      -     0     -       0    (-,-) 
+<   ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_fsm/stop_bit_error_reg/Q  -       CK->Q F     DFFHQX1        2    4.6   126   253     253    (-,-) 
+<   ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_fsm/drc_bufs2976/Y        -       A->Y  F     CLKBUFX20      1 5201.6  7071  4085    4338    (-,-) 
+<   rx_stop_bit_error_a                                                    -       -     F     (port)         -      -     -     0    4374    (-,-) 
+< #-------------------------------------------------------------------------------------------------------------------------------------------------
+---
+> #---------------------------------------------------------------------------------------------------------------------------------------------------------
+> #                                  Timing Point                                    Flags   Arc   Edge   Cell     Fanout Load Trans Delay Arrival Instance 
+> #                                                                                                                       (fF)  (ps)  (ps)   (ps)  Location 
+> #---------------------------------------------------------------------------------------------------------------------------------------------------------
+>   rx_data_rd_enable_in_a                                                           -       -     R     (arrival)      9 11.5     0     0    6000    (-,-) 
+>   ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/g598/Y                       -       B->Y  F     NOR2BX1        3  4.2   126    68    6068    (-,-) 
+>   ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/g593/Y                       -       B->Y  R     NOR2X1         2  3.0   168   164    6232    (-,-) 
+>   ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/g574/Y                       -       B0->Y F     OAI21X1        1  2.0   167   200    6432    (-,-) 
+>   ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/g560/Y                       -       A1->Y R     AOI22X1        1  2.0   153   194    6626    (-,-) 
+>   ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/g555/Y                       -       B->Y  F     NOR2X1         1  1.9    87   130    6756    (-,-) 
+>   ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/buffer_full_counter_reg[2]/D -       -     F     DFFHQX1        1    -     -     0    6756    (-,-) 
+> #---------------------------------------------------------------------------------------------------------------------------------------------------------
+151,156c171,176
+< Path 5: MET (9126 ps) Late External Delay Assertion at pin rx_parity_error_a
+<           Group: clk_a
+<      Startpoint: (R) ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_fsm/parity_error_reg/CK
+<           Clock: (R) clk_a
+<        Endpoint: (F) rx_parity_error_a
+<           Clock: (R) clk_a
+---
+> Path 5: MET (2698 ps) Setup Check with Pin ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/memory_reg[7]/CK->D
+>           Group: clk_b
+>      Startpoint: (F) tx_data_wr_enable_in_b
+>           Clock: (R) clk_b
+>        Endpoint: (R) ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/memory_reg[7]/D
+>           Clock: (R) clk_b
+159c179,180
+<         Clock Edge:+   20000            0     
+---
+>         Clock Edge:+   10000            0     
+>         Drv Adjust:+       0            0     
+162c183
+<            Arrival:=   20000            0     
+---
+>            Arrival:=   10000            0     
+164c185
+<       Output Delay:-    6000                  
+---
+>              Setup:-     135                  
+166c187
+<      Required Time:=   13500                  
+---
+>      Required Time:=    9365                  
+168,169c189,191
+<          Data Path:-    4374                  
+<              Slack:=    9126                  
+---
+>        Input Delay:-    6000                  
+>          Data Path:-     667                  
+>              Slack:=    2698                  
+172c194
+<   output_delay             6000            ou_del_379_1 
+---
+>   input_delay             6000            in_del_18_1 
+174,182c196,206
+< #-----------------------------------------------------------------------------------------------------------------------------------------------
+< #                            Timing Point                              Flags   Arc   Edge   Cell     Fanout  Load  Trans Delay Arrival Instance 
+< #                                                                                                            (fF)   (ps)  (ps)   (ps)  Location 
+< #-----------------------------------------------------------------------------------------------------------------------------------------------
+<   ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_fsm/parity_error_reg/CK -       -     R     (arrival)    153      -     0     -       0    (-,-) 
+<   ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_fsm/parity_error_reg/Q  -       CK->Q F     DFFHQX1        2    4.6   126   253     253    (-,-) 
+<   ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_fsm/drc_bufs2984/Y      -       A->Y  F     CLKBUFX20      1 5201.6  7071  4085    4338    (-,-) 
+<   rx_parity_error_a                                                    -       -     F     (port)         -      -     -     0    4374    (-,-) 
+< #-----------------------------------------------------------------------------------------------------------------------------------------------
+---
+> #--------------------------------------------------------------------------------------------------------------------------------------------
+> #                            Timing Point                             Flags   Arc   Edge   Cell     Fanout Load Trans Delay Arrival Instance 
+> #                                                                                                          (fF)  (ps)  (ps)   (ps)  Location 
+> #--------------------------------------------------------------------------------------------------------------------------------------------
+>   tx_data_wr_enable_in_b                                              -       -     F     (arrival)      8  9.7     0     0    6000    (-,-) 
+>   ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/g2/Y            -       B->Y  R     NOR2BX2        8  9.5   231   140    6140    (-,-) 
+>   ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/g950/Y          -       A->Y  F     INVX1          1  1.9    97   174    6314    (-,-) 
+>   ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/g943/Y          -       B0->Y R     OAI21X1        1  1.8   130    87    6401    (-,-) 
+>   ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/g932/Y          -       A0->Y R     AO22X1         1  1.9    62   266    6667    (-,-) 
+>   ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/memory_reg[7]/D -       -     R     DFFHQX1        1    -     -     0    6667    (-,-) 
+> #--------------------------------------------------------------------------------------------------------------------------------------------
+186c210
+< Path 6: MET (9126 ps) Late External Delay Assertion at pin tx_busy_out_a
+---
+> Path 6: MET (2698 ps) Setup Check with Pin ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_buffer/memory_reg[7]/CK->D
+188c212
+<      Startpoint: (R) ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_fsm/tx_busy_reg/CK
+---
+>      Startpoint: (F) tx_data_wr_enable_in_a
+190c214
+<        Endpoint: (F) tx_busy_out_a
+---
+>        Endpoint: (R) ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_buffer/memory_reg[7]/D
+194c218,219
+<         Clock Edge:+   20000            0     
+---
+>         Clock Edge:+   10000            0     
+>         Drv Adjust:+       0            0     
+197c222
+<            Arrival:=   20000            0     
+---
+>            Arrival:=   10000            0     
+199c224
+<       Output Delay:-    6000                  
+---
+>              Setup:-     135                  
+201c226
+<      Required Time:=   13500                  
+---
+>      Required Time:=    9365                  
+203,204c228,230
+<          Data Path:-    4374                  
+<              Slack:=    9126                  
+---
+>        Input Delay:-    6000                  
+>          Data Path:-     667                  
+>              Slack:=    2698                  
+207c233
+<   output_delay             6000            ou_del_345_1 
+---
+>   input_delay             6000            in_del_8_1 
+209,217c235,245
+< #------------------------------------------------------------------------------------------------------------------------------------------
+< #                          Timing Point                           Flags   Arc   Edge   Cell     Fanout  Load  Trans Delay Arrival Instance 
+< #                                                                                                       (fF)   (ps)  (ps)   (ps)  Location 
+< #------------------------------------------------------------------------------------------------------------------------------------------
+<   ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_fsm/tx_busy_reg/CK -       -     R     (arrival)    153      -     0     -       0    (-,-) 
+<   ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_fsm/tx_busy_reg/Q  -       CK->Q F     DFFHQX1        2    4.6   126   253     253    (-,-) 
+<   ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_fsm/drc_bufs2824/Y -       A->Y  F     CLKBUFX20      1 5201.6  7071  4085    4338    (-,-) 
+<   tx_busy_out_a                                                   -       -     F     (port)         -      -     -     0    4374    (-,-) 
+< #------------------------------------------------------------------------------------------------------------------------------------------
+---
+> #--------------------------------------------------------------------------------------------------------------------------------------------
+> #                            Timing Point                             Flags   Arc   Edge   Cell     Fanout Load Trans Delay Arrival Instance 
+> #                                                                                                          (fF)  (ps)  (ps)   (ps)  Location 
+> #--------------------------------------------------------------------------------------------------------------------------------------------
+>   tx_data_wr_enable_in_a                                              -       -     F     (arrival)      8  9.7     0     0    6000    (-,-) 
+>   ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_buffer/g2/Y            -       B->Y  R     NOR2BX2        8  9.5   231   140    6140    (-,-) 
+>   ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_buffer/g950/Y          -       A->Y  F     INVX1          1  1.9    97   174    6314    (-,-) 
+>   ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_buffer/g943/Y          -       B0->Y R     OAI21X1        1  1.8   130    87    6401    (-,-) 
+>   ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_buffer/g932/Y          -       A0->Y R     AO22X1         1  1.9    62   266    6667    (-,-) 
+>   ins_uart_transceiver_A/ins_tx_wrapper/ins_tx_buffer/memory_reg[7]/D -       -     R     DFFHQX1        1    -     -     0    6667    (-,-) 
+> #--------------------------------------------------------------------------------------------------------------------------------------------
+221c249
+< Path 7: MET (9128 ps) Late External Delay Assertion at pin rx_parallel_data_out_b[0]
+---
+> Path 7: MET (2719 ps) Setup Check with Pin ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/buffer_full_counter_reg[1]/CK->D
+223c251
+<      Startpoint: (R) ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[0]/CK
+---
+>      Startpoint: (F) rx_data_rd_enable_in_b
+225c253
+<        Endpoint: (F) rx_parallel_data_out_b[0]
+---
+>        Endpoint: (R) ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/buffer_full_counter_reg[1]/D
+229c257,258
+<         Clock Edge:+   30000        10000     
+---
+>         Clock Edge:+   10000            0     
+>         Drv Adjust:+       0            0     
+232c261
+<            Arrival:=   30000        10000     
+---
+>            Arrival:=   10000            0     
+234c263
+<       Output Delay:-    6000                  
+---
+>              Setup:-     161                  
+236,239c265,269
+<      Required Time:=   23500                  
+<       Launch Clock:-   10000                  
+<          Data Path:-    4372                  
+<              Slack:=    9128                  
+---
+>      Required Time:=    9339                  
+>       Launch Clock:-       0                  
+>        Input Delay:-    6000                  
+>          Data Path:-     620                  
+>              Slack:=    2719                  
+242c272
+<   output_delay             6000            ou_del_414_1 
+---
+>   input_delay             6000            in_del_19_1 
+244,252c274,284
+< #----------------------------------------------------------------------------------------------------------------------------------------------------------
+< #                                  Timing Point                                   Flags   Arc   Edge   Cell     Fanout  Load  Trans Delay Arrival Instance 
+< #                                                                                                                       (fF)   (ps)  (ps)   (ps)  Location 
+< #----------------------------------------------------------------------------------------------------------------------------------------------------------
+<   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[0]/CK -       -     R     (arrival)    153      -     0     -   10000    (-,-) 
+<   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[0]/Q  -       CK->Q F     DFFHQX1        2    4.5   123   251   10251    (-,-) 
+<   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/drc_bufs3936/Y              -       A->Y  F     CLKBUFX20      1 5201.6  7072  4084   14335    (-,-) 
+<   rx_parallel_data_out_b[0]                                                       -       -     F     (port)         -      -     -     0   14372    (-,-) 
+< #----------------------------------------------------------------------------------------------------------------------------------------------------------
+---
+> #---------------------------------------------------------------------------------------------------------------------------------------------------------
+> #                                  Timing Point                                    Flags   Arc   Edge   Cell     Fanout Load Trans Delay Arrival Instance 
+> #                                                                                                                       (fF)  (ps)  (ps)   (ps)  Location 
+> #---------------------------------------------------------------------------------------------------------------------------------------------------------
+>   rx_data_rd_enable_in_b                                                           -       -     F     (arrival)      9 11.4     0     0    6000    (-,-) 
+>   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/g598/Y                       -       B->Y  R     NOR2BX1        3  4.4   216   132    6132    (-,-) 
+>   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/g593/Y                       -       B->Y  F     NOR2X1         2  2.9   123   181    6312    (-,-) 
+>   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/g563/Y                       -       B->Y  F     MX2X1          1  1.9    68   202    6515    (-,-) 
+>   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/g559/Y                       -       B->Y  R     NOR2X1         1  1.9   114   105    6620    (-,-) 
+>   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/buffer_full_counter_reg[1]/D -       -     R     DFFHQX1        1    -     -     0    6620    (-,-) 
+> #---------------------------------------------------------------------------------------------------------------------------------------------------------
+256,261c288,293
+< Path 8: MET (9128 ps) Late External Delay Assertion at pin rx_parallel_data_out_b[1]
+<           Group: clk_b
+<      Startpoint: (R) ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[1]/CK
+<           Clock: (R) clk_b
+<        Endpoint: (F) rx_parallel_data_out_b[1]
+<           Clock: (R) clk_b
+---
+> Path 8: MET (2719 ps) Setup Check with Pin ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/buffer_full_counter_reg[1]/CK->D
+>           Group: clk_a
+>      Startpoint: (F) rx_data_rd_enable_in_a
+>           Clock: (R) clk_a
+>        Endpoint: (R) ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/buffer_full_counter_reg[1]/D
+>           Clock: (R) clk_a
+264c296,297
+<         Clock Edge:+   30000        10000     
+---
+>         Clock Edge:+   10000            0     
+>         Drv Adjust:+       0            0     
+267c300
+<            Arrival:=   30000        10000     
+---
+>            Arrival:=   10000            0     
+269c302
+<       Output Delay:-    6000                  
+---
+>              Setup:-     161                  
+271,274c304,308
+<      Required Time:=   23500                  
+<       Launch Clock:-   10000                  
+<          Data Path:-    4372                  
+<              Slack:=    9128                  
+---
+>      Required Time:=    9339                  
+>       Launch Clock:-       0                  
+>        Input Delay:-    6000                  
+>          Data Path:-     620                  
+>              Slack:=    2719                  
+277c311
+<   output_delay             6000            ou_del_413_1 
+---
+>   input_delay             6000            in_del_9_1 
+279,287c313,323
+< #----------------------------------------------------------------------------------------------------------------------------------------------------------
+< #                                  Timing Point                                   Flags   Arc   Edge   Cell     Fanout  Load  Trans Delay Arrival Instance 
+< #                                                                                                                       (fF)   (ps)  (ps)   (ps)  Location 
+< #----------------------------------------------------------------------------------------------------------------------------------------------------------
+<   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[1]/CK -       -     R     (arrival)    153      -     0     -   10000    (-,-) 
+<   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[1]/Q  -       CK->Q F     DFFHQX1        2    4.5   123   251   10251    (-,-) 
+<   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/drc_bufs3928/Y              -       A->Y  F     CLKBUFX20      1 5201.6  7072  4084   14335    (-,-) 
+<   rx_parallel_data_out_b[1]                                                       -       -     F     (port)         -      -     -     0   14372    (-,-) 
+< #----------------------------------------------------------------------------------------------------------------------------------------------------------
+---
+> #---------------------------------------------------------------------------------------------------------------------------------------------------------
+> #                                  Timing Point                                    Flags   Arc   Edge   Cell     Fanout Load Trans Delay Arrival Instance 
+> #                                                                                                                       (fF)  (ps)  (ps)   (ps)  Location 
+> #---------------------------------------------------------------------------------------------------------------------------------------------------------
+>   rx_data_rd_enable_in_a                                                           -       -     F     (arrival)      9 11.4     0     0    6000    (-,-) 
+>   ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/g598/Y                       -       B->Y  R     NOR2BX1        3  4.4   216   132    6132    (-,-) 
+>   ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/g593/Y                       -       B->Y  F     NOR2X1         2  2.9   123   181    6312    (-,-) 
+>   ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/g563/Y                       -       B->Y  F     MX2X1          1  1.9    68   202    6515    (-,-) 
+>   ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/g559/Y                       -       B->Y  R     NOR2X1         1  1.9   114   105    6620    (-,-) 
+>   ins_uart_transceiver_A/ins_rx_wrapper/ins_rx_buffer/buffer_full_counter_reg[1]/D -       -     R     DFFHQX1        1    -     -     0    6620    (-,-) 
+> #---------------------------------------------------------------------------------------------------------------------------------------------------------
+291c327
+< Path 9: MET (9128 ps) Late External Delay Assertion at pin rx_parallel_data_out_b[2]
+---
+> Path 9: MET (2742 ps) Setup Check with Pin ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/memory_reg[4]/CK->D
+293c329
+<      Startpoint: (R) ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[2]/CK
+---
+>      Startpoint: (R) tx_data_wr_enable_in_b
+295c331
+<        Endpoint: (F) rx_parallel_data_out_b[2]
+---
+>        Endpoint: (R) ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/memory_reg[4]/D
+299c335,336
+<         Clock Edge:+   30000        10000     
+---
+>         Clock Edge:+   10000            0     
+>         Drv Adjust:+       0            0     
+302c339
+<            Arrival:=   30000        10000     
+---
+>            Arrival:=   10000            0     
+304c341
+<       Output Delay:-    6000                  
+---
+>              Setup:-     148                  
+306,309c343,347
+<      Required Time:=   23500                  
+<       Launch Clock:-   10000                  
+<          Data Path:-    4372                  
+<              Slack:=    9128                  
+---
+>      Required Time:=    9352                  
+>       Launch Clock:-       0                  
+>        Input Delay:-    6000                  
+>          Data Path:-     610                  
+>              Slack:=    2742                  
+312c350
+<   output_delay             6000            ou_del_412_1 
+---
+>   input_delay             6000            in_del_18_1 
+314,322c352,361
+< #----------------------------------------------------------------------------------------------------------------------------------------------------------
+< #                                  Timing Point                                   Flags   Arc   Edge   Cell     Fanout  Load  Trans Delay Arrival Instance 
+< #                                                                                                                       (fF)   (ps)  (ps)   (ps)  Location 
+< #----------------------------------------------------------------------------------------------------------------------------------------------------------
+<   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[2]/CK -       -     R     (arrival)    153      -     0     -   10000    (-,-) 
+<   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[2]/Q  -       CK->Q F     DFFHQX1        2    4.5   123   251   10251    (-,-) 
+<   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/drc_bufs3920/Y              -       A->Y  F     CLKBUFX20      1 5201.6  7072  4084   14335    (-,-) 
+<   rx_parallel_data_out_b[2]                                                       -       -     F     (port)         -      -     -     0   14372    (-,-) 
+< #----------------------------------------------------------------------------------------------------------------------------------------------------------
+---
+> #--------------------------------------------------------------------------------------------------------------------------------------------
+> #                            Timing Point                             Flags   Arc   Edge   Cell     Fanout Load Trans Delay Arrival Instance 
+> #                                                                                                          (fF)  (ps)  (ps)   (ps)  Location 
+> #--------------------------------------------------------------------------------------------------------------------------------------------
+>   tx_data_wr_enable_in_b                                              -       -     R     (arrival)      8 10.2     0     0    6000    (-,-) 
+>   ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/g955/Y          -       A->Y  R     AND2X1         8  9.5   211   212    6212    (-,-) 
+>   ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/g945/Y          -       A1->Y F     AOI22X1        1  2.0   201   247    6459    (-,-) 
+>   ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/g937/Y          -       B0->Y R     OAI2BB1X1      1  1.9    88   151    6610    (-,-) 
+>   ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/memory_reg[4]/D -       -     R     DFFHQX1        1    -     -     0    6610    (-,-) 
+> #--------------------------------------------------------------------------------------------------------------------------------------------
+326c365
+< Path 10: MET (9128 ps) Late External Delay Assertion at pin rx_parallel_data_out_b[3]
+---
+> Path 10: MET (2742 ps) Setup Check with Pin ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/memory_reg[6]/CK->D
+328c367
+<      Startpoint: (R) ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[3]/CK
+---
+>      Startpoint: (R) tx_data_wr_enable_in_b
+330c369
+<        Endpoint: (F) rx_parallel_data_out_b[3]
+---
+>        Endpoint: (R) ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/memory_reg[6]/D
+334c373,374
+<         Clock Edge:+   30000        10000     
+---
+>         Clock Edge:+   10000            0     
+>         Drv Adjust:+       0            0     
+337c377
+<            Arrival:=   30000        10000     
+---
+>            Arrival:=   10000            0     
+339c379
+<       Output Delay:-    6000                  
+---
+>              Setup:-     148                  
+341,344c381,385
+<      Required Time:=   23500                  
+<       Launch Clock:-   10000                  
+<          Data Path:-    4372                  
+<              Slack:=    9128                  
+---
+>      Required Time:=    9352                  
+>       Launch Clock:-       0                  
+>        Input Delay:-    6000                  
+>          Data Path:-     610                  
+>              Slack:=    2742                  
+347c388
+<   output_delay             6000            ou_del_411_1 
+---
+>   input_delay             6000            in_del_18_1 
+349,357c390,399
+< #----------------------------------------------------------------------------------------------------------------------------------------------------------
+< #                                  Timing Point                                   Flags   Arc   Edge   Cell     Fanout  Load  Trans Delay Arrival Instance 
+< #                                                                                                                       (fF)   (ps)  (ps)   (ps)  Location 
+< #----------------------------------------------------------------------------------------------------------------------------------------------------------
+<   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[3]/CK -       -     R     (arrival)    153      -     0     -   10000    (-,-) 
+<   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/data_parallel_out_reg[3]/Q  -       CK->Q F     DFFHQX1        2    4.5   123   251   10251    (-,-) 
+<   ins_uart_transceiver_B/ins_rx_wrapper/ins_rx_buffer/drc_bufs3912/Y              -       A->Y  F     CLKBUFX20      1 5201.6  7072  4084   14335    (-,-) 
+<   rx_parallel_data_out_b[3]                                                       -       -     F     (port)         -      -     -     0   14372    (-,-) 
+< #----------------------------------------------------------------------------------------------------------------------------------------------------------
+---
+> #--------------------------------------------------------------------------------------------------------------------------------------------
+> #                            Timing Point                             Flags   Arc   Edge   Cell     Fanout Load Trans Delay Arrival Instance 
+> #                                                                                                          (fF)  (ps)  (ps)   (ps)  Location 
+> #--------------------------------------------------------------------------------------------------------------------------------------------
+>   tx_data_wr_enable_in_b                                              -       -     R     (arrival)      8 10.2     0     0    6000    (-,-) 
+>   ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/g955/Y          -       A->Y  R     AND2X1         8  9.5   211   212    6212    (-,-) 
+>   ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/g948/Y          -       A1->Y F     AOI22X1        1  2.0   201   247    6459    (-,-) 
+>   ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/g941/Y          -       B0->Y R     OAI2BB1X1      1  1.9    88   151    6610    (-,-) 
+>   ins_uart_transceiver_B/ins_tx_wrapper/ins_tx_buffer/memory_reg[6]/D -       -     R     DFFHQX1        1    -     -     0    6610    (-,-) 
+> #--------------------------------------------------------------------------------------------------------------------------------------------

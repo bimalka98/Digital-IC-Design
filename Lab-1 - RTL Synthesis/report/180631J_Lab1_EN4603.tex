@@ -11,21 +11,22 @@
 \pagebreak
 
 \tableofcontents
+\vfill
+\textit{\textbf{Note:}}\\
+\textit{All the materials related to the report can also be found at \url{https://github.com/bimalka98/Digital-IC-Design}}
+
+\pagebreak
 \listoffigures
 \listoftables
 \input{content/abbreviations}
-\vfill
 
-\textit{\textbf{Note:}}\\
-\textit{All the materials related to the report can also be found at \url{https://github.com/bimalka98/Digital-IC-Design}}
-\pagebreak
 
 
 \pagebreak
 \section{Introduction}
 
 \subsection{Practical}
-In this practical, we will be using \textit{Cadence Genus - Ver. 18.10 } to synthesize an example \ac{rtl} design, a transceiver. As inputs to Genus, we will provide
+In this practical, we will be using \textit{Cadence Genus - Ver. 18.10 } to synthesize an example \ac{rtl} design, a \ac{uart} transceiver (shown in Figure \ref{fig:top_level}). As inputs to Genus, we will provide
 
 \begin{enumerate}
 	\item Source Verilog files
@@ -43,6 +44,15 @@ In this practical, we will be using \textit{Cadence Genus - Ver. 18.10 } to synt
 \end{enumerate}
 
 and will obtain the synthesized netlist (Verilog files) and further timing constrains {\tt (.sdc)} as output. We will then analyze the area, timing and power of the synthesized design.
+
+\begin{figure}[h]
+	\centering
+	\fbox{
+		\includegraphics[width=0.95\linewidth]{figures/bw1.png}
+	}
+	\caption{Top level diagram of the \ac{uart} design}
+	\label{fig:top_level}
+\end{figure}
 
 \pagebreak
 \subsection{RTL Synthesis}
@@ -261,7 +271,150 @@ The {\tt ports\_final.log} file in the {\tt report} directory carries the detail
 	\label{fig:ports_log}
 \end{figure}
 
+\subsection{Changing the Top Level Designs Parameters}
+
+In this part of the exercise, the {\tt uart\_top.v} Verilog source file was modified according to the instructions, and synthesis process was re-run. After the modification, top level design parameters will be as follows. Note that word lengths of the \ac{tx} and the \ac{rx} are changed from 8 bits to 32 bits.
+
+\begin{Verbatim}[frame=single]
+module uart_top #(
+    parameter  CLOCK_IN_MHZ  =100,
+    
+    parameter  TX_WORD_LENGTH =32,  // # of UART-tramsmit data bits ; 6,7,8
+    parameter  TX_NO_OF_WORDS =1,   // Transmitter buffer size in words.
+    // Actual buffer size= TX_WORD_LENGTH * TX_NO_OF_WORDS  ; 1,2...
+    '
+    parameter  RX_WORD_LENGTH =32,  // # of UART-receive data bits ; 6,7,8
+    parameter  RX_NO_OF_WORDS =1    // Receiver buffer size in words.
+    // Actual buffer size= RX_WORD_LENGTH * RX_NO_OF_WORDS  ; 1,2.....
+)
+\end{Verbatim}
+
+\subsubsection{Area Reports Comparison}
+
+After changing the word length of the \ac{tx} and the \ac{rx}, the produced area report is shown in the Figure \ref{fig:area_log2}.
+
+\begin{figure}[h]
+	\centering
+	\fbox{
+		\includegraphics[width=0.95\linewidth]{figures/area_log2.PNG}
+	}
+	\caption{Area log file after changing the word length of TX and RX}
+	\label{fig:area_log2}
+\end{figure}
+
+When comparing the new area report with the previous area report showed in the Figure \ref{fig:area_log}, observations reported in the Table \ref{table:area_compare} can be made. Below is a summary of the most significant changes between two designs.
+
+\begin{itemize}
+	\item {\tt ins\_rx\_buffer} cell count and the total area has been increased by nearly three times. This change is predictable as the buffer size equals to {\tt RX\_WORD\_LENGTH * RX\_NO\_OF\_WORDS}, and we have increased the \ac{rx} word length by four times.
+	
+	\item {\tt ins\_tx\_buffer} cell count and the total area has been increased by nearly one and half times. This change is also predictable as the buffer size equals to {\tt TX\_WORD\_LENGTH * TX\_NO\_OF\_WORDS}, and we have increased the \ac{tx} word length by four times.
+\end{itemize}
+
+These increase of \ac{tx} and \ac{rx} buffer sizes have contributed to a significant area increase ($~1.5\times$) in the overall design.
+
+\begin{table}[h]
+	\captionsetup{font={sc, footnotesize}, labelsep=newline}
+	\centering
+	\caption{Area comparison: Cell count and the Total Area}
+	\begin{tabular}{|L{0.4\linewidth}  |C{0.11\linewidth}  | C{0.11\linewidth}  |C{0.11\linewidth}  | C{0.11\linewidth} |} \hline
+		Instance & Cell Count 8 bit design & Cell Count 32 bit design & Total Area 8 bit design & Total Area 32 bit design\\ \hline
+{\tt uart\_top} & 772 & 1128 & 3167.441 & 5117.318\\ \hline
+{\tt -ins\_uart\_transceiver\_B} & 386 &  564 & 1533.792 & 2468.457\\ \hline
+{\tt ---ins\_rx\_wrapper} & 197 &  305 &  830.175 & 1478.561\\ \hline
+{\tt -----ins\_rx\_buffer} &  67 &  199 &  353.115 & 1079.791\\ \hline
+{\tt -----ins\_sampling\_tick\_generator} &  74 &   48 &  258.785 &  196.571\\ \hline
+{\tt -----ins\_rx\_fsm} &  56 &   58 &  210.235 &  194.160\\ \hline
+{\tt ---ins\_tx\_wrapper} & 189 &  259 &  703.617 &  989.896\\ \hline
+{\tt -----ins\_tx\_buffer} &  94 &  146 &  313.874 &  559.655\\ \hline
+{\tt -----ins\_tx\_fsm} &  53 &   66 &  198.965 &  223.690\\ \hline
+{\tt -----ins\_sampling\_tick\_generator} &  42 &   47 &  178.766 &  186.234\\ \hline		
+	\end{tabular}
+	\label{table:area_compare}
+\end{table}
+
+\subsubsection{Timing Reports Comparison}
+
+After changing the word length of the \ac{tx} and the \ac{rx}, the produced timing report is shown in the Figure \ref{fig:timing_log2}.
+
+\begin{figure}[h]
+	\centering
+	\fbox{
+		\includegraphics[width=0.95\linewidth]{figures/timing_log2.PNG}
+	}
+	\caption{Timing log file after changing the word length of TX and RX}
+	\label{fig:timing_log2}
+\end{figure}
+
+It can be observed that the least slack time which corresponds to the most critical path, has been increased to $9126~ps$. This positive slack time indicates that there is no timing violations in the given design even after the made changes. 
 \pagebreak
+\subsection{Changing Constraints}
+
+In this part of the exercise, the changes were made to the {\tt constraints.tcl} file, to meet the below criteria.
+
+\begin{enumerate}[a.]
+	\item Change the system clocks of both A and B transceivers to operate at $50MHz$.
+	\item Change the duty cycle of both clocks to $40\%$
+	\item Introduce $180\degree$ phase shift to clock B
+	\item Increase the pin load by 5pF and check the timing violations
+\end{enumerate}
+
+\subsubsection{Changing the System Clocks}
+
+The units of the clocks, and the other parameters related to timings are in nanoseconds ($ns$) scale, as defines in the Verilog source files by {\tt \`timescale 1ns/1ps}. Therefore in order to generate a clock operating at $50~MHz$, the clock period must be $20~ns$.  Argument `{\tt -period 20}' will do this change as follows.
+
+\begin{Verbatim}[frame=single]
+create_clock -name clk_a -period 20 [get_ports clk_a] -waveform {0 10}
+create_clock -name clk_b -period 20 [get_ports clk_b] -waveform {0 10}
+\end{Verbatim}
+
+\subsubsection{Changing the Duty Cycle}
+
+Duty cycle of the clock can be changed as necessary by changing the parameters of the `{\tt -waveform}' argument. Since the clock period is $20~ns$, in order to have a $40\%$ duty cycle, clock should remain high for $8~ns$. Therefore, the rise time of the clock will be at time unit 0 and fall time will be at time unit 8.
+
+\[
+high ~time = 20~ns \times \frac{40}{100} = 8~ns
+\]
+
+\begin{Verbatim}[frame=single]
+create_clock -name clk_a -period 20 [get_ports clk_a] -waveform {0 8}
+create_clock -name clk_b -period 20 [get_ports clk_b] -waveform {0 8}
+\end{Verbatim}
+
+\subsubsection{Phase Shifting Clock B}
+
+The necessary phase shift can also be given to any clock by changing the rise time and the fall time of the clock. Since we need $180\degree$ phase shift in clock B, with respect to the clock A, we need to give a shift worth half of the period to the clock B. This is equal to the rise time and fall time increment by 10 time units.
+
+\begin{Verbatim}[frame=single]
+create_clock -name clk_a -period 20 [get_ports clk_a] -waveform {0 8}
+create_clock -name clk_b -period 20 [get_ports clk_b] -waveform {10 18}
+\end{Verbatim}
+
+\subsubsection{Increasing Pin Loads}
+
+Pin load is specified by the below command. Previously it was 0.2 units and in order to make it $5.2~pF$ the necessary change was made.
+ 
+\begin{Verbatim}[frame=single]
+set_load        5.2 $design_outputs
+\end{Verbatim}
+
+\subsubsection{Timing Violations}
+
+After making the above changes to the constraints of the design, the produced timing report is shown in the Figure \ref{fig:timing_log3}.
+
+\begin{figure}[H]
+	\centering
+	\fbox{
+		\includegraphics[width=0.95\linewidth]{figures/timing_log3.PNG}
+	}
+	\caption{Timing log file after changing design constraints}
+	\label{fig:timing_log3}
+\end{figure}
+
+It can be observed that the least slack time which corresponds to the most critical path, has been increased to $9126~ps$. This positive slack time indicates that there is no timing violations in the given design even after the made changes. An increase in slack time on the critical path means that the design has more flexibility to accommodate changes or delays without causing a timing violation.
+
+\vfill
+\hrule
+
 \bibliographystyle{IEEEtran}
 \bibliography{refer}
 
