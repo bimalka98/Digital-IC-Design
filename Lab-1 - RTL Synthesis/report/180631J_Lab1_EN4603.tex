@@ -399,7 +399,7 @@ set_load        5.2 $design_outputs
 
 \subsubsection{Area Reports Comparison}
 
-After changing the design constraints as described previously, the produced area report is shown in the Figure \ref{fig:area_log3}.
+After changing the specified design constraints, the produced area report is shown in the Figure \ref{fig:area_log3}. When comparing this new area report  with the previous area report showed in the Figure \ref{fig:area_log2}, it can be observed that, there is no significant change in the area of the design, although some of the design constraints are modified. That is modifying the clock frequency and pin load capacitance does not have much affect on the area of the design. A summary of the changes are listed in the Table \ref{table:area_after_const_change}.
 
 \begin{figure}[h]
 	\centering
@@ -409,9 +409,6 @@ After changing the design constraints as described previously, the produced area
 	\caption{Area log file after changing the design constraints}
 	\label{fig:area_log3}
 \end{figure}
-
-When comparing the new area report with the previous area report showed in the Figure \ref{fig:area_log2}, observations reported in the Table \ref{table:area_after_const_change} can be made. However, there is no significant change in the area of the design, although the design constraints are modified.
-
 
 
 \begin{table}[h]
@@ -433,11 +430,46 @@ When comparing the new area report with the previous area report showed in the F
 	\end{tabular}
 	\label{table:area_after_const_change}
 \end{table}
+\pagebreak
+\subsubsection{Power Reports Comparison}
+
+After making the specified changes to the constraints of the design, the produced power report is shown in the Figure \ref{fig:timing_log3}. In contrast to the area report compared in the Table \ref{table:area_after_const_change}, changing the design constraints has resulted in tremendous change in the power of the design. More specifically \textbf{Total power of the design has increase by nearly six times}, and this observation is summarized in the Table \ref{table:power_after_const_change}.
+
+\begin{figure}[h]
+	\centering
+	\fbox{
+		\includegraphics[width=0.65\linewidth]{figures/power_log3.PNG}
+	}
+	\caption{Power log file after changing the design constraints}
+	\label{fig:power_log3}
+\end{figure}
+
+The change that was made to the pin load capacitance in the design constraints can be considered as the potential reason for this behavior in power. Because we have increased the load capacitance from $0.2~pF$ to $5.2~pF$, that is by \textbf{26 times}.
+
+\begin{table}[h]
+	\captionsetup{font={sc, footnotesize}, labelsep=newline}
+	\centering
+	\caption{Power comparison after changing the design constraints}
+	\begin{tabular}{|L{0.4\linewidth}  |C{0.11\linewidth}  | C{0.11\linewidth}  |C{0.11\linewidth}  | C{0.12\linewidth} |} \hline
+		Instance & Cell Count (old)  & Cell Count (new) & Total Power (old) & Total Power (new) \\ \hline
+		{\tt uart\_top} 							 & 1054 & 1128 &  617839.218 & 3692859.108 \\ \hline
+		{\tt -ins\_uart\_transceiver\_B} 			 &  527 &  564 &  301399.619 & 1937251.586 \\ \hline
+		{\tt ---ins\_rx\_wrapper} 					 &  277 &  305 &  245675.698 & 1871906.411 \\ \hline
+		{\tt -----ins\_rx\_buffer} 					 &  166 &  199 &  218087.307 & 1766078.448 \\ \hline
+		{\tt -----ins\_sampling\_tick\_generator} 	 &   56 &   48 &    8316.926 &  103037.678 \\ \hline
+		{\tt -----ins\_rx\_fsm} 					 &   55 &   58 &   19271.464 &    2790.285 \\ \hline
+		{\tt ---ins\_tx\_wrapper} 					 &  250 &  259 &   55723.921 &   65345.175 \\ \hline
+		{\tt -----ins\_tx\_buffer} 					 &  140 &  146 &   36136.844 &   13289.543 \\ \hline
+		{\tt -----ins\_tx\_fsm} 					 &   67 &   66 &   13542.076 &   48876.750 \\ \hline
+		{\tt -----ins\_sampling\_tick\_generator} 	 &   43 &   47 &    6045.000 &    3178.883 \\ \hline	
+	\end{tabular}
+	\label{table:power_after_const_change}
+\end{table}
 
 \pagebreak
 \subsubsection{Timing Violations}
 
-After making the above changes to the constraints of the design, the produced timing report is shown in the Figure \ref{fig:timing_log3}.
+After making the specified changes to the constraints of the design, the produced timing report is shown in the Figure \ref{fig:timing_log3}.
 
 \begin{figure}[H]
 	\centering
@@ -452,10 +484,10 @@ It can be observed that the least slack time which corresponds to the most criti
 
 \vfill
 \hrule
-
+{\small
 \bibliographystyle{IEEEtran}
 \bibliography{refer}
-
+}
 %---------------------------------------------------------------------------
 \end{document}
 -
