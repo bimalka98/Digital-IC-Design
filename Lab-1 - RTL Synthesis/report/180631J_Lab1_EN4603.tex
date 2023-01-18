@@ -305,12 +305,12 @@ After changing the word length of the \ac{tx} and the \ac{rx}, the produced area
 When comparing the new area report with the previous area report showed in the Figure \ref{fig:area_log}, observations reported in the Table \ref{table:area_compare} can be made. Below is a summary of the most significant changes between two designs.
 
 \begin{itemize}
-	\item {\tt ins\_rx\_buffer} cell count and the total area has been increased by nearly three times. This change is predictable as the buffer size equals to {\tt RX\_WORD\_LENGTH * RX\_NO\_OF\_WORDS}, and we have increased the \ac{rx} word length by four times.
+	\item {\tt ins\_rx\_buffer} cell count and the total area has been increased by nearly 2.5 times. This change is predictable as the buffer size equals to {\tt RX\_WORD\_LENGTH * RX\_NO\_OF\_WORDS}, and we have increased the \ac{rx} word length by four times.
 	
-	\item {\tt ins\_tx\_buffer} cell count and the total area has been increased by nearly one and half times. This change is also predictable as the buffer size equals to {\tt TX\_WORD\_LENGTH * TX\_NO\_OF\_WORDS}, and we have increased the \ac{tx} word length by four times.
+	\item {\tt ins\_tx\_buffer} cell count and the total area has been increased by nearly 1.5 times. This change is also predictable as the buffer size equals to {\tt TX\_WORD\_LENGTH * TX\_NO\_OF\_WORDS}, and we have increased the \ac{tx} word length by four times.
 \end{itemize}
 
-These increase of \ac{tx} and \ac{rx} buffer sizes have contributed to a significant area increase ($~1.5\times$) in the overall design.
+These increase of \ac{tx} and \ac{rx} buffer sizes have contributed to a significant area increase (nearly 1.5 times) in the overall design.
 
 \begin{table}[h]
 	\captionsetup{font={sc, footnotesize}, labelsep=newline}
@@ -318,16 +318,16 @@ These increase of \ac{tx} and \ac{rx} buffer sizes have contributed to a signifi
 	\caption{Area comparison: Cell count and the Total Area}
 	\begin{tabular}{|L{0.4\linewidth}  |C{0.11\linewidth}  | C{0.11\linewidth}  |C{0.11\linewidth}  | C{0.11\linewidth} |} \hline
 		Instance & Cell Count 8 bit design & Cell Count 32 bit design & Total Area 8 bit design & Total Area 32 bit design\\ \hline
-{\tt uart\_top} & 772 & 1128 & 3167.441 & 5117.318\\ \hline
-{\tt -ins\_uart\_transceiver\_B} & 386 &  564 & 1533.792 & 2468.457\\ \hline
-{\tt ---ins\_rx\_wrapper} & 197 &  305 &  830.175 & 1478.561\\ \hline
-{\tt -----ins\_rx\_buffer} &  67 &  199 &  353.115 & 1079.791\\ \hline
-{\tt -----ins\_sampling\_tick\_generator} &  74 &   48 &  258.785 &  196.571\\ \hline
-{\tt -----ins\_rx\_fsm} &  56 &   58 &  210.235 &  194.160\\ \hline
-{\tt ---ins\_tx\_wrapper} & 189 &  259 &  703.617 &  989.896\\ \hline
-{\tt -----ins\_tx\_buffer} &  94 &  146 &  313.874 &  559.655\\ \hline
-{\tt -----ins\_tx\_fsm} &  53 &   66 &  198.965 &  223.690\\ \hline
-{\tt -----ins\_sampling\_tick\_generator} &  42 &   47 &  178.766 &  186.234\\ \hline		
+{\tt uart\_top} 							& 772 & 1054 & 3167.441 & 4688.553\\ \hline
+{\tt -ins\_uart\_transceiver\_B} 			& 386 &  527 & 1533.792 & 2241.436\\ \hline
+{\tt ---ins\_rx\_wrapper} 					& 197 &  277 &  830.175 & 1282.055\\ \hline
+{\tt -----ins\_rx\_buffer} 					&  67 &  166 &  353.115 &  886.550\\ \hline
+{\tt -----ins\_sampling\_tick\_generator} 	&  74 &   56 &  258.785 &  205.770\\ \hline
+{\tt -----ins\_rx\_fsm} 					&  56 &   55 &  210.235 &  181.695\\ \hline
+{\tt ---ins\_tx\_wrapper} 					& 189 &  250 &  703.617 &  959.380\\ \hline
+{\tt -----ins\_tx\_buffer} 					&  94 &  140 &  313.874 &  544.263\\ \hline
+{\tt -----ins\_tx\_fsm} 					&  53 &   67 &  198.965 &  219.377\\ \hline
+{\tt -----ins\_sampling\_tick\_generator} 	&  42 &   43 &  178.766 &  175.062\\ \hline		
 	\end{tabular}
 	\label{table:area_compare}
 \end{table}
@@ -345,7 +345,7 @@ After changing the word length of the \ac{tx} and the \ac{rx}, the produced timi
 	\label{fig:timing_log2}
 \end{figure}
 
-It can be observed that the least slack time which corresponds to the most critical path, has been increased to $9126~ps$. This positive slack time indicates that there is no timing violations in the given design even after the made changes. 
+It can be observed that the least slack time which corresponds to the most critical path, has been increased to $3080~ps$. This positive slack time indicates that there is no timing violations in the given design even after the made changes. 
 \pagebreak
 \subsection{Changing Constraints}
 
@@ -397,6 +397,44 @@ Pin load is specified by the below command. Previously it was 0.2 units and in o
 set_load        5.2 $design_outputs
 \end{Verbatim}
 
+\subsubsection{Area Reports Comparison}
+
+After changing the design constraints as described previously, the produced area report is shown in the Figure \ref{fig:area_log3}.
+
+\begin{figure}[h]
+	\centering
+	\fbox{
+		\includegraphics[width=0.95\linewidth]{figures/area_log3.PNG}
+	}
+	\caption{Area log file after changing the design constraints}
+	\label{fig:area_log3}
+\end{figure}
+
+When comparing the new area report with the previous area report showed in the Figure \ref{fig:area_log2}, observations reported in the Table \ref{table:area_after_const_change} can be made. However, there is no significant change in the area of the design, although the design constraints are modified.
+
+
+
+\begin{table}[h]
+	\captionsetup{font={sc, footnotesize}, labelsep=newline}
+	\centering
+	\caption{Area comparison after changing the design constraints: Cell count and the Total Area}
+	\begin{tabular}{|L{0.4\linewidth}  |C{0.11\linewidth}  | C{0.11\linewidth}  |C{0.11\linewidth}  | C{0.11\linewidth} |} \hline
+		Instance & Cell Count (old)  & Cell Count (new) & Total Area (old) & Total Area (new) \\ \hline
+		{\tt uart\_top} 							 & 1054 & 1128 & 4688.553 & 5117.318\\ \hline
+		{\tt -ins\_uart\_transceiver\_B} 			 &  527 &  564 & 2241.436 & 2468.457\\ \hline
+		{\tt ---ins\_rx\_wrapper} 					 &  277 &  305 & 1282.055 & 1478.561\\ \hline
+		{\tt -----ins\_rx\_buffer} 					 &  166 &  199 &  886.550 & 1079.791\\ \hline
+		{\tt -----ins\_sampling\_tick\_generator} 	 &   56 &   48 &  205.770 &  196.571\\ \hline
+		{\tt -----ins\_rx\_fsm} 					 &   55 &   58 &  181.695 &  194.160\\ \hline
+		{\tt ---ins\_tx\_wrapper} 					 &  250 &  259 &  959.380 &  989.896\\ \hline
+		{\tt -----ins\_tx\_buffer} 					 &  140 &  146 &  544.263 &  559.655\\ \hline
+		{\tt -----ins\_tx\_fsm} 					 &   67 &   66 &  219.377 &  223.690\\ \hline
+		{\tt -----ins\_sampling\_tick\_generator} 	 &   43 &   47 &  175.062 &  186.234\\ \hline		
+	\end{tabular}
+	\label{table:area_after_const_change}
+\end{table}
+
+\pagebreak
 \subsubsection{Timing Violations}
 
 After making the above changes to the constraints of the design, the produced timing report is shown in the Figure \ref{fig:timing_log3}.
@@ -406,7 +444,7 @@ After making the above changes to the constraints of the design, the produced ti
 	\fbox{
 		\includegraphics[width=0.95\linewidth]{figures/timing_log3.PNG}
 	}
-	\caption{Timing log file after changing design constraints}
+	\caption{Timing log file after changing the design constraints}
 	\label{fig:timing_log3}
 \end{figure}
 
