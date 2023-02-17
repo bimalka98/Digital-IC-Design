@@ -2,7 +2,7 @@
 # NOTE: This file must be executed within the /work directory 
 
 ################################################################################
-#	A simple Tcl script,                                                  	   #
+#	A simple Tcl script,                                                   #
 #     to automate the ASIC synthesis flow                                      #
 ################################################################################
 

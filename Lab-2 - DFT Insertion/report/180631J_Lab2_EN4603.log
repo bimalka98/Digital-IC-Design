@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.9)  17 FEB 2023 18:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.9)  17 FEB 2023 19:34
 entering extended mode
-**./180631J_Lab1_EN4603.tex
-(180631J_Lab1_EN4603.tex
+**./180631J_Lab2_EN4603.tex
+(180631J_Lab2_EN4603.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18>
 (C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -365,10 +365,10 @@ Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 )
 \@indexfile=\write3
-\openout3 = `180631J_Lab1_EN4603.idx'.
+\openout3 = `180631J_Lab2_EN4603.idx'.
 
 
-Writing index file 180631J_Lab1_EN4603.idx
+Writing index file 180631J_Lab2_EN4603.idx
 (C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/was\gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
 )
@@ -827,23 +827,511 @@ File: tikzlibraryfadings.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 (C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryfadings.code.tex
 File: pgflibraryfadings.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)))
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.sty
+Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
 
-! I can't write on file `180631J_Lab1_EN4603.pdf'.
-Please type another file name for output
-! Emergency stop.
-\pgfsys@horishading ...e] >> >>}\pgfutil@tempboxa 
-                                                  \xdef \pgfutil@tempa {\hbo...
-l.17 ...t!100); color(100bp)=(pgftransparent!100)}
-                                                  %
-*** (job aborted, file error in nonstop mode)
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.s
+ty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box75
+)
+\tc@llx=\dimen264
+\tc@lly=\dimen265
+\tc@urx=\dimen266
+\tc@ury=\dimen267
+Package trimclip Info: Using driver 'tc-pdftex.def'.
 
- 
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen268
+\adjbox@Height=\dimen269
+\adjbox@Depth=\dimen270
+\adjbox@Totalheight=\dimen271
+\adjbox@pwidth=\dimen272
+\adjbox@pheight=\dimen273
+\adjbox@pdepth=\dimen274
+\adjbox@ptotalheight=\dimen275
+
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count343
+) (C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box76
+\sift@deathcycles=\count344
+\@vwid@loff=\dimen276
+\@vwid@roff=\dimen277
+)) (C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/relsize\relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\l__twmk_indris_int=\count345
+\c@tw@hyphen@char@num=\count346
+) (C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen278
+\captionmargin@=\dimen279
+\captionwidth=\dimen280
+\caption@tempdima=\dimen281
+\caption@indent=\dimen282
+\caption@parindent=\dimen283
+\caption@hangindent=\dimen284
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count347
+\c@continuedfloat=\count348
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
+Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
+)
+Package caption Info: subfigure package is loaded.
+) (C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/pstricks\pstricks.sty
+Package: pstricks 2021/08/23 v0.71 LaTeX wrapper for `PSTricks' (RN,HV)
+
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\pst-xkey.tex
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+)
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks.tex
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pst-fp.tex
+`pst-fp' v0.06, 2020/11/20 (hv)
+\pstFP@xs=\count349
+\pstFP@xia=\count350
+\pstFP@xib=\count351
+\pstFP@xfa=\count352
+\pstFP@xfb=\count353
+\pstFP@rega=\count354
+\pstFP@regb=\count355
+\pstFP@regs=\count356
+\pstFP@times=\count357
+)
+\psLoopIndex=\count358
+
+`PSTricks' v3.11  <2021/09/27> (tvz,hv)
+\pst@dima=\dimen285
+\pst@dimb=\dimen286
+\pst@dimc=\dimen287
+\pst@dimd=\dimen288
+\pst@dimg=\dimen289
+\pst@dimh=\dimen290
+\pst@dimm=\dimen291
+\pst@dimn=\dimen292
+\pst@dimo=\dimen293
+\pst@dimp=\dimen294
+\pst@hbox=\box77
+\pst@ibox=\box78
+\pst@boxg=\box79
+\pst@cnta=\count359
+\pst@cntb=\count360
+\pst@cntc=\count361
+\pst@cntd=\count362
+\pst@cntg=\count363
+\pst@cnth=\count364
+\pst@cntm=\count365
+\pst@cntn=\count366
+\pst@cnto=\count367
+\pst@cntp=\count368
+\@zero=\count369
+\pst@toks=\toks41
+--- We are running latex or xelatex ---
+
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks.con
+)
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks-col
+or.tex)
+\psunit=\dimen295
+\psxunit=\dimen296
+\psyunit=\dimen297
+\pst@C@@rType=\count370
+\pslinewidth=\dimen298
+\psk@startLW=\dimen299
+\psk@endLW=\dimen300
+
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks-arr
+ows.tex
+\pshooklength=\dimen301
+\pshookwidth=\dimen302
+)
+\pst@customdefs=\toks42
+
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks-dot
+s.tex)
+\pslinearc=\dimen303
+\pst@symbolStep=\dimen304
+\pst@symbolWidth=\dimen305
+\pst@symbolLinewidth=\dimen306
+\everypsbox=\toks43
+\psframesep=\dimen307
+\pslabelsep=\dimen308
+\sh@wgridXunit=\dimen309
+\sh@wgridYunit=\dimen310
+\pst@shift=\dimen311
+
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks.con
+))
+File: pstricks.tex 2021/09/27 v3.11 `PSTricks' (tvz,hv)
+
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pst-fp.tex
+`pst-fp' v0.06, 2020/11/20 (hv))
+File: pst-fp.tex 2020/11/20 v0.06 `PST-fp' (hv)
+)
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/acronym\acronym.sty
+Package: acronym 2020/04/17 v1.47 Support for acronyms (Tobias Oetiker)
+
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/bigfoot\suffix.sty
+Package: suffix 2006/07/15 1.5a Variant command support
+)
+\AC@clearlist=\toks44
+)
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty
+Package: fancyvrb 2021/01/20 v3.7 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count371
+\FV@InFile=\read4
+\FV@TabBox=\box80
+\c@FancyVerbLine=\count372
+\FV@StepNumber=\count373
+\FV@OutFile=\write8
+))
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\tabularx.st
+y
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+ (C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\array.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+\col@sep=\dimen312
+\ar@mcellbox=\box81
+\extrarowheight=\dimen313
+\NC@list=\toks45
+\extratabsurround=\skip70
+\backup@length=\skip71
+\ar@cellbox=\box82
+)
+\TX@col@width=\dimen314
+\TX@old@table=\dimen315
+\TX@old@col=\dimen316
+\TX@target=\dimen317
+\TX@delta=\dimen318
+\TX@cols=\count374
+\TX@ftn=\toks46
+) (settings/page.tex
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count375
+\Gm@cntv=\count376
+\c@Gm@tempcnt=\count377
+\Gm@bindingoffset=\dimen319
+\Gm@wd@mp=\dimen320
+\Gm@odd@mp=\dimen321
+\Gm@even@mp=\dimen322
+\Gm@layoutwidth=\dimen323
+\Gm@layoutheight=\dimen324
+\Gm@layouthoffset=\dimen325
+\Gm@layoutvoffset=\dimen326
+\Gm@dimlist=\toks47
+
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+) (C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip72
+\f@nch@O@elh=\skip73
+\f@nch@O@erh=\skip74
+\f@nch@O@olh=\skip75
+\f@nch@O@orh=\skip76
+\f@nch@O@elf=\skip77
+\f@nch@O@erf=\skip78
+\f@nch@O@olf=\skip79
+\f@nch@O@orf=\skip80
+) (settings/macros.tex
+\c@shellcounter=\count378
+\c@outputcounter=\count379
+) (180631J_Lab2_EN4603.aux)
+\openout1 = `180631J_Lab2_EN4603.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+Package hyperref Info: Link coloring ON on input line 8.
+
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count380
+)
+LaTeX Info: Redefining \ref on input line 8.
+LaTeX Info: Redefining \pageref on input line 8.
+LaTeX Info: Redefining \nameref on input line 8.
+ (180631J_Lab2_EN4603.out) (180631J_Lab2_EN4603.out)
+\@outlinefile=\write9
+\openout9 = `180631J_Lab2_EN4603.out'.
+
+
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count381
+\scratchdimen=\dimen327
+\scratchbox=\box83
+\nofMPsegments=\count382
+\nofMParguments=\count383
+\everyMPshowfont=\toks48
+\MPscratchCnt=\count384
+\MPscratchDim=\dimen328
+\MPnumerator=\count385
+\makeMPintoPDFobject=\count386
+\everyMPtoPDFconversion=\toks49
+)
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+LaTeX Info: Redefining \celsius on input line 8.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 8.
+
+
+Package gensymb Warning: Not defining \perthousand.
+
+LaTeX Info: Redefining \ohm on input line 8.
+Package gensymb Info: Using \Omega for \ohm on input line 8.
+
+Package gensymb Warning: Not defining \micro.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(content/title_page.tex
+<figures/uomlogo.png, id=66, 307.1475pt x 326.21875pt>
+File: figures/uomlogo.png Graphic file (type png)
+<use figures/uomlogo.png>
+Package pdftex.def Info: figures/uomlogo.png  used on input line 10.
+(pdftex.def)             Requested size: 136.57462pt x 145.05489pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 37.
+
+
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 37.
+
+
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+[1
+Non-PDF special ignored!
+<special> header=psfrag.pro
+Non-PDF special ignored!
+<special> header=pstricks.pro
+Non-PDF special ignored!
+<special> header=pst-algparser.pro
+Non-PDF special ignored!
+<special> header=pst-tools.pro
+Non-PDF special ignored!
+<special> header=pst-dots.pro
+
+Non-PDF special ignored!
+<special> ps: /pssetRGBcolor /setrgbcolor load def /pssetCMYKcolor /setcmyk...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
+Non-PDF special ignored!
+<special> ps:0.8 setlinewidth 0 setgray
+{C:/Users/bimal/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./figures/uomlo
+go.png>]) (180631J_Lab2_EN4603.toc)
+\tf@toc=\write10
+\openout10 = `180631J_Lab2_EN4603.toc'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.19 \listoffigures
+                    [1] (180631J_Lab2_EN4603.lof
+Package acronym Info: Label `acro:uart' newly defined as it shall be overridden
+
+although it is yet undefined on input line 1.
+Package acronym Info: Label `acro:dft' newly defined as it shall be overridden
+although it is yet undefined on input line 2.
+)
+\tf@lof=\write11
+\openout11 = `180631J_Lab2_EN4603.lof'.
+
+ (180631J_Lab2_EN4603.lot)
+\tf@lot=\write12
+\openout12 = `180631J_Lab2_EN4603.lot'.
+
+
+(content/abbreviations.tex
+
+LaTeX Warning: Hyper reference `acro:hdl' on page 2 undefined on input line 12.
+
+
+
+LaTeX Warning: Hyper reference `acro:hdl' on page 2 undefined on input line 12.
+
+
+
+LaTeX Warning: Hyper reference `acro:rx' on page 2 undefined on input line 15.
+
+
+LaTeX Warning: Hyper reference `acro:rx' on page 2 undefined on input line 15.
+
+
+LaTeX Warning: Hyper reference `acro:tx' on page 2 undefined on input line 18.
+
+
+LaTeX Warning: Hyper reference `acro:tx' on page 2 undefined on input line 18.
+
+) [2]
+Package acronym Info: Label `acro:rtl' newly defined as it shall be overridden
+although it is yet undefined on input line 29.
+Package acronym Info: Label `acro:gpdk' newly defined as it shall be overridden
+
+although it is yet undefined on input line 33.
+Package acronym Info: Label `acro:def' newly defined as it shall be overridden
+although it is yet undefined on input line 46.
+Package acronym Info: Label `acro:atpg' newly defined as it shall be overridden
+
+although it is yet undefined on input line 46.
+<figures/bw1.png, id=150, 1124.70187pt x 433.62pt>
+File: figures/bw1.png Graphic file (type png)
+<use figures/bw1.png>
+Package pdftex.def Info: figures/bw1.png  used on input line 52.
+(pdftex.def)             Requested size: 432.48051pt x 166.7358pt.
+ [3 <./figures/bw1.png (PNG copy)>]
+Package acronym Info: Label `acro:asic' newly defined as it shall be overridden
+
+although it is yet undefined on input line 60.
+<figures/dftinsertion.png, id=168, 394.47375pt x 530.58224pt>
+File: figures/dftinsertion.png Graphic file (type png)
+<use figures/dftinsertion.png>
+Package pdftex.def Info: figures/dftinsertion.png  used on input line 67.
+(pdftex.def)             Requested size: 364.19667pt x 489.85794pt.
+ [4 <./figures/dftinsertion.png>]
+Package acronym Info: Label `acro:tcl' newly defined as it shall be overridden
+although it is yet undefined on input line 75.
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+
+ []
+
+[5] [6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
+
+ []
+
+(180631J_Lab2_EN4603.bbl
+
+Package natbib Warning: Empty `thebibliography' environment on input line 24.
+
+) [8] (180631J_Lab2_EN4603.aux)
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `180631J_Lab2_EN4603.out' has not changed.
+(rerunfilecheck)             Checksum: DE5C19B5B527BC7DB04EA06622F4AE47;1106.
+ ) 
 Here is how much of TeX's memory you used:
- 23160 strings out of 479321
- 434339 string characters out of 2856584
- 710910 words of memory out of 3000000
- 40218 multiletter control sequences out of 15000+600000
- 403730 words of font info for 28 fonts, out of 8000000 for 9000
+ 29557 strings out of 479321
+ 542792 string characters out of 2856584
+ 864628 words of memory out of 3000000
+ 46383 multiletter control sequences out of 15000+600000
+ 411584 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 92i,1n,100p,482b,141s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 92i,8n,120p,677b,563s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Users\bimal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1095.pk><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmbx12.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/bimal/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Users/bimal/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/bimal/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/bimal
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Use
+rs/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb>
+<C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+ti10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmtt10.pfb>
+Output written on 180631J_Lab2_EN4603.pdf (9 pages, 325177 bytes).
+PDF statistics:
+ 245 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
+ 196 words of extra memory for PDF output out of 10000 (max. 10000000)
+
