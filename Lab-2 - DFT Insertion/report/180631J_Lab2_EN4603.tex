@@ -236,11 +236,70 @@ write_dft_atpg -library
 	\label{fig:final_top_level}
 \end{figure}
 
+By comparing the Figures \ref{fig:init_top_level} and \ref{fig:final_top_level}, it can be observed that, additional ports have been created to facilitate the Scan Test. Those are {\tt scan\_in\_a}, {\tt scan\_in\_b}, {\tt SE}, {\tt scan\_out\_a} and {\tt scan\_out\_b}. In total there are two scan chains in the design, each having 82 registers in a chain.
+
 \pagebreak
 \section{Exercise}
-This section documents the observations made in step 4 and 5 of the practical guide, with screenshots and explanations.\\
+This section documents the answers to the questions at the end of the practical guide, with screenshots and explanations.\\
+
+\subsection{Comments on the Area}
+
+The {\tt area.log} files in the {\tt report} directories, provide a breakdown of the area usage by design hierarchy and by instance, which can be helpful in identifying specific modules that are contributing to the overall area of the design. Specifically it provides the below information\cite{genus_command_ref_2019}. Figures \ref{fig:area_lab1} and \ref{fig:area_after_scan_synthesis} illustrates the log files, before and after the scan synthesis process respectively.
+
+\begin{enumerate}[i.]
+	\item \textbf{{Cell Count}} : The total count of cells mapped against the hierarchical blocks in the current design.
+	
+	\item \textbf{{Cell Area}} : The combined cell area in each of the blocks and the top level design (hierarchical breakup)
+	
+	\item \textbf{{Net Area}} : The estimated post-route net area, which is based on the minimum wire widths defined in the LEF and capacitance table files and the area of the design blocks.
+	
+	\item \textbf{{Total Area}} : Simply combines the `Cell Area' and the `Net Area'
+\end{enumerate}
+
+\begin{figure}[h]
+	\centering
+	\fbox{
+		\includegraphics[width=0.8\linewidth]{figures/familiarization/area_lab1}
+	}
+	\caption{Ports of the \ac{uart} design, before scan synthesis (Lab 1)}
+	\label{fig:area_lab1}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\fbox{
+		\includegraphics[width=0.8\linewidth]{figures/familiarization/area_after_scan_synthesis}
+	}
+	\caption{Ports of the \ac{uart} design, after scan synthesis}
+	\label{fig:area_after_scan_synthesis}
+\end{figure}
+
+\pagebreak
+\subsection{Comments on the Ports}
 
 
+
+The {\tt ports.log} files in the {\tt report} directories carry the details related to the ports of the current design. By default, the report gives information on port direction, external delays, exception objects and their types, driver, slew, fanout load, pin capacitance and wire capacitance for the ports\cite{genus_command_ref_2019}. Figures \ref{fig:ports_lab1} and \ref{fig:ports_after_scan_synthesis} illustrates a part of the `External Delays \& Exceptions' section of the ports log files, before and after the scan synthesis process respectively.
+
+\begin{figure}[h]
+	\centering
+	\fbox{
+		\includegraphics[width=0.8\linewidth]{figures/familiarization/ports_lab1}
+	}
+	\caption{Ports of the \ac{uart} design, before scan synthesis (Lab 1)}
+	\label{fig:ports_lab1}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\fbox{
+		\includegraphics[width=0.8\linewidth]{figures/familiarization/ports_after_scan_synthesis}
+	}
+	\caption{Ports of the \ac{uart} design, after scan synthesis}
+	\label{fig:ports_after_scan_synthesis}
+\end{figure}
+
+\pagebreak
 \vfill
 \hrule
 {\small
