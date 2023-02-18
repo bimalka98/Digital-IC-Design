@@ -48,7 +48,7 @@ and will obtain the Scan-test compatible netlist (Verilog files), timing constra
 \begin{figure}[h]
 	\centering
 	\fbox{
-		\includegraphics[width=0.95\linewidth]{figures/bw1.png}
+		\includegraphics[width=0.95\linewidth]{figures/familiarization/init_top_level}
 	}
 	\caption{Top level diagram of the \ac{uart} design}
 	\label{fig:top_level}
@@ -74,8 +74,8 @@ In the context of \ac{asic} design, \ac{dft} refers to the process of inserting 
 
 \textbf{Note}: \textit{Genus is a \ac{tcl} based tool and therefore {\tt .tcl} scripts can be created to execute a series of commands instead of typing each command individually. The entire interface of Genus is accessible through \ac{tcl}, and true \ac{tcl} syntax and semantics are supported.}\\
 
-Followings are the commands used in this lab, and the entire script could be executed once using a single {\tt .tcl} file. However, it was encouraged to execute the commands one-by-one in order to understand the process of synthesizing an \ac{rtl} design.
-\vspace{2cm}
+Followings are the commands used in this lab, and the entire script could be executed once using a single {\tt .tcl} file. However, it was encouraged to execute the commands one-by-one in order to understand the process of \ac{dft} insertion to an \ac{rtl} design.
+
 \begin{Verbatim}[frame=single]
 # 1. Link Technology Library
 source ../scripts/setup.tcl
@@ -91,12 +91,11 @@ uniquify uart_top
 
 # 5. Set timing constraints
 source ../input/constraints.tcl
+\end{Verbatim}
 
-# Now that we have set the target libraries, 
-# read the design files and set the design constrains,  
-# we may now proceed to the DFT insertion steps.
-# **************************************************************** 
-
+Now that we have set the target libraries, read the design files and set the design constrains as done in the Laboratory Experiment 1. We can now proceed to the \ac{dft} insertion steps.
+ 
+\begin{Verbatim}[frame=single]
 # 7. Set the DFT scan style in order to configure the DFT rule checker
 set_db dft_scan_style muxed_scan
 
@@ -108,19 +107,29 @@ define_shift_enable -name SE -active high -create_port SE
 
 # 10. Run DFT rule checker
 check_dft_rules
+\end{Verbatim}
 
-# If all steps have been followed correctly up until this point, 
-# we should not see any DFT  violations
-# ****************************************************************
+If all steps have been followed correctly up until this point, 
+we should not see any \ac{dft}  violations, and Genus should generate an output similar to that of Figure \ref{fig:check_dft_rules}. The \ac{dft} rule checker checks all flip-flops to determine if clock pins to the flip-flops can be controlled and if asynchronous set/reset pins (if available) to the flip-flops can be held to their non-controlling value during scan-shift mode. It is essential that there are no \ac{dft} violations at this step as any flip-flops with \ac{dft} violations will not be affected by \ac{dft} insertion commands which will be executed in the subsequent steps.
 
-# 11. Synthesize the design into the generic logic netlist,
-# and then map to the technology library
+\begin{figure}[H]
+	\centering
+	\fbox{
+		\includegraphics[width=0.9\linewidth]{figures/familiarization/check_dft_rules}
+	}
+	\caption{Genus log for the {\tt check\_dft\_rules} command}
+	\label{fig:check_dft_rules}
+\end{figure}
 
-# Synthesize to generic logic with medium effort
+
+Now the design is synthesized into the generic logic netlist, and then mapped to the technology library.
+
+\begin{Verbatim}[frame=single]
+# 11.1 Synthesize to generic logic with medium effort
 set_db syn_generic_effort medium
 syn_generic
 
-# Map to technology library and re-synthesize with medium effort
+# 11.2 Map to technology library and re-synthesize with medium effort
 set_db syn_map_effort medium
 syn_map
 
@@ -132,19 +141,37 @@ report_area > ../report/after_scan_synthesis/area.log
 report_timing -nworst 10 > ../report/after_scan_synthesis/timing.log
 report_port * > ../report/after_scan_synthesis/ports.log
 report_power > ../report/after_scan_synthesis/power.log
+\end{Verbatim}
+\pagebreak
+Then the Scan Configuration and Scan Stitching is done using the below commands. The genus log of those commands are shown in the Figure \ref{fig:scan_setup_config}.
 
+\begin{Verbatim}[frame=single]
 # 14. Set scan configuration 
 define_scan_chain -name top_chain_a -sdi scan_in_a -sdo scan_out_a
     -non_shared_output -create_ports -domain clk_a
 define_scan_chain -name top_chain_b -sdi scan_in_b -sdo scan_out_b
     -non_shared_output -create_ports -domain clk_b
-
+    
 # 15. Preview the scan chains/Scan Stitching
 connect_scan_chains -preview -auto_create_chains
 
 # 16. Preview the scan chains/Scan Stitching
 connect_scan_chains -auto_create_chains
+\end{Verbatim}
 
+\begin{figure}[H]
+	\centering
+	\fbox{
+		\includegraphics[width=0.95\linewidth]{figures/familiarization/scan_setup_config}
+	}
+	\caption{Genus log for the scan configuration and scan stitching  commands}
+	\label{fig:scan_setup_config}
+\end{figure}
+
+
+After scan chain connecting, incremental synthesis is performed to generate th netlist of the scan connected design. Then \ac{dft} rules are checked again to identify any potential violations. The Genus log of that is shown in the Figure \ref{fig:check_dft_rules2}.
+ 
+\begin{Verbatim}[frame=single]
 # 17. Perform incremental synthesis to generate the netlist
 # of the scan connected design
 syn_opt -incr
@@ -152,6 +179,20 @@ syn_opt -incr
 # 18. Perform DFT rule check after scan connecting
 check_dft_rules
 
+\end{Verbatim}
+
+\begin{figure}[H]
+	\centering
+	\fbox{
+		\includegraphics[width=0.7\linewidth]{figures/familiarization/check_dft_rules2}
+	}
+	\caption{Genus log for the {\tt check\_dft\_rules} command after scan chain connecting}
+	\label{fig:check_dft_rules2}
+\end{figure}
+
+Once the above mentioned steps are completed, the below commands are used to finalize the \ac{dft} insertion process. They generate the Scan-test compatible netlist (Verilog files), further timing constrains (.sdc file), scan\ac{def} file and a set of files to be used as inputs to Cadence Modus for \ac{atpg} as output.
+
+\begin{Verbatim}[frame=single]
 # 19. Report scan setup and scan chain information
 report_scan_setup > ../report/scan_setup.log
 report_scan_chains > ../report/scan_chains.log
@@ -173,6 +214,27 @@ report_power > ../report/after_scan_connect/power.log
 write_dft_atpg -library
     ../input/libs/gsclib045/timing/slow_vdd1v0_basicCells.lib
 \end{Verbatim}
+
+\pagebreak
+\subsection{Top Level Design before and after \ac{dft} Insertion}
+
+\begin{figure}[h]
+	\centering
+	\fbox{
+		\includegraphics[width=0.95\linewidth]{figures/familiarization/init_top_level}
+	}
+	\caption{Initial top level diagram of the \ac{uart} design,  before \ac{dft} insertion}
+	\label{fig:init_top_level}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\fbox{
+		\includegraphics[width=0.95\linewidth]{figures/familiarization/final_top_level}
+	}
+	\caption{Final top level diagram of the \ac{uart} design, after \ac{dft} insertion}
+	\label{fig:final_top_level}
+\end{figure}
 
 \pagebreak
 \section{Exercise}

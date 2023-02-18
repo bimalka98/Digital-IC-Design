@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.9)  17 FEB 2023 19:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.9)  18 FEB 2023 11:16
 entering extended mode
 **./180631J_Lab2_EN4603.tex
 (180631J_Lab2_EN4603.tex
@@ -1176,7 +1176,7 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (content/title_page.tex
-<figures/uomlogo.png, id=66, 307.1475pt x 326.21875pt>
+<figures/uomlogo.png, id=70, 307.1475pt x 326.21875pt>
 File: figures/uomlogo.png Graphic file (type png)
 <use figures/uomlogo.png>
 Package pdftex.def Info: figures/uomlogo.png  used on input line 10.
@@ -1214,7 +1214,10 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 <special> ps:0.8 setlinewidth 0 setgray
 {C:/Users/bimal/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./figures/uomlo
-go.png>]) (180631J_Lab2_EN4603.toc)
+go.png>]) (180631J_Lab2_EN4603.toc
+Package acronym Info: Label `acro:dft' newly defined as it shall be overridden
+although it is yet undefined on input line 8.
+)
 \tf@toc=\write10
 \openout10 = `180631J_Lab2_EN4603.toc'.
 
@@ -1227,8 +1230,6 @@ l.19 \listoffigures
 Package acronym Info: Label `acro:uart' newly defined as it shall be overridden
 
 although it is yet undefined on input line 1.
-Package acronym Info: Label `acro:dft' newly defined as it shall be overridden
-although it is yet undefined on input line 2.
 )
 \tf@lof=\write11
 \openout11 = `180631J_Lab2_EN4603.lof'.
@@ -1270,16 +1271,17 @@ although it is yet undefined on input line 46.
 Package acronym Info: Label `acro:atpg' newly defined as it shall be overridden
 
 although it is yet undefined on input line 46.
-<figures/bw1.png, id=150, 1124.70187pt x 433.62pt>
-File: figures/bw1.png Graphic file (type png)
-<use figures/bw1.png>
-Package pdftex.def Info: figures/bw1.png  used on input line 52.
+<figures/familiarization/init_top_level.png, id=170, 1124.70187pt x 433.62pt>
+File: figures/familiarization/init_top_level.png Graphic file (type png)
+<use figures/familiarization/init_top_level.png>
+Package pdftex.def Info: figures/familiarization/init_top_level.png  used on in
+put line 52.
 (pdftex.def)             Requested size: 432.48051pt x 166.7358pt.
- [3 <./figures/bw1.png (PNG copy)>]
+ [3 <./figures/familiarization/init_top_level.png (PNG copy)>]
 Package acronym Info: Label `acro:asic' newly defined as it shall be overridden
 
 although it is yet undefined on input line 60.
-<figures/dftinsertion.png, id=168, 394.47375pt x 530.58224pt>
+<figures/dftinsertion.png, id=187, 394.47375pt x 530.58224pt>
 File: figures/dftinsertion.png Graphic file (type png)
 <use figures/dftinsertion.png>
 Package pdftex.def Info: figures/dftinsertion.png  used on input line 67.
@@ -1292,8 +1294,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
-[5] [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 179--180
+<figures/familiarization/check_dft_rules.png, id=206, 601.64775pt x 423.984pt>
+File: figures/familiarization/check_dft_rules.png Graphic file (type png)
+<use figures/familiarization/check_dft_rules.png>
+Package pdftex.def Info: figures/familiarization/check_dft_rules.png  used on i
+nput line 119.
+(pdftex.def)             Requested size: 409.71692pt x 288.73874pt.
+[5] [6 <./figures/familiarization/check_dft_rules.png>]
+<figures/familiarization/scan_setup_config.png, id=219, 808.2195pt x 358.941pt>
+
+File: figures/familiarization/scan_setup_config.png Graphic file (type png)
+<use figures/familiarization/scan_setup_config.png>
+Package pdftex.def Info: figures/familiarization/scan_setup_config.png  used on
+ input line 166.
+(pdftex.def)             Requested size: 432.48051pt x 192.0726pt.
+<figures/familiarization/check_dft_rules2.png, id=222, 460.119pt x 423.38174pt>
+
+File: figures/familiarization/check_dft_rules2.png Graphic file (type png)
+<use figures/familiarization/check_dft_rules2.png>
+Package pdftex.def Info: figures/familiarization/check_dft_rules2.png  used on 
+input line 188.
+(pdftex.def)             Requested size: 318.66948pt x 293.23842pt.
+ [7 <./figures/familiarization/scan_setup_config.png>] [8 <./figures/familiariz
+ation/check_dft_rules2.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ac' on input line 219.
+
+File: figures/familiarization/init_top_level.png Graphic file (type png)
+<use figures/familiarization/init_top_level.png>
+Package pdftex.def Info: figures/familiarization/init_top_level.png  used on in
+put line 225.
+(pdftex.def)             Requested size: 432.48051pt x 166.7358pt.
+<figures/familiarization/final_top_level.png, id=241, 1421.31pt x 629.35126pt>
+File: figures/familiarization/final_top_level.png Graphic file (type png)
+<use figures/familiarization/final_top_level.png>
+Package pdftex.def Info: figures/familiarization/final_top_level.png  used on i
+nput line 234.
+(pdftex.def)             Requested size: 432.48051pt x 191.4957pt.
+[9 <./figures/familiarization/final_top_level.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
@@ -1301,21 +1341,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
 Package natbib Warning: Empty `thebibliography' environment on input line 24.
 
-) [8] (180631J_Lab2_EN4603.aux)
+) [10] (180631J_Lab2_EN4603.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `180631J_Lab2_EN4603.out' has not changed.
-(rerunfilecheck)             Checksum: DE5C19B5B527BC7DB04EA06622F4AE47;1106.
+(rerunfilecheck)             Checksum: 7D092230E717A449161D04B73233393E;1420.
  ) 
 Here is how much of TeX's memory you used:
- 29557 strings out of 479321
- 542792 string characters out of 2856584
- 864628 words of memory out of 3000000
- 46383 multiletter control sequences out of 15000+600000
- 411584 words of font info for 57 fonts, out of 8000000 for 9000
+ 29611 strings out of 479321
+ 544695 string characters out of 2856584
+ 866116 words of memory out of 3000000
+ 46423 multiletter control sequences out of 15000+600000
+ 411751 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 92i,8n,120p,677b,563s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 92i,8n,120p,677b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\bimal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -1328,10 +1368,11 @@ ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/bimal/AppData
 rs/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb>
 <C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
 ti10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmtt10.pfb>
-Output written on 180631J_Lab2_EN4603.pdf (9 pages, 325177 bytes).
+nts/cm/cmtt10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmtt9.pfb>
+Output written on 180631J_Lab2_EN4603.pdf (11 pages, 460572 bytes).
 PDF statistics:
- 245 PDF objects out of 1000 (max. 8388607)
- 43 named destinations out of 1000 (max. 500000)
- 196 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 308 PDF objects out of 1000 (max. 8388607)
+ 51 named destinations out of 1000 (max. 500000)
+ 224 words of extra memory for PDF output out of 10000 (max. 10000000)
 
