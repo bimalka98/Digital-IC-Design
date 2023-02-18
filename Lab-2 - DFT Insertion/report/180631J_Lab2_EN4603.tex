@@ -240,11 +240,11 @@ By comparing the Figures \ref{fig:init_top_level} and \ref{fig:final_top_level},
 
 \pagebreak
 \section{Exercise}
-This section documents the answers to the questions at the end of the practical guide, with screenshots and explanations.\\
+This section documents the answers to the questions at the end of the practical guide, with screenshots and explanations.
 
 \subsection{Comments on the Area}
 
-The {\tt area.log} files in the {\tt report} directories, provide a breakdown of the area usage by design hierarchy and by instance, which can be helpful in identifying specific modules that are contributing to the overall area of the design. Specifically it provides the below information\cite{genus_command_ref_2019}. Figures \ref{fig:area_lab1} and \ref{fig:area_after_scan_synthesis} illustrates the log files, before and after the scan synthesis process respectively.
+The {\tt area.log} files in the {\tt report} directories, provide a breakdown of the area usage by design hierarchy and by instance, which can be helpful in identifying specific modules that are contributing to the overall area of the design. Specifically it provides the below information\cite{genus_command_ref_2019}. 
 
 \begin{enumerate}[i.]
 	\item \textbf{{Cell Count}} : The total count of cells mapped against the hierarchical blocks in the current design.
@@ -256,23 +256,60 @@ The {\tt area.log} files in the {\tt report} directories, provide a breakdown of
 	\item \textbf{{Total Area}} : Simply combines the `Cell Area' and the `Net Area'
 \end{enumerate}
 
+
+Figures \ref{fig:area_lab1} and \ref{fig:area_after_scan_synthesis} illustrates the log files, before and after the scan synthesis process respectively.
+
+
 \begin{figure}[h]
 	\centering
 	\fbox{
-		\includegraphics[width=0.8\linewidth]{figures/familiarization/area_lab1}
+		\includegraphics[width=0.9\linewidth]{figures/familiarization/area_lab1}
 	}
-	\caption{Ports of the \ac{uart} design, before scan synthesis (Lab 1)}
+	\caption{Area of the \ac{uart} design, before scan synthesis (Lab 1)}
 	\label{fig:area_lab1}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
 	\fbox{
-		\includegraphics[width=0.8\linewidth]{figures/familiarization/area_after_scan_synthesis}
+		\includegraphics[width=0.9\linewidth]{figures/familiarization/area_after_scan_synthesis}
 	}
-	\caption{Ports of the \ac{uart} design, after scan synthesis}
+	\caption{Area of the \ac{uart} design, after scan synthesis}
 	\label{fig:area_after_scan_synthesis}
 \end{figure}
+
+By comparing the area details shown in the Figures \ref{fig:area_lab1} and \ref{fig:area_after_scan_synthesis}, it can be concluded that after scan synthesis, the area of the design has increased. A summary of area comparison is given in the Table \ref{table:area_comparison}. 
+
+
+\begin{table}[h]
+	\captionsetup{font={sc, footnotesize}, labelsep=newline}
+	\centering
+	\caption{Area comparison of the design before and after scan synthesis}
+	\begin{tabular}{|L{0.2\linewidth}  |C{0.12\linewidth}  | C{0.12\linewidth} | C{0.12\linewidth} | C{0.12\linewidth} |} \hline
+		Design & Cell Count & Cell Area & Net Area & Total Area \\ \hline
+		Before Scan Synthesis (Lab 1) & 772 & 2220.948& 946.493&3167.441\\ \hline
+		After Scan Synthesis & 764 & 2570.472&987.659&3558.131\\ \hline
+
+	\end{tabular}
+	\label{table:area_comparison}
+\end{table}
+
+
+The reason behind this area increment is the additional logic that is introduced by the Scannable Flip-Flops. they introduce additional multiplexer to each generic D-Flip-Flop. The structure of such Flip-Flop is shown in the Figure \ref{fig:sff}.
+
+\begin{figure}[h]
+	\centering
+	\fbox{
+	\subfigure[Logical structure of a Scannable Flip-Flops]
+	{ \includegraphics[scale=0.3]{figures/familiarization/sff}
+	}\hfill
+	\subfigure[Schematic view of a Scannable Flip-Flops]
+	{ \includegraphics[scale=0.8]{figures/familiarization/sff_schematic}
+	}}
+	\caption{Logical and schematic view of a Scannable flip-flop}
+	\label{fig:sff}
+\end{figure}
+
 
 \pagebreak
 \subsection{Comments on the Ports}
@@ -298,6 +335,8 @@ The {\tt ports.log} files in the {\tt report} directories carry the details rela
 	\caption{Ports of the \ac{uart} design, after scan synthesis}
 	\label{fig:ports_after_scan_synthesis}
 \end{figure}
+
+It can be observed that after the scan synthesis, number of ports has been increased by one, due to the addition of the {\tt Scan Enable (SE)} port. Before the scan synthesis number of ports was 48, and after the scan synthesis it is 49. In addition to that there is no other change to the ports.
 
 \pagebreak
 \vfill

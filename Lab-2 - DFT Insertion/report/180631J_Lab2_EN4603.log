@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.9)  18 FEB 2023 12:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.9)  18 FEB 2023 17:31
 entering extended mode
 **./180631J_Lab2_EN4603.tex
 (180631J_Lab2_EN4603.tex
@@ -1071,7 +1071,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.134 ...and\NAT@force@numbers{}\NAT@force@numbers
+l.140 ...and\NAT@force@numbers{}\NAT@force@numbers
                                                   
 Check the bibliography entries for non-compliant syntax,
 or select author-year BibTeX style, e.g. plainnat
@@ -1286,7 +1286,7 @@ although it is yet undefined on input line 46.
 Package acronym Info: Label `acro:atpg' newly defined as it shall be overridden
 
 although it is yet undefined on input line 46.
-<figures/familiarization/init_top_level.png, id=192, 1124.70187pt x 433.62pt>
+<figures/familiarization/init_top_level.png, id=196, 1124.70187pt x 433.62pt>
 File: figures/familiarization/init_top_level.png Graphic file (type png)
 <use figures/familiarization/init_top_level.png>
 Package pdftex.def Info: figures/familiarization/init_top_level.png  used on in
@@ -1296,7 +1296,7 @@ put line 52.
 Package acronym Info: Label `acro:asic' newly defined as it shall be overridden
 
 although it is yet undefined on input line 60.
-<figures/dftinsertion.png, id=209, 394.47375pt x 530.58224pt>
+<figures/dftinsertion.png, id=213, 394.47375pt x 530.58224pt>
 File: figures/dftinsertion.png Graphic file (type png)
 <use figures/dftinsertion.png>
 Package pdftex.def Info: figures/dftinsertion.png  used on input line 67.
@@ -1309,21 +1309,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
-<figures/familiarization/check_dft_rules.png, id=228, 601.64775pt x 423.984pt>
+<figures/familiarization/check_dft_rules.png, id=232, 601.64775pt x 423.984pt>
 File: figures/familiarization/check_dft_rules.png Graphic file (type png)
 <use figures/familiarization/check_dft_rules.png>
 Package pdftex.def Info: figures/familiarization/check_dft_rules.png  used on i
 nput line 119.
 (pdftex.def)             Requested size: 409.71692pt x 288.73874pt.
 [5] [6 <./figures/familiarization/check_dft_rules.png>]
-<figures/familiarization/scan_setup_config.png, id=241, 808.2195pt x 358.941pt>
+<figures/familiarization/scan_setup_config.png, id=245, 808.2195pt x 358.941pt>
 
 File: figures/familiarization/scan_setup_config.png Graphic file (type png)
 <use figures/familiarization/scan_setup_config.png>
 Package pdftex.def Info: figures/familiarization/scan_setup_config.png  used on
  input line 166.
 (pdftex.def)             Requested size: 432.48051pt x 192.0726pt.
-<figures/familiarization/check_dft_rules2.png, id=244, 460.119pt x 423.38174pt>
+<figures/familiarization/check_dft_rules2.png, id=248, 460.119pt x 423.38174pt>
 
 File: figures/familiarization/check_dft_rules2.png Graphic file (type png)
 <use figures/familiarization/check_dft_rules2.png>
@@ -1341,81 +1341,96 @@ File: figures/familiarization/init_top_level.png Graphic file (type png)
 Package pdftex.def Info: figures/familiarization/init_top_level.png  used on in
 put line 225.
 (pdftex.def)             Requested size: 432.48051pt x 166.7358pt.
-<figures/familiarization/final_top_level.png, id=263, 1421.31pt x 629.35126pt>
+<figures/familiarization/final_top_level.png, id=267, 1421.31pt x 629.35126pt>
 File: figures/familiarization/final_top_level.png Graphic file (type png)
 <use figures/familiarization/final_top_level.png>
 Package pdftex.def Info: figures/familiarization/final_top_level.png  used on i
 nput line 234.
 (pdftex.def)             Requested size: 432.48051pt x 191.4957pt.
 [9 <./figures/familiarization/final_top_level.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
-
- []
-
-<figures/familiarization/area_lab1.png, id=278, 789.54974pt x 281.853pt>
+<figures/familiarization/area_lab1.png, id=282, 789.54974pt x 281.853pt>
 File: figures/familiarization/area_lab1.png Graphic file (type png)
 <use figures/familiarization/area_lab1.png>
 Package pdftex.def Info: figures/familiarization/area_lab1.png  used on input l
-ine 263.
-(pdftex.def)             Requested size: 364.19667pt x 130.01091pt.
-<figures/familiarization/area_after_scan_synthesis.png, id=281, 789.54974pt x 2
+ine 267.
+(pdftex.def)             Requested size: 409.71692pt x 146.26335pt.
+<figures/familiarization/area_after_scan_synthesis.png, id=285, 789.54974pt x 2
 83.65974pt>
 File: figures/familiarization/area_after_scan_synthesis.png Graphic file (type 
 png)
 <use figures/familiarization/area_after_scan_synthesis.png>
 Package pdftex.def Info: figures/familiarization/area_after_scan_synthesis.png 
- used on input line 272.
-(pdftex.def)             Requested size: 364.19667pt x 130.8443pt.
+ used on input line 276.
+(pdftex.def)             Requested size: 409.71692pt x 147.20093pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [10 <./figures/familiarization/area_lab1.png> <./figures/familiarization/area_a
 fter_scan_synthesis.png>]
-<figures/familiarization/ports_lab1.png, id=298, 663.6795pt x 358.33875pt>
+<figures/familiarization/sff.jpg, id=303, 717.68124pt x 560.0925pt>
+File: figures/familiarization/sff.jpg Graphic file (type jpg)
+<use figures/familiarization/sff.jpg>
+Package pdftex.def Info: figures/familiarization/sff.jpg  used on input line 30
+8.
+(pdftex.def)             Requested size: 215.30603pt x 168.02904pt.
+<figures/familiarization/sff_schematic.png, id=304, 246.9225pt x 181.42781pt>
+File: figures/familiarization/sff_schematic.png Graphic file (type png)
+<use figures/familiarization/sff_schematic.png>
+Package pdftex.def Info: figures/familiarization/sff_schematic.png  used on inp
+ut line 308.
+(pdftex.def)             Requested size: 197.53824pt x 145.14244pt.
+ [11 <./figures/familiarization/sff.jpg> <./figures/familiarization/sff_schemat
+ic.png>]
+<figures/familiarization/ports_lab1.png, id=316, 663.6795pt x 358.33875pt>
 File: figures/familiarization/ports_lab1.png Graphic file (type png)
 <use figures/familiarization/ports_lab1.png>
 Package pdftex.def Info: figures/familiarization/ports_lab1.png  used on input 
-line 288.
+line 325.
 (pdftex.def)             Requested size: 364.19667pt x 196.64403pt.
-<figures/familiarization/ports_after_scan_synthesis.png, id=301, 663.6795pt x 3
+<figures/familiarization/ports_after_scan_synthesis.png, id=319, 663.6795pt x 3
 73.395pt>
 File: figures/familiarization/ports_after_scan_synthesis.png Graphic file (type
  png)
 <use figures/familiarization/ports_after_scan_synthesis.png>
 Package pdftex.def Info: figures/familiarization/ports_after_scan_synthesis.png
-  used on input line 297.
+  used on input line 334.
 (pdftex.def)             Requested size: 364.19667pt x 204.90639pt.
- [11 <./figures/familiarization/ports_lab1.png> <./figures/familiarization/port
-s_after_scan_synthesis.png>] (180631J_Lab2_EN4603.bbl) [12] (180631J_Lab2_EN460
-3.aux)
+ [12 <./figures/familiarization/ports_lab1.png> <./figures/familiarization/port
+s_after_scan_synthesis.png>]
+(180631J_Lab2_EN4603.bbl) [13] (180631J_Lab2_EN4603.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `180631J_Lab2_EN4603.out' has not changed.
-(rerunfilecheck)             Checksum: 61A49A314822EA9833F3332D9A8116EA;1759.
+(rerunfilecheck)             Checksum: 959A643A40F2B19D473E390CF56A9D38;1759.
  ) 
 Here is how much of TeX's memory you used:
- 29666 strings out of 479321
- 546507 string characters out of 2856584
- 868482 words of memory out of 3000000
- 46461 multiletter control sequences out of 15000+600000
- 412097 words of font info for 59 fonts, out of 8000000 for 9000
+ 29698 strings out of 479321
+ 547293 string characters out of 2856584
+ 868658 words of memory out of 3000000
+ 46484 multiletter control sequences out of 15000+600000
+ 412699 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 92i,8n,120p,677b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 92i,10n,120p,677b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\bimal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmbx12.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/bimal/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Users/bimal/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/bimal/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/bimal
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Use
-rs/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-<C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-ti10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmtt10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmtt9.pfb>
-Output written on 180631J_Lab2_EN4603.pdf (13 pages, 635959 bytes).
+TeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/bimal/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Users/bimal/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/bim
+al/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/U
+sers/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.p
+fb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmr9.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmti10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmtt10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on 180631J_Lab2_EN4603.pdf (14 pages, 701224 bytes).
 PDF statistics:
- 370 PDF objects out of 1000 (max. 8388607)
- 64 named destinations out of 1000 (max. 500000)
- 260 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 392 PDF objects out of 1000 (max. 8388607)
+ 69 named destinations out of 1000 (max. 500000)
+ 270 words of extra memory for PDF output out of 10000 (max. 10000000)
 
