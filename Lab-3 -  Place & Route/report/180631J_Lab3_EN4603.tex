@@ -1,0 +1,59 @@
+% to compile: Shift+Alt+F1
+\documentclass[a4paper,11pt]{article}%,twocolumn
+\input{settings/packages}
+\input{settings/page}
+\input{settings/macros}
+
+
+\begin{document}
+\input{content/title_page}
+
+\pagebreak
+
+\tableofcontents
+\vfill
+\textit{\textbf{Note:}}\\
+\textit{All the materials related to the report can also be found at \url{https://github.com/bimalka98/Digital-IC-Design}}
+
+\pagebreak
+\listoffigures
+\listoftables
+\input{content/abbreviations}
+
+
+
+\pagebreak
+\section{Introduction}
+
+\subsection{Practical}
+In this practical, you will be using \textit{Cadence Innovus} to place and route the design you synthesized in Laboratory Experiment 2. As inputs to Innovus, you will provide,
+
+\begin{enumerate}
+	\item Source Verilog files
+	\item Technology libraries provided by the fabrication plant (here, $45~nm$ educational \ac{gpdk} given by Cadence) : {\tt (.lib, .lef, .tch)}
+	
+	\begin{itemize}
+		\item Library Timing (.lib) files specify timing (cell delay, cell transition time, setup and hold time requirement) and power characteristics of standard cells. Slow and fast libraries 	characterize standard cells with maximum and minimum signal delays, which could occur from process variations.
+
+		\item Tch files are binary files that accurately characterize library elements, that include  capacitance and resistance.
+		
+		\item Library Exchange Format (LEF) specify design rules, metal capacitances, layer information…etc.
+	\end{itemize}
+	
+	\item Multi Mode Multi Corner file (.view)
+	\item Constraints file (.sdc)
+	\item Scan \ac{def} file (.scandef)
+\end{enumerate}
+
+and will obtain the GDSII file as output, which is an industry standard format for exchanging \ac{ic} layout data. You will then analyze, compare, and comment on the placement, cell count, congestion etc. of the design at various stages of the place and route design flow.
+
+\pagebreak
+\vfill
+\hrule
+{\small
+\bibliographystyle{IEEEtran}
+\bibliography{refer}
+}
+%---------------------------------------------------------------------------
+\end{document}
+-
