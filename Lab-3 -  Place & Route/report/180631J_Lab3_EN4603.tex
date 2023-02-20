@@ -47,9 +47,70 @@ In this practical, you will be using \textit{Cadence Innovus} to place and route
 
 and will obtain the GDSII file as output, which is an industry standard format for exchanging \ac{ic} layout data. You will then analyze, compare, and comment on the placement, cell count, congestion etc. of the design at various stages of the place and route design flow.
 
+\subsection{Place \& Route}
+
+Place \& route is the final step in the IC design flow before fabrication. As the name implies, this step comprises of two main tasks – placement and routing.\\
+
+In placement, the IC designer decides where to place all the elements of the design. In addition to placing cells, this step involves making initial decisions about the aspect ratio and utilization factors (core utilization / cell utilization).\\
+
+Then, in the routing step, the designer makes the physical interconnects between the placed elements. This step comprises of three main stages: (1) Power Routing: routing of VDD and GND nets, (2) Clock Tree Synthesis: re-synthesizing of clock nets based on cell placement in order to balance clock skew throughout the design and minimize insertion delay, and (3) Signal Routing: routing of all other nets.\\
+
 \pagebreak
-\vfill
-\hrule
+The general design flow for place \& Route, which we will be following in this laboratory experiment, is shown in Figure \ref{fig:flow}.
+
+\begin{figure}[h]
+	\centering
+	\fbox{
+		\includegraphics[width=0.95\linewidth]{figures/flow}
+	}
+	\caption{The general design flow for place \& Route}
+	\label{fig:flow}
+\end{figure}
+
+\pagebreak
+\section{Using Innovus for Place and Route}
+This section demonstrates the steps carried out at the `Step 3' in the Laboratory guide, with necessary illustrations.
+
+\begin{enumerate}[1.)]
+	\item Import the Design: this step loads the design according to the netlist, technology libraries, labels for power nets and the timing analysis configurations. Once the design is loaded an empty core in the design area of Innovus can be observed as shown in the Figure \ref{fig:innovus_1},  and it displays ``In Memory'' in the bottom right corner of Innovus.
+	
+	\begin{figure}[h]
+		\centering
+		\fbox{
+			\includegraphics[width=0.95\linewidth]{figures/innovus_1.png}
+		}
+		\caption{Empty core in the design area of Innovus, when the design is loaded}
+		\label{fig:innovus_1}
+	\end{figure}
+	
+	
+	\item  Read the scanDEF file: this file specifies the scan chains available in the design and to perform scan reordering later.
+	
+	\begin{figure}[h]
+		\centering
+		\fbox{
+			\includegraphics[width=0.95\linewidth]{figures/defIn}
+		}
+		\caption{Innovus log for reading the scan\ac{def} file}
+		\label{fig:defIn}
+	\end{figure}
+	
+	\item Set the design mode to 45nm process
+	
+	\begin{figure}[h]
+		\centering
+		\fbox{
+			\includegraphics[width=0.95\linewidth]{figures/setDesignMode}
+		}
+		\caption{Innovus log for setting the design mode to 45nm process}
+		\label{fig:setDesignMode}
+	\end{figure}
+	
+\end{enumerate} 
+
+\pagebreak
+%\vfill
+%\hrule
 {\small
 \bibliographystyle{IEEEtran}
 \bibliography{refer}

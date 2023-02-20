@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.9)  19 FEB 2023 19:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.9)  20 FEB 2023 22:29
 entering extended mode
 **./180631J_Lab3_EN4603.tex
 (180631J_Lab3_EN4603.tex
@@ -1149,15 +1149,15 @@ Package caption Info: End \AtBeginDocument code.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
-* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=455.24411pt
-* \textheight=702.78308pt
-* \oddsidemargin=-1.1381pt
-* \evensidemargin=-1.1381pt
-* \topmargin=-38.1381pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -1176,11 +1176,11 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (content/title_page.tex
-<figures/uomlogo.png, id=54, 307.1475pt x 326.21875pt>
+<figures/uomlogo.png, id=62, 307.1475pt x 326.21875pt>
 File: figures/uomlogo.png Graphic file (type png)
 <use figures/uomlogo.png>
 Package pdftex.def Info: figures/uomlogo.png  used on input line 10.
-(pdftex.def)             Requested size: 136.57462pt x 145.05489pt.
+(pdftex.def)             Requested size: 145.11053pt x 154.11925pt.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 37.
 
 
@@ -1223,7 +1223,10 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.19 \listoffigures
-                    [1] (180631J_Lab3_EN4603.lof)
+                    [1] (180631J_Lab3_EN4603.lof
+Package acronym Info: Label `acro:def' newly defined as it shall be overridden
+although it is yet undefined on input line 3.
+)
 \tf@lof=\write11
 \openout11 = `180631J_Lab3_EN4603.lof'.
 
@@ -1303,29 +1306,71 @@ LaTeX Warning: Hyper reference `acro:uart' on page 2 undefined on input line 22
 Package acronym Info: Label `acro:gpdk' newly defined as it shall be overridden
 
 although it is yet undefined on input line 33.
-Package acronym Info: Label `acro:def' newly defined as it shall be overridden
-although it is yet undefined on input line 45.
+
+Underfull \hbox (badness 2781) in paragraph at lines 40--41
+[]\OT1/cmr/m/n/10.95 Library Ex-change For-mat (LEF) spec-ify de-sign rules, me
+tal ca-pac-i-tances, layer
+ []
+
 Package acronym Info: Label `acro:ic' newly defined as it shall be overridden
 although it is yet undefined on input line 48.
- [3] (180631J_Lab3_EN4603.bbl
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+[3]
+<figures/flow.png, id=141, 598.03426pt x 542.62724pt>
+File: figures/flow.png Graphic file (type png)
+<use figures/flow.png>
+Package pdftex.def Info: figures/flow.png  used on input line 65.
+(pdftex.def)             Requested size: 459.51054pt x 416.93832pt.
+ [4 <./figures/flow.png>]
+<figures/innovus_1.png.png, id=148, 1445.4pt x 813.0375pt>
+File: figures/innovus_1.png.png Graphic file (type png)
+<use figures/innovus_1.png.png>
+Package pdftex.def Info: figures/innovus_1.png.png  used on input line 81.
+(pdftex.def)             Requested size: 459.51054pt x 258.4777pt.
+<figures/defIn.png, id=149, 610.6815pt x 67.452pt>
+File: figures/defIn.png Graphic file (type png)
+<use figures/defIn.png>
+Package pdftex.def Info: figures/defIn.png  used on input line 93.
+(pdftex.def)             Requested size: 459.51054pt x 50.7556pt.
+<figures/setDesignMode.png, id=152, 847.36575pt x 93.34875pt>
+File: figures/setDesignMode.png Graphic file (type png)
+<use figures/setDesignMode.png>
+Package pdftex.def Info: figures/setDesignMode.png  used on input line 104.
+(pdftex.def)             Requested size: 459.51054pt x 50.62122pt.
+ [5 <./figures/innovus_1.png.png> <./figures/defIn.png> <./figures/setDesignMod
+e.png>] (180631J_Lab3_EN4603.bbl
 
 Package natbib Warning: Empty `thebibliography' environment on input line 24.
 
-) [4] (180631J_Lab3_EN4603.aux)
+) [6] (180631J_Lab3_EN4603.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `180631J_Lab3_EN4603.out' has not changed.
-(rerunfilecheck)             Checksum: D36FA346F2CA08997FD20C2BFD67E87C;709.
+(rerunfilecheck)             Checksum: 69162E8390EDB027DCCD0955A1F08500;1064.
  ) 
 Here is how much of TeX's memory you used:
- 29503 strings out of 479321
- 541932 string characters out of 2856584
- 861296 words of memory out of 3000000
- 46343 multiletter control sequences out of 15000+600000
- 411285 words of font info for 56 fonts, out of 8000000 for 9000
+ 29561 strings out of 479321
+ 542963 string characters out of 2856584
+ 864620 words of memory out of 3000000
+ 46384 multiletter control sequences out of 15000+600000
+ 411584 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 92i,5n,120p,482b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 92i,8n,120p,482b,512s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\bimal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -1335,12 +1380,13 @@ TeX/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Users/bimal/AppData/Local/Pr
 ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/bimal/AppData
 /Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/bimal
 /AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Use
-rs/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pf
-b><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmtt10.pfb>
-Output written on 180631J_Lab3_EN4603.pdf (5 pages, 229242 bytes).
+rs/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb>
+<C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+ti10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmtt10.pfb>
+Output written on 180631J_Lab3_EN4603.pdf (7 pages, 471870 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
- 32 named destinations out of 1000 (max. 500000)
- 162 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 216 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
+ 198 words of extra memory for PDF output out of 10000 (max. 10000000)
 
