@@ -105,7 +105,108 @@ This section demonstrates the steps carried out at the `Step 3' in the Laborator
 		\caption{Innovus log for setting the design mode to 45nm process}
 		\label{fig:setDesignMode}
 	\end{figure}
+	\pagebreak
+	\item Specify floorplan: Set the \textit{Aspect Ratio} as 1.0 and \textit{Core Utilization} as 0.4.  Set core margins by core to \ac{io} boundary. Set a margin of 5 Microns to all sides from the core. This resulted in a floor plan shown in the Figure \ref{fig:innovus_2}.
 	
+	\begin{figure}[h]
+	\centering
+	\fbox{
+		\includegraphics[width=0.9\linewidth]{figures/innovus_2.png}
+	}
+	\caption{Specified floorplan}
+	\label{fig:innovus_2}
+	\end{figure}
+		
+	\item Add power rings and power stripes:Metal 7 layer is used  for for horizontal power rings/stripes, while Metal 8  layer for vertical power rings/stripes.
+	
+	\begin{enumerate}[a.]
+		\item  Power rings
+		\begin{figure}[H]
+			\centering
+			\fbox{
+				\includegraphics[width=0.9\linewidth]{figures/innovus_3_2.png}
+			}
+			\caption{Adding power rings}
+			\label{fig:innovus_3_2}
+		\end{figure}
+		\pagebreak
+		\item Horizontal power strips
+		\begin{figure}[H]
+			\centering
+			\fbox{
+				\includegraphics[width=0.9\linewidth]{figures/innovus_4_2.png}
+			}
+			\caption{Adding horizontal power strips}
+			\label{fig:innovus_4_2}
+		\end{figure}
+		
+		\item Vertical power strips
+		\begin{figure}[H]
+			\centering
+			\fbox{
+				\includegraphics[width=0.9\linewidth]{figures/innovus_4_4.png}
+			}
+			\caption{Adding vertical power strips}
+			\label{fig:innovus_4_4}
+		\end{figure}	
+	\end{enumerate}
+	
+	\pagebreak
+	\item Pin Placement: assigns a set of pin to the \ac{io} boundary. By default the pins are set as \textit{SIGNAL} pins. However, we should change this attribute for the clock pins {\tt clk\_a} and {\tt clk\_b} to \textit{CLOCK}. Figure \ref{fig:innovus_6_1} illustrated the view of the floorplan after all the pins are assigned.
+	
+	\begin{figure}[H]
+		\centering
+		\fbox{
+			\includegraphics[width=0.9\linewidth]{figures/innovus_5_5.png}
+		}
+		\caption{Assigning the pins to the \ac{io} boundary}
+		\label{fig:innovus_5_5}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\fbox{
+			\includegraphics[width=0.9\linewidth]{figures/innovus_6_1.png}
+		}
+		\caption{View of the floorplan after the pins are assigned}
+		\label{fig:innovus_6_1}
+	\end{figure}
+	
+	\pagebreak
+	\item Standard cell placement: this step runs a full placement with pre-place optimization as shown in the dialog box of the Figure \ref{fig:innovus_7_2}.
+	
+	\begin{figure}[H]
+		\centering
+		\fbox{
+			\includegraphics[width=0.9\linewidth]{figures/innovus_7_2.png}
+		}
+		\caption{`Run Full Placement' with `Pre-Place Optimization'}
+		\label{fig:innovus_7_2}
+	\end{figure}
+	\pagebreak
+	\begin{enumerate}[a.]
+		\item A screenshot of the design without any nets
+		\begin{figure}[H]
+			\centering
+			\fbox{
+				\includegraphics[width=0.9\linewidth]{figures/innovus_9_2.png}
+			}
+			\caption{Screenshot of the design without any nets}
+			\label{fig:innovus_9_2}
+		\end{figure}
+		
+		\item A screenshot of the design with the clock net		
+		\begin{figure}[H]
+			\centering
+			\fbox{
+				\includegraphics[width=0.9\linewidth]{figures/innovus_9_3.png}
+			}
+			\caption{Screenshot of the design with the clock net}
+			\label{fig:innovus_9_3}
+		\end{figure}
+	\end{enumerate}
+	
+
 \end{enumerate} 
 
 \pagebreak
