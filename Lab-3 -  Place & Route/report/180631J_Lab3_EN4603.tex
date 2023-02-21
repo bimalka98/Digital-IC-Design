@@ -183,7 +183,7 @@ This section demonstrates the steps carried out at the `Step 3' in the Laborator
 		\caption{`Run Full Placement' with `Pre-Place Optimization'}
 		\label{fig:innovus_7_2}
 	\end{figure}
-	\pagebreak
+	%TODO: check the validty of these ss. they are used in a ltare item!
 	\begin{enumerate}[a.]
 		\item A screenshot of the design without any nets
 		\begin{figure}[H]
@@ -206,7 +206,63 @@ This section demonstrates the steps carried out at the `Step 3' in the Laborator
 		\end{figure}
 	\end{enumerate}
 	
+	\item  Report gate count and area
+	\begin{figure}[H]
+		\centering
+		\fbox{
+			\includegraphics[width=0.9\linewidth]{figures/gateCount}
+		}
+		\caption{Gate count and the area report}
+		\label{fig:gateCount}
+	\end{figure}
+	
+	\item Pre-\ac{cts} setup time analysis: according to the given constraints,  there will be no violations at this stage. Summary of this is shown in the Figure \ref{fig:timeDesign}.
+	
+	\begin{figure}[H]
+		\centering
+		\fbox{
+			\includegraphics[width=0.6\linewidth]{figures/timeDesign }
+		}
+		\caption{Summary of the Pre-CTS setup time analysis}
+		\label{fig:timeDesign}
+	\end{figure} 
+	
+	
+	\item Route power nets: observe the horizontal power routes spanning across the core area shown in the Figure \ref{fig:innovus_8_1}.
+	\begin{figure}[H]
+		\centering
+		\fbox{
+			\includegraphics[width=0.9\linewidth]{figures/innovus_8_1.png}
+		}
+		\caption{Horizontal power routes spanning across the core area}
+		\label{fig:innovus_8_1}
+	\end{figure}
 
+	\item \ac{cts} using {\tt ccopt\_design} command: resynthesize the clock net and add buffers or change wire lengths of clock nets to balance clock skew throughout the design.
+	
+	\begin{enumerate}[a.]
+		\item A screenshot of the design without any nets after \ac{cts}
+		\begin{figure}[H]
+			\centering
+			\fbox{
+				\includegraphics[width=0.9\linewidth]{figures/innovus_9_2.png}
+			}
+			\caption{Screenshot of the design without any nets after \ac{cts}}
+			%\label{fig:innovus_9_2}
+		\end{figure}
+		
+		\item A screenshot of the design with the clock net	after \ac{cts}	
+		\begin{figure}[H]
+			\centering
+			\fbox{
+				\includegraphics[width=0.9\linewidth]{figures/innovus_9_3.png}
+			}
+			\caption{Screenshot of the design with the clock net after \ac{cts}}
+			%\label{fig:innovus_9_3}
+		\end{figure}
+	\end{enumerate}
+	
+	
 \end{enumerate} 
 
 \pagebreak
