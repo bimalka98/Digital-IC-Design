@@ -216,7 +216,7 @@ This section demonstrates the steps carried out at the `Step 3' in the Laborator
 		\label{fig:gateCount}
 	\end{figure}
 	
-	\item Pre-\ac{cts} setup time analysis: according to the given constraints,  there will be no violations at this stage. Summary of this is shown in the Figure \ref{fig:timeDesign}.
+	\item Pre-\ac{cts} setup time analysis: according to the given constraints,  there will be no violations at this stage. Summary of this is shown in the Figure \ref{fig:timeDesign}. (\textbf{Pre-CTS} as the design stage,  \textbf{Setup} as the analysis type)
 	
 	\begin{figure}[H]
 		\centering
@@ -262,6 +262,75 @@ This section demonstrates the steps carried out at the `Step 3' in the Laborator
 		\end{figure}
 	\end{enumerate}
 	
+	
+	\item Scan reorder: performs clock tree aware scan chain reordering, which will contribute to reduce signal routing congestion in the design.
+	\begin{figure}[H]
+		\centering
+		\fbox{
+			\includegraphics[width=0.9\linewidth]{figures/scanReorder}
+		}
+		\caption{Innovus log of the scan reordering}
+		\label{fig:scanReorder}
+	\end{figure}
+	
+	\item Post \ac{cts} timing analysis: \textbf{Post-CTS} as the design stage,  \textbf{Hold} as the analysis type. Ass shown in the Figure \ref{fig:postCTStimeDesign} there are no paths with timing violations.
+	\begin{figure}[H]
+		\centering
+		\fbox{
+			\includegraphics[width=0.7\linewidth]{figures/postCTStimeDesign}
+		}
+		\caption{Summary of the Post \ac{cts} timing analysis}
+		\label{fig:postCTStimeDesign}
+	\end{figure}
+	
+	\item Signal Route; NanoRoute configuration window which is shown in the Figure \ref*{fig:innovus_q16_2} is used to route signal nets.
+	
+	\begin{figure}[H]
+		\centering
+		\fbox{
+			\includegraphics[width=0.9\linewidth]{figures/innovus_q16_2}
+		}
+		\caption{NanoRoute configuration window to route the signal nets}
+		\label{fig:innovus_q16_2}
+	\end{figure}
+	
+	\item  Post-Route Timing analysis: we have fully placed and routed the functional design, we may now perform post route timing analysis to ensure that all timing constraints are still met. For post route timing analysis, before generating the timing reports, we should change the analysis type to \ac{ocv}.
+	
+	\item Place filler cells: ensures that there is \textit{n-well} continuity and to avoid sagging of layers after fabrication, we need fill the empty spaces in the core area with filler cells. Figure \ref{fig:innovus_q18_2} shows the design after the filler cell placement.
+	\begin{figure}[H]
+		\centering
+		\fbox{
+			\includegraphics[width=0.9\linewidth]{figures/addFiller}
+		}
+		\caption{Innovus log for placing filler cells}
+		\label{fig:addFiller}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\fbox{
+			\includegraphics[width=0.9\linewidth]{figures/innovus_q18_2}
+		}
+		\caption{Design after the filler cell placement}
+		\label{fig:innovus_q18_2}
+	\end{figure}
+
+	\item Verification: before exporting the design verify that there are no geometry violations (cell overlaps, spacing, min area etc.) and no connectivity issues (open nets, unrouted nets) in the design. As it is shown in the Figure \ref{fig:verification} there are no violations in the geometry or the connectivity.
+	
+	\begin{figure}[h]
+		\centering
+		\fbox{
+			\subfigure[Geometry Verification]
+			{ \includegraphics[scale=0.5]{figures/verifyGeometry}
+			}\hfill
+			\subfigure[Connectivity Verification]
+			{ \includegraphics[scale=0.5]{figures/verifyConnectivity}
+		}}
+		\caption{Verification reports}
+		\label{fig:verification}
+	\end{figure}
+	
+	\item GDSII Export: After making sure that there are no timing violations and design rule violations in the design, the final step in the place and route process is to generate the data exchange file required by the foundries to fabricate the design.
 	
 \end{enumerate} 
 

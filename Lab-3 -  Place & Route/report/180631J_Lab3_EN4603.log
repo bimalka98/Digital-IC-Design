@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.9)  21 FEB 2023 22:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.9)  22 FEB 2023 21:47
 entering extended mode
 **./180631J_Lab3_EN4603.tex
 (180631J_Lab3_EN4603.tex
@@ -1273,42 +1273,42 @@ LaTeX Warning: Hyper reference `acro:hdl' on page 2 undefined on input line 15.
 
 
 
-LaTeX Warning: Hyper reference `acro:rtl' on page 2 undefined on input line 20.
+LaTeX Warning: Hyper reference `acro:rtl' on page 2 undefined on input line 23.
 
 
 
-LaTeX Warning: Hyper reference `acro:rtl' on page 2 undefined on input line 20.
+LaTeX Warning: Hyper reference `acro:rtl' on page 2 undefined on input line 23.
 
 
 
-LaTeX Warning: Hyper reference `acro:rx' on page 2 undefined on input line 21.
+LaTeX Warning: Hyper reference `acro:rx' on page 2 undefined on input line 24.
 
 
-LaTeX Warning: Hyper reference `acro:rx' on page 2 undefined on input line 21.
+LaTeX Warning: Hyper reference `acro:rx' on page 2 undefined on input line 24.
 
 
-LaTeX Warning: Hyper reference `acro:tcl' on page 2 undefined on input line 23.
-
-
-
-LaTeX Warning: Hyper reference `acro:tcl' on page 2 undefined on input line 23.
+LaTeX Warning: Hyper reference `acro:tcl' on page 2 undefined on input line 26.
 
 
 
-LaTeX Warning: Hyper reference `acro:tx' on page 2 undefined on input line 24.
+LaTeX Warning: Hyper reference `acro:tcl' on page 2 undefined on input line 26.
 
 
-LaTeX Warning: Hyper reference `acro:tx' on page 2 undefined on input line 24.
+
+LaTeX Warning: Hyper reference `acro:tx' on page 2 undefined on input line 27.
 
 
-LaTeX Warning: Hyper reference `acro:uart' on page 2 undefined on input line 26
+LaTeX Warning: Hyper reference `acro:tx' on page 2 undefined on input line 27.
+
+
+LaTeX Warning: Hyper reference `acro:uart' on page 2 undefined on input line 29
 .
 
 
-LaTeX Warning: Hyper reference `acro:uart' on page 2 undefined on input line 26
+LaTeX Warning: Hyper reference `acro:uart' on page 2 undefined on input line 29
 .
 
-) [2]
+[2]) [3]
 Package acronym Info: Label `acro:gpdk' newly defined as it shall be overridden
 
 although it is yet undefined on input line 33.
@@ -1335,92 +1335,92 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
-[3]
-<figures/flow.png, id=180, 598.03426pt x 542.62724pt>
+[4]
+<figures/flow.png, id=201, 598.03426pt x 542.62724pt>
 File: figures/flow.png Graphic file (type png)
 <use figures/flow.png>
 Package pdftex.def Info: figures/flow.png  used on input line 65.
 (pdftex.def)             Requested size: 459.51054pt x 416.93832pt.
- [4 <./figures/flow.png>]
-<figures/innovus_1.png.png, id=187, 1445.4pt x 813.0375pt>
+ [5 <./figures/flow.png>]
+<figures/innovus_1.png.png, id=208, 1445.4pt x 813.0375pt>
 File: figures/innovus_1.png.png Graphic file (type png)
 <use figures/innovus_1.png.png>
 Package pdftex.def Info: figures/innovus_1.png.png  used on input line 81.
 (pdftex.def)             Requested size: 459.51054pt x 258.4777pt.
-<figures/defIn.png, id=188, 610.6815pt x 67.452pt>
+<figures/defIn.png, id=209, 610.6815pt x 67.452pt>
 File: figures/defIn.png Graphic file (type png)
 <use figures/defIn.png>
 Package pdftex.def Info: figures/defIn.png  used on input line 93.
 (pdftex.def)             Requested size: 459.51054pt x 50.7556pt.
-<figures/setDesignMode.png, id=191, 847.36575pt x 93.34875pt>
+<figures/setDesignMode.png, id=212, 847.36575pt x 93.34875pt>
 File: figures/setDesignMode.png Graphic file (type png)
 <use figures/setDesignMode.png>
 Package pdftex.def Info: figures/setDesignMode.png  used on input line 104.
 (pdftex.def)             Requested size: 459.51054pt x 50.62122pt.
- [5 <./figures/innovus_1.png.png> <./figures/defIn.png> <./figures/setDesignMod
+ [6 <./figures/innovus_1.png.png> <./figures/defIn.png> <./figures/setDesignMod
 e.png>]
-<figures/innovus_2.png, id=203, 1445.4pt x 813.0375pt>
+<figures/innovus_2.png, id=225, 1445.4pt x 813.0375pt>
 File: figures/innovus_2.png Graphic file (type png)
 <use figures/innovus_2.png>
 Package pdftex.def Info: figures/innovus_2.png  used on input line 115.
 (pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
-<figures/innovus_3_2.png, id=204, 1445.4pt x 813.0375pt>
+<figures/innovus_3_2.png, id=226, 1445.4pt x 813.0375pt>
 File: figures/innovus_3_2.png Graphic file (type png)
 <use figures/innovus_3_2.png>
 Package pdftex.def Info: figures/innovus_3_2.png  used on input line 128.
 (pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
- [6 <./figures/innovus_2.png> <./figures/innovus_3_2.png>]
-<figures/innovus_4_2.png, id=213, 1445.4pt x 813.0375pt>
+ [7 <./figures/innovus_2.png> <./figures/innovus_3_2.png>]
+<figures/innovus_4_2.png, id=234, 1445.4pt x 813.0375pt>
 File: figures/innovus_4_2.png Graphic file (type png)
 <use figures/innovus_4_2.png>
 Package pdftex.def Info: figures/innovus_4_2.png  used on input line 138.
 (pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
-<figures/innovus_4_4.png, id=214, 1445.4pt x 813.0375pt>
+<figures/innovus_4_4.png, id=235, 1445.4pt x 813.0375pt>
 File: figures/innovus_4_4.png Graphic file (type png)
 <use figures/innovus_4_4.png>
 Package pdftex.def Info: figures/innovus_4_4.png  used on input line 148.
 (pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
- [7 <./figures/innovus_4_2.png> <./figures/innovus_4_4.png>]
-<figures/innovus_5_5.png, id=223, 1445.4pt x 813.0375pt>
+ [8 <./figures/innovus_4_2.png> <./figures/innovus_4_4.png>]
+<figures/innovus_5_5.png, id=244, 1445.4pt x 813.0375pt>
 File: figures/innovus_5_5.png Graphic file (type png)
 <use figures/innovus_5_5.png>
 Package pdftex.def Info: figures/innovus_5_5.png  used on input line 161.
 (pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
-<figures/innovus_6_1.png, id=226, 1445.4pt x 813.0375pt>
+<figures/innovus_6_1.png, id=247, 1445.4pt x 813.0375pt>
 File: figures/innovus_6_1.png Graphic file (type png)
 <use figures/innovus_6_1.png>
 Package pdftex.def Info: figures/innovus_6_1.png  used on input line 170.
 (pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
 
-[8 <./figures/innovus_5_5.png> <./figures/innovus_6_1.png>]
-<figures/innovus_7_2.png, id=233, 1445.4pt x 813.0375pt>
+[9 <./figures/innovus_5_5.png> <./figures/innovus_6_1.png>]
+<figures/innovus_7_2.png, id=254, 1445.4pt x 813.0375pt>
 File: figures/innovus_7_2.png Graphic file (type png)
 <use figures/innovus_7_2.png>
 Package pdftex.def Info: figures/innovus_7_2.png  used on input line 182.
 (pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
-<figures/innovus_9_2.png, id=234, 1445.4pt x 813.0375pt>
+<figures/innovus_9_2.png, id=255, 1445.4pt x 813.0375pt>
 File: figures/innovus_9_2.png Graphic file (type png)
 <use figures/innovus_9_2.png>
 Package pdftex.def Info: figures/innovus_9_2.png  used on input line 193.
 (pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
-<figures/innovus_9_3.png, id=235, 1445.4pt x 813.0375pt>
+<figures/innovus_9_3.png, id=256, 1445.4pt x 813.0375pt>
 File: figures/innovus_9_3.png Graphic file (type png)
 <use figures/innovus_9_3.png>
 Package pdftex.def Info: figures/innovus_9_3.png  used on input line 203.
 (pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
- [9 <./figures/innovus_7_2.png> <./figures/innovus_9_2.png>]
-<figures/gateCount.png, id=243, 658.8615pt x 104.7915pt>
+ [10 <./figures/innovus_7_2.png> <./figures/innovus_9_2.png>]
+<figures/gateCount.png, id=264, 658.8615pt x 104.7915pt>
 File: figures/gateCount.png Graphic file (type png)
 <use figures/gateCount.png>
 Package pdftex.def Info: figures/gateCount.png  used on input line 214.
 (pdftex.def)             Requested size: 435.32422pt x 69.23935pt.
-<figures/timeDesign.png, id=246, 422.17725pt x 393.8715pt>
+<figures/timeDesign.png, id=267, 422.17725pt x 393.8715pt>
 File: figures/timeDesign.png Graphic file (type png)
 <use figures/timeDesign.png>
 Package pdftex.def Info: figures/timeDesign.png  used on input line 225.
 (pdftex.def)             Requested size: 290.22107pt x 270.77396pt.
- [10 <./figures/innovus_9_3.png> <./figures/gateCount.png>]
-<figures/innovus_8_1.png, id=255, 1445.4pt x 813.0375pt>
+ [11 <./figures/innovus_9_3.png> <./figures/gateCount.png>]
+<figures/innovus_8_1.png, id=276, 1445.4pt x 813.0375pt>
 File: figures/innovus_8_1.png Graphic file (type png)
 <use figures/innovus_8_1.png>
 Package pdftex.def Info: figures/innovus_8_1.png  used on input line 236.
@@ -1429,27 +1429,71 @@ File: figures/innovus_9_2.png Graphic file (type png)
 <use figures/innovus_9_2.png>
 Package pdftex.def Info: figures/innovus_9_2.png  used on input line 249.
 (pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
- [11 <./figures/timeDesign.png> <./figures/innovus_8_1.png>]
+ [12 <./figures/timeDesign.png> <./figures/innovus_8_1.png>]
 File: figures/innovus_9_3.png Graphic file (type png)
 <use figures/innovus_9_3.png>
 Package pdftex.def Info: figures/innovus_9_3.png  used on input line 259.
 (pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
- [12] (180631J_Lab3_EN4603.bbl
+<figures/scanReorder.png, id=293, 787.14075pt x 374.5995pt>
+File: figures/scanReorder.png Graphic file (type png)
+<use figures/scanReorder.png>
+Package pdftex.def Info: figures/scanReorder.png  used on input line 271.
+(pdftex.def)             Requested size: 435.32422pt x 207.17354pt.
+ [13]
+<figures/postCTStimeDesign.png, id=302, 423.984pt x 356.532pt>
+File: figures/postCTStimeDesign.png Graphic file (type png)
+<use figures/postCTStimeDesign.png>
+Package pdftex.def Info: figures/postCTStimeDesign.png  used on input line 281.
+
+(pdftex.def)             Requested size: 338.58632pt x 284.72546pt.
+<figures/innovus_q16_2.png, id=305, 1445.4pt x 813.0375pt>
+File: figures/innovus_q16_2.png Graphic file (type png)
+<use figures/innovus_q16_2.png>
+Package pdftex.def Info: figures/innovus_q16_2.png  used on input line 292.
+(pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
+ [14 <./figures/scanReorder.png> <./figures/postCTStimeDesign.png>]
+Package acronym Info: Label `acro:ocv' newly defined as it shall be overridden
+although it is yet undefined on input line 297.
+<figures/addFiller.png, id=316, 585.98924pt x 184.89075pt>
+File: figures/addFiller.png Graphic file (type png)
+<use figures/addFiller.png>
+Package pdftex.def Info: figures/addFiller.png  used on input line 304.
+(pdftex.def)             Requested size: 435.32422pt x 137.35583pt.
+<figures/innovus_q18_2.png, id=317, 1445.4pt x 813.0375pt>
+File: figures/innovus_q18_2.png Graphic file (type png)
+<use figures/innovus_q18_2.png>
+Package pdftex.def Info: figures/innovus_q18_2.png  used on input line 313.
+(pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
+
+[15 <./figures/innovus_q16_2.png> <./figures/addFiller.png>]
+<figures/verifyGeometry.png, id=326, 383.63326pt x 254.1495pt>
+File: figures/verifyGeometry.png Graphic file (type png)
+<use figures/verifyGeometry.png>
+Package pdftex.def Info: figures/verifyGeometry.png  used on input line 328.
+(pdftex.def)             Requested size: 191.81615pt x 127.07443pt.
+<figures/verifyConnectivity.png, id=327, 398.08725pt x 216.81pt>
+File: figures/verifyConnectivity.png Graphic file (type png)
+<use figures/verifyConnectivity.png>
+Package pdftex.def Info: figures/verifyConnectivity.png  used on input line 328
+.
+(pdftex.def)             Requested size: 199.04314pt x 108.40472pt.
+ [16 <./figures/innovus_q18_2.png> <./figures/verifyGeometry.png> <./figures/ve
+rifyConnectivity.png>] (180631J_Lab3_EN4603.bbl
 
 Package natbib Warning: Empty `thebibliography' environment on input line 24.
 
-) [13] (180631J_Lab3_EN4603.aux)
+) [17] (180631J_Lab3_EN4603.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `180631J_Lab3_EN4603.out' has not changed.
-(rerunfilecheck)             Checksum: DA3F659FC9E7769AF0E66F0B423B6539;1064.
+(rerunfilecheck)             Checksum: C3C613656D6E05B8FAA5AFE084AB8B9B;1064.
  ) 
 Here is how much of TeX's memory you used:
- 29703 strings out of 479321
- 545579 string characters out of 2856584
- 871582 words of memory out of 3000000
- 46474 multiletter control sequences out of 15000+600000
+ 29793 strings out of 479321
+ 547473 string characters out of 2856584
+ 874107 words of memory out of 3000000
+ 46536 multiletter control sequences out of 15000+600000
  411584 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  92i,9n,120p,482b,610s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1466,9 +1510,9 @@ rs/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb>
 <C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
 ti10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/cm/cmtt10.pfb>
-Output written on 180631J_Lab3_EN4603.pdf (14 pages, 2609255 bytes).
+Output written on 180631J_Lab3_EN4603.pdf (18 pages, 3176437 bytes).
 PDF statistics:
- 337 PDF objects out of 1000 (max. 8388607)
- 83 named destinations out of 1000 (max. 500000)
- 258 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 402 PDF objects out of 1000 (max. 8388607)
+ 104 named destinations out of 1000 (max. 500000)
+ 293 words of extra memory for PDF output out of 10000 (max. 10000000)
 
