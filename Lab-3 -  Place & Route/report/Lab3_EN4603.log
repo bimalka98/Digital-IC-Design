@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.9)  18 FEB 2023 17:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.9)  22 FEB 2023 21:53
 entering extended mode
-**./180631J_Lab2_EN4603.tex
-(180631J_Lab2_EN4603.tex
+**./Lab3_EN4603.tex
+(Lab3_EN4603.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18>
 (C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -365,10 +365,10 @@ Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 )
 \@indexfile=\write3
-\openout3 = `180631J_Lab2_EN4603.idx'.
+\openout3 = `Lab3_EN4603.idx'.
 
 
-Writing index file 180631J_Lab2_EN4603.idx
+Writing index file Lab3_EN4603.idx
 (C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/was\gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
 )
@@ -1060,24 +1060,8 @@ rs
 ) (settings/macros.tex
 \c@shellcounter=\count378
 \c@outputcounter=\count379
-) (180631J_Lab2_EN4603.aux
-
-! Package natbib Error: Bibliography not compatible with author-year citations.
-
-(natbib)                Press <return> to continue in numerical citation style.
-
-
-See the natbib package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.140 ...and\NAT@force@numbers{}\NAT@force@numbers
-                                                  
-Check the bibliography entries for non-compliant syntax,
-or select author-year BibTeX style, e.g. plainnat
-
-)
-\openout1 = `180631J_Lab2_EN4603.aux'.
+) (Lab3_EN4603.aux)
+\openout1 = `Lab3_EN4603.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
@@ -1098,7 +1082,8 @@ LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 Package hyperref Info: Link coloring ON on input line 8.
- (C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+
+(C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
 (C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
@@ -1113,9 +1098,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 8.
 LaTeX Info: Redefining \pageref on input line 8.
 LaTeX Info: Redefining \nameref on input line 8.
- (180631J_Lab2_EN4603.out) (180631J_Lab2_EN4603.out)
+ (Lab3_EN4603.out) (Lab3_EN4603.out)
 \@outlinefile=\write9
-\openout9 = `180631J_Lab2_EN4603.out'.
+\openout9 = `Lab3_EN4603.out'.
 
 
 (C:\Users\bimal\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
@@ -1164,15 +1149,15 @@ Package caption Info: End \AtBeginDocument code.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
-* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=455.24411pt
-* \textheight=702.78308pt
-* \oddsidemargin=-1.1381pt
-* \evensidemargin=-1.1381pt
-* \topmargin=-38.1381pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -1191,11 +1176,11 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (content/title_page.tex
-<figures/uomlogo.png, id=78, 307.1475pt x 326.21875pt>
+<figures/uomlogo.png, id=66, 307.1475pt x 326.21875pt>
 File: figures/uomlogo.png Graphic file (type png)
 <use figures/uomlogo.png>
 Package pdftex.def Info: figures/uomlogo.png  used on input line 10.
-(pdftex.def)             Requested size: 136.57462pt x 145.05489pt.
+(pdftex.def)             Requested size: 145.11053pt x 154.11925pt.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 37.
 
 
@@ -1229,208 +1214,305 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 <special> ps:0.8 setlinewidth 0 setgray
 {C:/Users/bimal/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./figures/uomlo
-go.png>]) (180631J_Lab2_EN4603.toc
-Package acronym Info: Label `acro:dft' newly defined as it shall be overridden
-although it is yet undefined on input line 8.
-)
+go.png>]) (Lab3_EN4603.toc)
 \tf@toc=\write10
-\openout10 = `180631J_Lab2_EN4603.toc'.
+\openout10 = `Lab3_EN4603.toc'.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.19 \listoffigures
-                    [1] (180631J_Lab2_EN4603.lof
-Package acronym Info: Label `acro:uart' newly defined as it shall be overridden
-
-although it is yet undefined on input line 1.
+                    [1] (Lab3_EN4603.lof
+Package acronym Info: Label `acro:def' newly defined as it shall be overridden
+although it is yet undefined on input line 3.
+Package acronym Info: Label `acro:io' newly defined as it shall be overridden
+although it is yet undefined on input line 9.
+Package acronym Info: Label `acro:cts' newly defined as it shall be overridden
+although it is yet undefined on input line 17.
 )
 \tf@lof=\write11
-\openout11 = `180631J_Lab2_EN4603.lof'.
+\openout11 = `Lab3_EN4603.lof'.
 
- (180631J_Lab2_EN4603.lot)
+ (Lab3_EN4603.lot)
 \tf@lot=\write12
-\openout12 = `180631J_Lab2_EN4603.lot'.
+\openout12 = `Lab3_EN4603.lot'.
 
 
 (content/abbreviations.tex
 
-LaTeX Warning: Hyper reference `acro:hdl' on page 2 undefined on input line 12.
+LaTeX Warning: Hyper reference `acro:asic' on page 2 undefined on input line 4.
 
 
 
-LaTeX Warning: Hyper reference `acro:hdl' on page 2 undefined on input line 12.
+LaTeX Warning: Hyper reference `acro:asic' on page 2 undefined on input line 4.
 
 
 
-LaTeX Warning: Hyper reference `acro:rx' on page 2 undefined on input line 15.
+LaTeX Warning: Hyper reference `acro:atpg' on page 2 undefined on input line 5.
 
 
-LaTeX Warning: Hyper reference `acro:rx' on page 2 undefined on input line 15.
+
+LaTeX Warning: Hyper reference `acro:atpg' on page 2 undefined on input line 5.
 
 
-LaTeX Warning: Hyper reference `acro:tx' on page 2 undefined on input line 18.
+
+LaTeX Warning: Hyper reference `acro:dft' on page 2 undefined on input line 11.
 
 
-LaTeX Warning: Hyper reference `acro:tx' on page 2 undefined on input line 18.
 
-) [2]
-Package acronym Info: Label `acro:rtl' newly defined as it shall be overridden
-although it is yet undefined on input line 29.
+LaTeX Warning: Hyper reference `acro:dft' on page 2 undefined on input line 11.
+
+
+
+LaTeX Warning: Hyper reference `acro:hdl' on page 2 undefined on input line 15.
+
+
+
+LaTeX Warning: Hyper reference `acro:hdl' on page 2 undefined on input line 15.
+
+
+
+LaTeX Warning: Hyper reference `acro:rtl' on page 2 undefined on input line 23.
+
+
+
+LaTeX Warning: Hyper reference `acro:rtl' on page 2 undefined on input line 23.
+
+
+
+LaTeX Warning: Hyper reference `acro:rx' on page 2 undefined on input line 24.
+
+
+LaTeX Warning: Hyper reference `acro:rx' on page 2 undefined on input line 24.
+
+
+LaTeX Warning: Hyper reference `acro:tcl' on page 2 undefined on input line 26.
+
+
+
+LaTeX Warning: Hyper reference `acro:tcl' on page 2 undefined on input line 26.
+
+
+
+LaTeX Warning: Hyper reference `acro:tx' on page 2 undefined on input line 27.
+
+
+LaTeX Warning: Hyper reference `acro:tx' on page 2 undefined on input line 27.
+
+
+LaTeX Warning: Hyper reference `acro:uart' on page 2 undefined on input line 29
+.
+
+
+LaTeX Warning: Hyper reference `acro:uart' on page 2 undefined on input line 29
+.
+
+[2]) [3]
 Package acronym Info: Label `acro:gpdk' newly defined as it shall be overridden
 
 although it is yet undefined on input line 33.
-Package acronym Info: Label `acro:def' newly defined as it shall be overridden
-although it is yet undefined on input line 46.
-Package acronym Info: Label `acro:atpg' newly defined as it shall be overridden
 
-although it is yet undefined on input line 46.
-<figures/familiarization/init_top_level.png, id=196, 1124.70187pt x 433.62pt>
-File: figures/familiarization/init_top_level.png Graphic file (type png)
-<use figures/familiarization/init_top_level.png>
-Package pdftex.def Info: figures/familiarization/init_top_level.png  used on in
-put line 52.
-(pdftex.def)             Requested size: 432.48051pt x 166.7358pt.
- [3 <./figures/familiarization/init_top_level.png (PNG copy)>]
-Package acronym Info: Label `acro:asic' newly defined as it shall be overridden
+Underfull \hbox (badness 2781) in paragraph at lines 40--41
+[]\OT1/cmr/m/n/10.95 Library Ex-change For-mat (LEF) spec-ify de-sign rules, me
+tal ca-pac-i-tances, layer
+ []
 
-although it is yet undefined on input line 60.
-<figures/dftinsertion.png, id=213, 394.47375pt x 530.58224pt>
-File: figures/dftinsertion.png Graphic file (type png)
-<use figures/dftinsertion.png>
-Package pdftex.def Info: figures/dftinsertion.png  used on input line 67.
-(pdftex.def)             Requested size: 364.19667pt x 489.85794pt.
- [4 <./figures/dftinsertion.png>]
-Package acronym Info: Label `acro:tcl' newly defined as it shall be overridden
-although it is yet undefined on input line 75.
+Package acronym Info: Label `acro:ic' newly defined as it shall be overridden
+although it is yet undefined on input line 48.
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
-<figures/familiarization/check_dft_rules.png, id=232, 601.64775pt x 423.984pt>
-File: figures/familiarization/check_dft_rules.png Graphic file (type png)
-<use figures/familiarization/check_dft_rules.png>
-Package pdftex.def Info: figures/familiarization/check_dft_rules.png  used on i
-nput line 119.
-(pdftex.def)             Requested size: 409.71692pt x 288.73874pt.
-[5] [6 <./figures/familiarization/check_dft_rules.png>]
-<figures/familiarization/scan_setup_config.png, id=245, 808.2195pt x 358.941pt>
 
-File: figures/familiarization/scan_setup_config.png Graphic file (type png)
-<use figures/familiarization/scan_setup_config.png>
-Package pdftex.def Info: figures/familiarization/scan_setup_config.png  used on
- input line 166.
-(pdftex.def)             Requested size: 432.48051pt x 192.0726pt.
-<figures/familiarization/check_dft_rules2.png, id=248, 460.119pt x 423.38174pt>
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
-File: figures/familiarization/check_dft_rules2.png Graphic file (type png)
-<use figures/familiarization/check_dft_rules2.png>
-Package pdftex.def Info: figures/familiarization/check_dft_rules2.png  used on 
-input line 188.
-(pdftex.def)             Requested size: 318.66948pt x 293.23842pt.
- [7 <./figures/familiarization/scan_setup_config.png>] [8 <./figures/familiariz
-ation/check_dft_rules2.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ac' on input line 219.
-
-File: figures/familiarization/init_top_level.png Graphic file (type png)
-<use figures/familiarization/init_top_level.png>
-Package pdftex.def Info: figures/familiarization/init_top_level.png  used on in
-put line 225.
-(pdftex.def)             Requested size: 432.48051pt x 166.7358pt.
-<figures/familiarization/final_top_level.png, id=267, 1421.31pt x 629.35126pt>
-File: figures/familiarization/final_top_level.png Graphic file (type png)
-<use figures/familiarization/final_top_level.png>
-Package pdftex.def Info: figures/familiarization/final_top_level.png  used on i
-nput line 234.
-(pdftex.def)             Requested size: 432.48051pt x 191.4957pt.
-[9 <./figures/familiarization/final_top_level.png>]
-<figures/familiarization/area_lab1.png, id=282, 789.54974pt x 281.853pt>
-File: figures/familiarization/area_lab1.png Graphic file (type png)
-<use figures/familiarization/area_lab1.png>
-Package pdftex.def Info: figures/familiarization/area_lab1.png  used on input l
-ine 267.
-(pdftex.def)             Requested size: 409.71692pt x 146.26335pt.
-<figures/familiarization/area_after_scan_synthesis.png, id=285, 789.54974pt x 2
-83.65974pt>
-File: figures/familiarization/area_after_scan_synthesis.png Graphic file (type 
-png)
-<use figures/familiarization/area_after_scan_synthesis.png>
-Package pdftex.def Info: figures/familiarization/area_after_scan_synthesis.png 
- used on input line 276.
-(pdftex.def)             Requested size: 409.71692pt x 147.20093pt.
+ []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
-[10 <./figures/familiarization/area_lab1.png> <./figures/familiarization/area_a
-fter_scan_synthesis.png>]
-<figures/familiarization/sff.jpg, id=303, 717.68124pt x 560.0925pt>
-File: figures/familiarization/sff.jpg Graphic file (type jpg)
-<use figures/familiarization/sff.jpg>
-Package pdftex.def Info: figures/familiarization/sff.jpg  used on input line 30
-8.
-(pdftex.def)             Requested size: 215.30603pt x 168.02904pt.
-<figures/familiarization/sff_schematic.png, id=304, 246.9225pt x 181.42781pt>
-File: figures/familiarization/sff_schematic.png Graphic file (type png)
-<use figures/familiarization/sff_schematic.png>
-Package pdftex.def Info: figures/familiarization/sff_schematic.png  used on inp
-ut line 308.
-(pdftex.def)             Requested size: 197.53824pt x 145.14244pt.
- [11 <./figures/familiarization/sff.jpg> <./figures/familiarization/sff_schemat
-ic.png>]
-<figures/familiarization/ports_lab1.png, id=316, 663.6795pt x 358.33875pt>
-File: figures/familiarization/ports_lab1.png Graphic file (type png)
-<use figures/familiarization/ports_lab1.png>
-Package pdftex.def Info: figures/familiarization/ports_lab1.png  used on input 
-line 325.
-(pdftex.def)             Requested size: 364.19667pt x 196.64403pt.
-<figures/familiarization/ports_after_scan_synthesis.png, id=319, 663.6795pt x 3
-73.395pt>
-File: figures/familiarization/ports_after_scan_synthesis.png Graphic file (type
- png)
-<use figures/familiarization/ports_after_scan_synthesis.png>
-Package pdftex.def Info: figures/familiarization/ports_after_scan_synthesis.png
-  used on input line 334.
-(pdftex.def)             Requested size: 364.19667pt x 204.90639pt.
- [12 <./figures/familiarization/ports_lab1.png> <./figures/familiarization/port
-s_after_scan_synthesis.png>]
-(180631J_Lab2_EN4603.bbl) [13] (180631J_Lab2_EN4603.aux)
+ []
+
+[4]
+<figures/flow.png, id=206, 598.03426pt x 542.62724pt>
+File: figures/flow.png Graphic file (type png)
+<use figures/flow.png>
+Package pdftex.def Info: figures/flow.png  used on input line 65.
+(pdftex.def)             Requested size: 459.51054pt x 416.93832pt.
+ [5 <./figures/flow.png>]
+<figures/innovus_1.png.png, id=213, 1445.4pt x 813.0375pt>
+File: figures/innovus_1.png.png Graphic file (type png)
+<use figures/innovus_1.png.png>
+Package pdftex.def Info: figures/innovus_1.png.png  used on input line 81.
+(pdftex.def)             Requested size: 459.51054pt x 258.4777pt.
+<figures/defIn.png, id=214, 610.6815pt x 67.452pt>
+File: figures/defIn.png Graphic file (type png)
+<use figures/defIn.png>
+Package pdftex.def Info: figures/defIn.png  used on input line 93.
+(pdftex.def)             Requested size: 459.51054pt x 50.7556pt.
+<figures/setDesignMode.png, id=217, 847.36575pt x 93.34875pt>
+File: figures/setDesignMode.png Graphic file (type png)
+<use figures/setDesignMode.png>
+Package pdftex.def Info: figures/setDesignMode.png  used on input line 104.
+(pdftex.def)             Requested size: 459.51054pt x 50.62122pt.
+ [6 <./figures/innovus_1.png.png> <./figures/defIn.png> <./figures/setDesignMod
+e.png>]
+<figures/innovus_2.png, id=230, 1445.4pt x 813.0375pt>
+File: figures/innovus_2.png Graphic file (type png)
+<use figures/innovus_2.png>
+Package pdftex.def Info: figures/innovus_2.png  used on input line 115.
+(pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
+<figures/innovus_3_2.png, id=231, 1445.4pt x 813.0375pt>
+File: figures/innovus_3_2.png Graphic file (type png)
+<use figures/innovus_3_2.png>
+Package pdftex.def Info: figures/innovus_3_2.png  used on input line 128.
+(pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
+ [7 <./figures/innovus_2.png> <./figures/innovus_3_2.png>]
+<figures/innovus_4_2.png, id=239, 1445.4pt x 813.0375pt>
+File: figures/innovus_4_2.png Graphic file (type png)
+<use figures/innovus_4_2.png>
+Package pdftex.def Info: figures/innovus_4_2.png  used on input line 138.
+(pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
+<figures/innovus_4_4.png, id=240, 1445.4pt x 813.0375pt>
+File: figures/innovus_4_4.png Graphic file (type png)
+<use figures/innovus_4_4.png>
+Package pdftex.def Info: figures/innovus_4_4.png  used on input line 148.
+(pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
+ [8 <./figures/innovus_4_2.png> <./figures/innovus_4_4.png>]
+<figures/innovus_5_5.png, id=249, 1445.4pt x 813.0375pt>
+File: figures/innovus_5_5.png Graphic file (type png)
+<use figures/innovus_5_5.png>
+Package pdftex.def Info: figures/innovus_5_5.png  used on input line 161.
+(pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
+<figures/innovus_6_1.png, id=252, 1445.4pt x 813.0375pt>
+File: figures/innovus_6_1.png Graphic file (type png)
+<use figures/innovus_6_1.png>
+Package pdftex.def Info: figures/innovus_6_1.png  used on input line 170.
+(pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
+
+[9 <./figures/innovus_5_5.png> <./figures/innovus_6_1.png>]
+<figures/innovus_7_2.png, id=259, 1445.4pt x 813.0375pt>
+File: figures/innovus_7_2.png Graphic file (type png)
+<use figures/innovus_7_2.png>
+Package pdftex.def Info: figures/innovus_7_2.png  used on input line 182.
+(pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
+<figures/innovus_9_2.png, id=260, 1445.4pt x 813.0375pt>
+File: figures/innovus_9_2.png Graphic file (type png)
+<use figures/innovus_9_2.png>
+Package pdftex.def Info: figures/innovus_9_2.png  used on input line 193.
+(pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
+<figures/innovus_9_3.png, id=261, 1445.4pt x 813.0375pt>
+File: figures/innovus_9_3.png Graphic file (type png)
+<use figures/innovus_9_3.png>
+Package pdftex.def Info: figures/innovus_9_3.png  used on input line 203.
+(pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
+ [10 <./figures/innovus_7_2.png> <./figures/innovus_9_2.png>]
+<figures/gateCount.png, id=269, 658.8615pt x 104.7915pt>
+File: figures/gateCount.png Graphic file (type png)
+<use figures/gateCount.png>
+Package pdftex.def Info: figures/gateCount.png  used on input line 214.
+(pdftex.def)             Requested size: 435.32422pt x 69.23935pt.
+<figures/timeDesign.png, id=272, 422.17725pt x 393.8715pt>
+File: figures/timeDesign.png Graphic file (type png)
+<use figures/timeDesign.png>
+Package pdftex.def Info: figures/timeDesign.png  used on input line 225.
+(pdftex.def)             Requested size: 290.22107pt x 270.77396pt.
+ [11 <./figures/innovus_9_3.png> <./figures/gateCount.png>]
+<figures/innovus_8_1.png, id=281, 1445.4pt x 813.0375pt>
+File: figures/innovus_8_1.png Graphic file (type png)
+<use figures/innovus_8_1.png>
+Package pdftex.def Info: figures/innovus_8_1.png  used on input line 236.
+(pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
+File: figures/innovus_9_2.png Graphic file (type png)
+<use figures/innovus_9_2.png>
+Package pdftex.def Info: figures/innovus_9_2.png  used on input line 249.
+(pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
+ [12 <./figures/timeDesign.png> <./figures/innovus_8_1.png>]
+File: figures/innovus_9_3.png Graphic file (type png)
+<use figures/innovus_9_3.png>
+Package pdftex.def Info: figures/innovus_9_3.png  used on input line 259.
+(pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
+<figures/scanReorder.png, id=298, 787.14075pt x 374.5995pt>
+File: figures/scanReorder.png Graphic file (type png)
+<use figures/scanReorder.png>
+Package pdftex.def Info: figures/scanReorder.png  used on input line 271.
+(pdftex.def)             Requested size: 435.32422pt x 207.17354pt.
+ [13]
+<figures/postCTStimeDesign.png, id=307, 423.984pt x 356.532pt>
+File: figures/postCTStimeDesign.png Graphic file (type png)
+<use figures/postCTStimeDesign.png>
+Package pdftex.def Info: figures/postCTStimeDesign.png  used on input line 281.
+
+(pdftex.def)             Requested size: 338.58632pt x 284.72546pt.
+<figures/innovus_q16_2.png, id=310, 1445.4pt x 813.0375pt>
+File: figures/innovus_q16_2.png Graphic file (type png)
+<use figures/innovus_q16_2.png>
+Package pdftex.def Info: figures/innovus_q16_2.png  used on input line 292.
+(pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
+ [14 <./figures/scanReorder.png> <./figures/postCTStimeDesign.png>]
+Package acronym Info: Label `acro:ocv' newly defined as it shall be overridden
+although it is yet undefined on input line 297.
+<figures/addFiller.png, id=321, 585.98924pt x 184.89075pt>
+File: figures/addFiller.png Graphic file (type png)
+<use figures/addFiller.png>
+Package pdftex.def Info: figures/addFiller.png  used on input line 304.
+(pdftex.def)             Requested size: 435.32422pt x 137.35583pt.
+<figures/innovus_q18_2.png, id=322, 1445.4pt x 813.0375pt>
+File: figures/innovus_q18_2.png Graphic file (type png)
+<use figures/innovus_q18_2.png>
+Package pdftex.def Info: figures/innovus_q18_2.png  used on input line 313.
+(pdftex.def)             Requested size: 435.32422pt x 244.8684pt.
+
+[15 <./figures/innovus_q16_2.png> <./figures/addFiller.png>]
+<figures/verifyGeometry.png, id=331, 383.63326pt x 254.1495pt>
+File: figures/verifyGeometry.png Graphic file (type png)
+<use figures/verifyGeometry.png>
+Package pdftex.def Info: figures/verifyGeometry.png  used on input line 328.
+(pdftex.def)             Requested size: 191.81615pt x 127.07443pt.
+<figures/verifyConnectivity.png, id=332, 398.08725pt x 216.81pt>
+File: figures/verifyConnectivity.png Graphic file (type png)
+<use figures/verifyConnectivity.png>
+Package pdftex.def Info: figures/verifyConnectivity.png  used on input line 328
+.
+(pdftex.def)             Requested size: 199.04314pt x 108.40472pt.
+ [16 <./figures/innovus_q18_2.png> <./figures/verifyGeometry.png> <./figures/ve
+rifyConnectivity.png>] (Lab3_EN4603.bbl
+
+Package natbib Warning: Empty `thebibliography' environment on input line 24.
+
+) [17] (Lab3_EN4603.aux)
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `180631J_Lab2_EN4603.out' has not changed.
-(rerunfilecheck)             Checksum: 959A643A40F2B19D473E390CF56A9D38;1759.
+Package rerunfilecheck Info: File `Lab3_EN4603.out' has not changed.
+(rerunfilecheck)             Checksum: 9E95E9D553F3AC22815F97E6F32CD6F6;1147.
  ) 
 Here is how much of TeX's memory you used:
- 29698 strings out of 479321
- 547293 string characters out of 2856584
- 868658 words of memory out of 3000000
- 46484 multiletter control sequences out of 15000+600000
- 412699 words of font info for 61 fonts, out of 8000000 for 9000
+ 29795 strings out of 479321
+ 547269 string characters out of 2856584
+ 874059 words of memory out of 3000000
+ 46537 multiletter control sequences out of 15000+600000
+ 411584 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 92i,10n,120p,677b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 92i,9n,120p,474b,610s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\bimal\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1095.pk><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmbx12.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/bimal/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/bimal/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Users/bimal/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/bim
-al/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/U
-sers/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.p
-fb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmr9.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmti10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmtt10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on 180631J_Lab2_EN4603.pdf (14 pages, 701224 bytes).
+TeX/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Users/bimal/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/bimal/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/bimal
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Use
+rs/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb>
+<C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+ti10.pfb><C:/Users/bimal/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmtt10.pfb>
+Output written on Lab3_EN4603.pdf (18 pages, 3177631 bytes).
 PDF statistics:
- 392 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
- 270 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 407 PDF objects out of 1000 (max. 8388607)
+ 105 named destinations out of 1000 (max. 500000)
+ 301 words of extra memory for PDF output out of 10000 (max. 10000000)
 
